@@ -1,0 +1,22 @@
+name: opensci
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - xarray
+  - netcdf4
+  - matplotlib
+  - cartopy
+  - cmocean
+  - jupyter
+  - jupyterlab
+  - dask
+  - zarr
+  - copernicusmarine
+  - pip
+  - pip:
+    - erddapy

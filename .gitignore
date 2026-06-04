@@ -1,0 +1,39 @@
+# Raw data files — GitHub only stores links, not data
+*.nc
+*.nc4
+*.hdf5
+*.h5
+*.mat
+*.tif
+*.tiff
+*.grib
+*.grib2
+*.grb
+*.grb2
+*.dat
+*.bin
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment and secrets
+.env
+*.key
+credentials.*

@@ -1,0 +1,71 @@
+# GitHub Labels Configuration
+# 使用 github-label-sync 或手动在 GitHub Settings > Labels 中创建
+#
+# 安装: npm install -g github-label-sync
+# 使用: github-label-sync --access-token TOKEN pangeo-data/OpenSCI-Ocean
+
+# Project labels
+- name: P01
+  color: "1f77b4"
+  description: "Project 01"
+- name: P02
+  color: "ff7f0e"
+  description: "Project 02"
+- name: P03
+  color: "2ca02c"
+  description: "Project 03"
+- name: P04
+  color: "d62728"
+  description: "Project 04"
+- name: P05
+  color: "9467bd"
+  description: "Project 05"
+- name: P06
+  color: "8c564b"
+  description: "Project 06"
+- name: P07
+  color: "e377c2"
+  description: "Project 07"
+- name: P08
+  color: "7f7f7f"
+  description: "Project 08"
+- name: P09
+  color: "bcbd22"
+  description: "Project 09"
+- name: P10
+  color: "17becf"
+  description: "Project 10"
+
+# Stage labels
+- name: D0-explore
+  color: "c5def5"
+  description: "Stage: Topic exploration"
+- name: D1-draft
+  color: "bfd4f2"
+  description: "Stage: AI draft generation"
+- name: D2-deliver
+  color: "d4c5f9"
+  description: "Stage: Human review & delivery"
+- name: D3-review
+  color: "f9d0c4"
+  description: "Stage: Internal review"
+- name: D4-submit
+  color: "c2e0c6"
+  description: "Stage: Submission"
+
+# Type labels
+- name: idea
+  color: "fbca04"
+  description: "New research idea or direction"
+- name: discussion
+  color: "d876e3"
+  description: "Discussion topic"
+- name: review
+  color: "0e8a16"
+  description: "Review request"
+- name: bug
+  color: "fc2929"
+  description: "Bug in code or analysis"
+- name: help
+  color: "0075ca"
+  description: "Help needed"
