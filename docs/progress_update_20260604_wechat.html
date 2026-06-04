@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微信公众号预览</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #f4f5f7; font-family: Optima, 'Microsoft YaHei', PingFangSC-regular, serif; }
+    .copy-notice {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 25px; margin: 20px auto; border-radius: 12px;
+      text-align: center; color: white; max-width: 680px;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+    .copy-notice h3 { font-size: 18px; margin-bottom: 8px; }
+    .copy-notice p { font-size: 14px; opacity: 0.9; margin-bottom: 12px; }
+    .copy-notice button {
+      background: white; color: #667eea; border: none; padding: 12px 40px;
+      margin: 8px; border-radius: 25px; cursor: pointer; font-size: 15px;
+      font-weight: bold; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .copy-notice button:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .theme-selector {
+      margin-top: 12px;
+    }
+    .theme-btn {
+      display: inline-block; padding: 6px 16px; margin: 4px;
+      border-radius: 20px; border: 2px solid rgba(255,255,255,0.5);
+      color: white; font-size: 13px; cursor: pointer; background: rgba(255,255,255,0.15);
+    }
+    .theme-btn:hover, .theme-btn.active {
+      border-color: white; background: rgba(255,255,255,0.3);
+    }
+    .outer-container {
+      max-width: 800px; margin: 0 auto; background: white;
+      padding: 50px; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,.1);
+    }
+    .copy-notice button:disabled { opacity: .55; cursor: not-allowed; }
+    mjx-container[display="true"] { display: block; text-align: center; margin: 1em 0; }
+    .math-scroll-wrap {
+      position: relative; overflow-x: auto; overflow-y: hidden;
+      margin: .8em 0; padding: 6px 0 10px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin; scrollbar-color: #b0b8c8 transparent;
+    }
+    .math-scroll-wrap::-webkit-scrollbar { height: 6px; }
+    .math-scroll-wrap::-webkit-scrollbar-thumb { background: #c5cdd8; border-radius: 3px; }
+  </style>
+  
+</head>
+<body>
+
+<div class="copy-notice" id="copy-notice">
+  <h3>微信公众号排版</h3>
+  <p>点击复制后粘贴到微信公众号编辑器</p>
+  <button onclick="copyForWechat()" >复制全文</button>
+  <div class="theme-selector" id="theme-selector"></div>
+</div>
+
+<div class="outer-container">
+<div id="article-content">
+<h1 style="font-size:26px;font-weight:900;text-align:center;margin-bottom:8px;color:#1a1a1a;line-height:1.4;">10个人，10个方向，一周一篇——我们开始了</h1>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">上一篇推文发出不到48小时，报名人数超出预期。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">目前已有10余位同行加入工作组。硕士、博士、博后、青年教师都有，方向涵盖卫星高度计、物理海洋、海气相互作用、极地遥感。来自不同学校和机构，共同点只有一个：对这件事真的好奇。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">本项目是一个探索性质的科研协作实验，完全自发，由制造国产新一代低成本高精度小型化 GNSS 波浪潮汐浮标的青岛安海发起，邀请公众号粉丝参加。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">愿景上篇讲过了。这篇讲进展，讲接下来怎么干。</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:36px 0;"><tr><td style="border:none;border-top:1px solid #ddd;font-size:0;line-height:0;height:1px;">&nbsp;</td></tr></table>
+<h2 style="font-size:20px;font-weight:bold;color:#1a1a1a;margin-top:40px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #667eea;display:inline-block;">框架搭好了</h2>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">过去两天，协作框架在 GitHub 上搭建完毕（仓库：github.com/pangeo-data/OpenSCI-Ocean）。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;"><strong style="font-weight:bold;color:#d35d6e;">10个独立项目，并行推进。</strong> 仓库分成 P01 到 P10 十个子项目，每个对应一个研究方向、一个科学问题。项目之间互不依赖，各自推进，各自署名。你可以只参与一个，也可以同时跟好几个。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;"><strong style="font-weight:bold;color:#d35d6e;">每个项目的节奏：</strong></p>
+<ul style="padding-left:2em;margin:12px 0;"><li style="font-size:16px;line-height:1.8;color:#2d3436;margin:4px 0;">D0：选题确认，AI 快速文献调研，判断新颖性——半天到一天</li><li style="font-size:16px;line-height:1.8;color:#2d3436;margin:4px 0;">D1：AI 生成初稿，包括文献综述、数据分析代码、图表和全文——一天</li><li style="font-size:16px;line-height:1.8;color:#2d3436;margin:4px 0;">D2：人类审查，物理把关，纠偏修改——两到三天</li><li style="font-size:16px;line-height:1.8;color:#2d3436;margin:4px 0;">D3：内部模拟评审，交叉审查，定稿——约三天</li><li style="font-size:16px;line-height:1.8;color:#2d3436;margin:4px 0;">D4：格式检查，Cover Letter，投稿</li></ul>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">选题到投稿，大约一周。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">这个速度不是拍脑袋定的。AI 负责文献检索、代码编写、初稿生成这些可以批量完成的工作，人类只做 AI 做不好的事：判断物理机制对不对，检查引用是不是真的，决定一个结论能不能立住。</p>
+<h2 style="font-size:20px;font-weight:bold;color:#1a1a1a;margin-top:40px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #667eea;display:inline-block;">怎么分工</h2>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;"><strong style="font-weight:bold;color:#d35d6e;">每个项目 2 到 3 人一组，AI 是主力。</strong></p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">不是十几个人挤在一个项目里开会，而是小团队快速行动。核心组两三个人，负责把控方向、审查结果、做最终判断。文献检索、代码编写、数据处理、初稿生成这些苦活累活，交给 AI。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">人做人该做的事——提出好问题，判断物理上通不通，把关结论。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">AI 做 AI 擅长的事——搬运、计算、写作、不知疲倦地迭代。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">两三个人加一个 AI，产出不输一个传统课题组。</p>
+<h2 style="font-size:20px;font-weight:bold;color:#1a1a1a;margin-top:40px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #667eea;display:inline-block;">规则初稿</h2>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">协作制度的初稿已写好，放在 GitHub 仓库里，欢迎参与者提意见。几个方向性的原则：</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;"><strong style="font-weight:bold;color:#d35d6e;">署名按实际贡献来。</strong> 参照 CRediT 国际标准，每个项目独立署名。提出关键科学问题、做出核心物理判断、提供独家数据、资助项目经费或承担版面费——这些贡献不一定体现在代码提交里，但同样重要。GitHub 记录是参考，不是唯一标尺。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;"><strong style="font-weight:bold;color:#d35d6e;">AI 使用如实声明。</strong> 每个项目记录 AI 交互日志，投稿时在 Methods 部分写清楚 AI 参与了什么、到什么程度。不回避，不夸大。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;"><strong style="font-weight:bold;color:#d35d6e;">几条底线：</strong> 文献零幻觉——AI 给出的每一条引用，必须人工核验存在。代码可复现——分析脚本上传 GitHub，任何人能跑出相同结果。仓库不存原始数据，只存数据链接和下载脚本。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">这些规则还在打磨，正式版会在第一个项目启动前定下来。</p>
+<h2 style="font-size:20px;font-weight:bold;color:#1a1a1a;margin-top:40px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #667eea;display:inline-block;">全过程保留</h2>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">这个项目和一般科研项目最大的不同：全过程透明。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">每个项目目录有四个版本——AI 初稿、人类审查稿、内部评审定稿、最终投稿版。每一版都留在 Git 历史里。从 AI 写下的第一个字到最终投稿，每一步修改都可以回溯。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">AI 贡献了多少，人改了多少，diff 里看得清清楚楚。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">这也是我们想回答的问题：AI 做科研，真实的边界到底在哪？不靠嘴说，靠记录。</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:36px 0;"><tr><td style="border:none;border-top:1px solid #ddd;font-size:0;line-height:0;height:1px;">&nbsp;</td></tr></table>
+<h2 style="font-size:20px;font-weight:bold;color:#1a1a1a;margin-top:40px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #667eea;display:inline-block;">但这些都不是最重要的</h2>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">框架、制度、流程、底线——这些保障项目能转起来。重要，但不是我做这件事的原因。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">报名的人里，有人想发论文毕业，有人想攒成果评职称。这些都是真实的需求，完全正当。项目能帮上忙，我很高兴。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">发论文，拿学位，评教授。都好。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">但我知道，很多人走进海洋科学这个行当，最初不是因为这些。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">小时候第一次在电视上看到蓝色的地球，第一次翻开一本讲海洋的书，第一次听说马里亚纳海沟有一万米深——那时候没人想过影响因子，没人算过一区二区。想法很简单：</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;"><strong style="font-weight:bold;color:#d35d6e;">长大了当科学家。</strong></p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">后来我们真长大了。读了硕士、博士，进了实验室，学会写代码、跑模型、投稿件。也学会数论文、看 IF、算 h-index。不知道从哪天起，"做科研"变成了"发文章"，探索变成了生产，好奇心被压在了绩效考核下面。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">我不批判这个系统。每个人都在里面找自己的路，没有对错。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">但我想试试，能不能留一小块地方，回到最开始的样子。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">不为发表而发表。就是真的想搞明白一件事：海洋里的涡旋怎么生成的？SWOT 卫星拍到的精细结构到底在说什么？冰盖底下的海水在干什么？AI 这把新工具，能不能帮我们更快、更深地靠近答案？</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">发在 Nature 子刊，当然好。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">发不了，但过程中真搞懂了一些东西，也值。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">要是拿了诺贝尔奖——我请全组吃饭。</p>
+<h2 style="font-size:20px;font-weight:bold;color:#1a1a1a;margin-top:40px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #667eea;display:inline-block;">加入我们</h2>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">10 个方向的选题还在确定。如果你有一个"值得做但没时间做"的科学问题，现在是好时机。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">不要求全职投入，不要求固定时间。可以深度跟一个项目的全程，也可以在关键节点帮忙审一轮。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">唯一的要求没变：对这件事真的好奇。</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">GitHub 仓库：github.com/pangeo-data/OpenSCI-Ocean</p>
+<p style="font-size:16px;padding:8px 0;line-height:1.8;color:#2d3436;margin:0;">加入方式：私信我，说明你的研究方向和想参与的方式，拉你进微信工作群。</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:36px 0;"><tr><td style="border:none;border-top:1px solid #ddd;font-size:0;line-height:0;height:1px;">&nbsp;</td></tr></table>
+<blockquote style="display:block;font-size:0.9em;overflow:auto;border-left:3px solid #66b2b2;background:#f0f9f7;color:#6a737d;padding:10px 10px 10px 20px;margin:20px 0;border-radius:0 6px 6px 0;"><p style="margin:0;color:#2d3436;line-height:1.8;font-size:15px;">上一篇：<a style="color:#667eea;text-decoration:none;border-bottom:1px solid #667eea;" href="docs/recruitment_cn.md">AI 全过程写 Nature 子刊，我们试试</a>（2026-06-03）<br><br>项目仓库：github.com/pangeo-data/OpenSCI-Ocean</p></blockquote>
+</div>
+</div>
+
+<script>
+var THEMES = {
+    "teal": {
+      label: "青绿（默认）",
+      strong: "#d35d6e",
+      bqBorder: "#66b2b2", bqBg: "#f0f9f7", bqText: "#2d3436",
+      h2Border: "#667eea",
+      link: "#667eea",
+      grad: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      shadow: "rgba(102,126,234,.4)", btn: "#667eea",
+      thBg: "#667eea"
+    },
+    "navy": {
+      label: "深蓝学术",
+      strong: "#c0392b",
+      bqBorder: "#2c3e50", bqBg: "#f5f6fa", bqText: "#2d3436",
+      h2Border: "#2c3e50",
+      link: "#2980b9",
+      grad: "linear-gradient(135deg, #2c3e50 0%, #3498db 100%)",
+      shadow: "rgba(44,62,80,.4)", btn: "#2c3e50",
+      thBg: "#2c3e50"
+    },
+    "orange": {
+      label: "暖橙活力",
+      strong: "#e74c3c",
+      bqBorder: "#f39c12", bqBg: "#fef9e7", bqText: "#2d3436",
+      h2Border: "#f39c12",
+      link: "#e67e22",
+      grad: "linear-gradient(135deg, #f39c12 0%, #e74c3c 100%)",
+      shadow: "rgba(243,156,18,.4)", btn: "#f39c12",
+      thBg: "#e67e22"
+    },
+    "violet": {
+      label: "玫瑰优雅",
+      strong: "#8e44ad",
+      bqBorder: "#e84393", bqBg: "#fdf2f8", bqText: "#2d3436",
+      h2Border: "#8e44ad",
+      link: "#8e44ad",
+      grad: "linear-gradient(135deg, #8e44ad 0%, #c0392b 100%)",
+      shadow: "rgba(142,68,173,.4)", btn: "#8e44ad",
+      thBg: "#8e44ad"
+    },
+    "green": {
+      label: "墨绿清新",
+      strong: "#00b894",
+      bqBorder: "#27ae60", bqBg: "#f0fff4", bqText: "#2d3436",
+      h2Border: "#27ae60",
+      link: "#27ae60",
+      grad: "linear-gradient(135deg, #27ae60 0%, #2980b9 100%)",
+      shadow: "rgba(39,174,96,.4)", btn: "#27ae60",
+      thBg: "#27ae60"
+    },
+  };
+
+// 渲染主题按钮
+(function() {
+  var container = document.getElementById('theme-selector');
+  var saved = localStorage.getItem('wechat_theme') || 'teal';
+  Object.keys(THEMES).forEach(function(key) {
+    var btn = document.createElement('span');
+    btn.className = 'theme-btn' + (key === saved ? ' active' : '');
+    btn.textContent = THEMES[key].label;
+    btn.onclick = function() {
+      applyTheme(key);
+      document.querySelectorAll('.theme-btn').forEach(function(b) { b.className = 'theme-btn'; });
+      btn.className = 'theme-btn active';
+    };
+    container.appendChild(btn);
+  });
+  if (saved !== 'teal') applyTheme(saved);
+})();
+
+function applyTheme(name) {
+  var t = THEMES[name];
+  var root = document.getElementById('article-content');
+  localStorage.setItem('wechat_theme', name);
+
+  // 更新 copy-notice 渐变
+  var notice = document.getElementById('copy-notice');
+  notice.style.background = t.grad;
+
+  // strong
+  var els = root.querySelectorAll('strong');
+  for (var i = 0; i < els.length; i++) els[i].style.color = t.strong;
+
+  // blockquote
+  els = root.querySelectorAll('blockquote');
+  for (var i = 0; i < els.length; i++) {
+    els[i].style.borderLeftColor = t.bqBorder;
+    els[i].style.background = t.bqBg;
+  }
+  els = root.querySelectorAll('blockquote p');
+  for (var i = 0; i < els.length; i++) els[i].style.color = t.bqText;
+
+  // h2 border
+  els = root.querySelectorAll('h2');
+  for (var i = 0; i < els.length; i++) els[i].style.borderBottomColor = t.h2Border;
+
+  // links
+  els = root.querySelectorAll('a');
+  for (var i = 0; i < els.length; i++) {
+    els[i].style.color = t.link;
+    els[i].style.borderBottomColor = t.link;
+  }
+
+  // th
+  els = root.querySelectorAll('th');
+  for (var i = 0; i < els.length; i++) {
+    els[i].style.background = t.thBg;
+    els[i].style.borderColor = t.thBg;
+  }
+}
+
+// ── MathJax SVG → 微信兼容处理（mdnice 路线） ──
+// 长公式若渲染后宽度超过容器，套一层横向滚动容器；复制前会移除此包裹。
+function wrapOverflowMath() {
+  var root = document.getElementById('article-content');
+  if (!root) return;
+  var containers = root.querySelectorAll('mjx-container[display="true"]');
+  for (var i = 0; i < containers.length; i++) {
+    var mjx = containers[i];
+    if (mjx.parentNode.classList && mjx.parentNode.classList.contains('math-scroll-wrap')) continue;
+    var svg = mjx.querySelector('svg'); if (!svg) continue;
+    var svgW = svg.getBoundingClientRect().width;
+    var parentW = mjx.parentNode.getBoundingClientRect().width;
+    if (svgW <= parentW + 2) continue;
+    var wrap = document.createElement('div');
+    wrap.className = 'math-scroll-wrap';
+    mjx.parentNode.insertBefore(wrap, mjx);
+    wrap.appendChild(mjx);
+  }
+}
+function unwrapMathScroll(clone) {
+  var wraps = clone.querySelectorAll('.math-scroll-wrap');
+  for (var i = wraps.length - 1; i >= 0; i--) {
+    var w = wraps[i], parent = w.parentNode;
+    while (w.firstChild) parent.insertBefore(w.firstChild, w);
+    parent.removeChild(w);
+  }
+}
+// mdnice 的 solveWeChatMath：清理 MathJax SVG 属性，确保微信保留公式
+// 参考：https://github.com/mdnice/markdown-nice/blob/master/src/utils/converter.js
+function solveWeChatMath(root) {
+  // 1. 删除无障碍 MathML 节点（微信会把它露出来当正文显示）
+  var amml = root.querySelectorAll('mjx-assistive-mml');
+  for (var j = amml.length - 1; j >= 0; j--) amml[j].parentNode.removeChild(amml[j]);
+  // 2. 清理 mjx-container 属性；把 SVG 的 width/height 从 attribute 移到 inline style
+  var mjxs = root.getElementsByTagName('mjx-container');
+  for (var i = 0; i < mjxs.length; i++) {
+    var mjx = mjxs[i];
+    if (!mjx.hasAttribute('jax')) continue;
+    mjx.removeAttribute('jax');
+    mjx.removeAttribute('display');
+    mjx.removeAttribute('tabindex');
+    mjx.removeAttribute('ctxtmenu_counter');
+    var svg = mjx.querySelector('svg');
+    if (svg) {
+      var w = svg.getAttribute('width'), h = svg.getAttribute('height');
+      svg.removeAttribute('width'); svg.removeAttribute('height');
+      if (w) svg.style.width = w;
+      if (h) svg.style.height = h;
+    }
+  }
+}
+
+async function copyForWechat() {
+  var content = document.getElementById('article-content');
+  var clone = content.cloneNode(true);
+
+  // 公式：先拆掉滚动容器，再按 mdnice 方式清理 SVG
+  unwrapMathScroll(clone);
+  solveWeChatMath(clone);
+
+  // pre 代码块：换行转 br，并改为 nowrap 防止长行折行
+  var pres = clone.querySelectorAll('pre');
+  for (var i = 0; i < pres.length; i++) {
+    var pre = pres[i];
+    pre.innerHTML = pre.innerHTML.replace(/\n/g, '<br>');
+    pre.style.whiteSpace = 'nowrap';
+  }
+
+  var htmlText = '<div>' + clone.innerHTML + '</div>';
+
+  // 构造干净的纯文本版本：只按块级元素产出段落，一段一行，用空行分隔
+  // 关键：用 textContent 而非 innerText，避免包含浏览器视觉换行
+  var blockSelector = 'h1, h2, h3, h4, p, blockquote, li, pre, figure';
+  var blocks = clone.querySelectorAll(blockSelector);
+  var paragraphs = [];
+  for (var n = 0; n < blocks.length; n++) {
+    var el = blocks[n];
+    // 跳过嵌套在其他块内的（如 blockquote 里的 p），只要顶层
+    if (el.parentElement && el.parentElement.closest &&
+        el.parentElement.closest(blockSelector)) continue;
+    var txt = (el.textContent || '').replace(/\s+/g, ' ').trim();
+    if (txt) paragraphs.push(txt);
+  }
+  var plainText = paragraphs.join('\n\n');
+
+  var btn = document.querySelector('.copy-notice button');
+  var ok = false;
+
+  // 用 copy 事件显式写 clipboardData，屏蔽浏览器自动生成的带视觉换行的纯文本
+  var handler = function(ev) {
+    ev.clipboardData.setData('text/html', htmlText);
+    ev.clipboardData.setData('text/plain', plainText);
+    ev.preventDefault();
+  };
+  document.addEventListener('copy', handler);
+
+  // 需要有 selection 才能触发 copy
+  var tmp = document.createElement('textarea');
+  tmp.value = 'x';
+  tmp.style.cssText = 'position:absolute;left:-9999px;top:0;';
+  document.body.appendChild(tmp);
+  tmp.focus(); tmp.select();
+  try {
+    ok = document.execCommand('copy');
+  } catch (e) { ok = false; }
+  document.body.removeChild(tmp);
+  document.removeEventListener('copy', handler);
+
+  if (ok) {
+    btn.textContent = '已复制！粘贴到公众号编辑器即可';
+    btn.style.background = '#2ecc71';
+    btn.style.color = 'white';
+    setTimeout(function() {
+      btn.textContent = '复制全文';
+      btn.style.background = 'white';
+      btn.style.color = '#667eea';
+    }, 3000);
+  } else {
+    alert('复制失败，请手动全选复制');
+  }
+}
+</script>
+
+</body>
+</html>
