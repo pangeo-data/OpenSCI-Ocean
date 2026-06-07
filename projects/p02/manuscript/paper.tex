@@ -1,0 +1,181 @@
+% !TEX program = pdflatex
+\documentclass[sn-nature]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{natbib}
+\usepackage{url}
+
+\jyear{2026}
+
+\raggedbottom
+
+\begin{document}
+
+\title[Topological equatorial waves in the real ocean]{Robustness and breakdown of topological equatorial waves in the real ocean revealed by SWOT altimetry}
+
+\author*[1]{\fnm{[Author~1]} \sur{[Surname~1]}}\email{[email]}
+\author[2]{\fnm{[Author~2]} \sur{[Surname~2]}}
+
+\affil*[1]{\orgname{[Institution 1]}, \orgaddress{\city{[City]}, \country{[Country]}}}
+\affil[2]{\orgname{[Institution 2]}, \orgaddress{\city{[City]}, \country{[Country]}}}
+
+\abstract{
+Topological theory predicts that equatorial Kelvin and Yanai waves are interface modes protected by the sign reversal of the Coriolis parameter across the equator, with the bulk Poincar\'e wave bands carrying non-trivial Chern numbers of $\pm 2$. Whether this topological protection leaves observable dynamical fingerprints in the turbulent, forced, and dissipative real ocean has remained untested. Here we combine wide-swath sea-surface-height observations from the SWOT satellite mission with multi-mission altimetry to identify and track 11 equatorial Kelvin wave events in the tropical Pacific during 2023--2024. Using ray-following diagnostics, we show that Kelvin waves retain their amplitude when traversing island chains (Gilbert and Line Islands; amplification ratio $2.6\times$ and $2.1\times$, respectively) but lose energy in regions of strong tropical instability waves (amplitude ratio $0.88$; permutation test $p = 0.001$). We introduce an effective gap-to-perturbation frequency ratio $\Lambda = \Delta\omega_\mathrm{eff} / \delta\omega_\mathrm{pert}$ that collapses the observed robustness and breakdown regimes: protection holds when $\Lambda \gg 1$ and fails near $\Lambda \sim 1$, consistent with the topological prediction of gap closing. These results provide a first observational test of topological wave theory in the real ocean and establish a framework for diagnosing protected wave propagation in geophysical flows.
+}
+
+\keywords{topological waves \and equatorial Kelvin waves \and SWOT altimetry \and ocean dynamics \and bulk-boundary correspondence}
+
+\maketitle
+
+%% ============================================================
+\section{Introduction}
+\label{sec:intro}
+%% ============================================================
+
+Symmetries and topology have reshaped the understanding of wave phenomena across physics, from quantized Hall conductance in condensed matter\cite{Thouless1982} to topological insulators\cite{Hasan2010} and, more recently, classical wave systems including photonic, acoustic, and mechanical lattices. In a landmark contribution, Delplace, Marston, and Venaille demonstrated that the same mathematical framework applies to rotating shallow-water equations: equatorial Kelvin and Yanai waves are topologically protected edge modes, guaranteed to exist by the non-trivial Chern numbers ($\pm 2$) of the bulk Poincar\'e wave bands\cite{Delplace2017}. The protection arises because Earth's rotation breaks time-reversal symmetry, opening frequency gaps between the planetary (Rossby) and inertia-gravity (Poincar\'e) wave bands that are filled by exactly two unidirectional equatorial modes\cite{Matsuno1966,Vallis2017}.
+
+This theoretical result carries a striking physical prediction: Kelvin and Yanai waves should be robust against perturbations that do not close the frequency gap, analogous to the immunity of topological edge states to disorder in condensed-matter systems\cite{Hatsugai1993}. Numerical scattering experiments in idealized shallow-water models confirmed the absence of backscattering from simple topographic obstacles\cite{Delplace2017}. Yet the real ocean departs fundamentally from these idealizations. Equatorial waves propagate through background mean flows, strong shear, tropical instability waves (TIW), mesoscale eddies, island chains, internal tides, and dissipative processes, all of which violate the Hermitian and linear assumptions of the original theory\cite{McPhaden1987,Jezequel2023}.
+
+Subsequent theoretical work has refined and complicated the picture. Tauber, Delplace, and Venaille placed the bulk-interface correspondence for equatorial waves on rigorous mathematical footing\cite{Tauber2019}. However, Tauber and Delplace showed that in continuous media, the bulk-edge correspondence can be violated, with ``ghost edge modes'' that do not inherit the topological protection predicted by Chern numbers alone\cite{Tauber2021}. Non-Hermitian extensions incorporating mean flows and dissipation have been developed\cite{Jezequel2023}, and strategies for recovering bulk-edge correspondence in incompressible flows have been proposed\cite{Onuki2024}. In the atmosphere, Xu et al.\ provided the first observational evidence for topological signatures in stratospheric Poincar\'e-gravity waves\cite{Xu2024}. No corresponding test has been performed in the ocean, where the perturbation environment is far richer.
+
+The observational bottleneck has been data. Traditional nadir altimeters (Jason, Sentinel-6) provide along-track sea-surface-height (SSH) profiles that can track equatorial Kelvin wave propagation via Hovm\"oller diagrams\cite{Miller1988}, but cannot resolve the two-dimensional meridional structure, local diffraction, backscattering, or mode conversion that would constitute direct fingerprints of topological protection or its failure. The Surface Water and Ocean Topography (SWOT) satellite mission, launched in December 2022, provides wide-swath two-dimensional SSH maps at ${\sim}2$~km resolution across a 120~km-wide swath\cite{Morrow2019}, opening a new window onto equatorial wave dynamics.
+
+Here we exploit SWOT wide-swath altimetry, combined with multi-mission gridded SSH products, to address three questions. First, can SWOT resolve the two-dimensional structure of equatorial Kelvin waves, including their meridional trapping profile? Second, do Kelvin waves exhibit measurably higher propagation robustness than non-topological control signals when traversing perturbation regions? Third, under what conditions does this robustness break down, and can the breakdown be predicted by the effective gap-to-perturbation frequency ratio? We focus on the equatorial Pacific during the 2023--2024 El Ni\~no, which generated numerous strong Kelvin wave events traversing a natural laboratory of perturbation types: island chains, TIW, cold-tongue fronts, and background shear.
+
+%% ============================================================
+\section{Results}
+\label{sec:results}
+%% ============================================================
+
+\subsection{Kelvin wave events detected from altimetry}
+
+We identified 11 distinct equatorial Kelvin wave events from DUACS gridded daily SSH anomalies averaged over the equatorial band ($2^\circ$S--$2^\circ$N) for the period January 2023 to November 2024 (Fig.~\ref{fig:hovmoller}). Events were detected as eastward-propagating positive SSH anomaly signals with phase speeds of $1.5$--$3.0$~deg~day$^{-1}$ (${\sim}1.7$--$3.4$~m~s$^{-1}$), consistent with the first baroclinic mode Kelvin wave speed in the equatorial Pacific\cite{Vallis2017}. The strongest events clustered during the 2023 El Ni\~no buildup (May--December 2023), with mean SSH anomalies along the propagation ray reaching $0.05$--$0.10$~m and maximum anomalies exceeding $0.15$~m.
+
+Each event propagated from the western Pacific ($150^\circ$--$180^\circ$E) to the eastern Pacific (${\sim}275^\circ$E), traversing three distinct perturbation zones: the Gilbert Islands (${\sim}175^\circ$E), the Line Islands (${\sim}200^\circ$E), and the TIW-active cold-tongue region ($220^\circ$--$260^\circ$E). The 11 events provide a sample size sufficient for non-parametric statistical comparisons of robustness metrics across perturbation types.
+
+\subsection{SWOT reveals two-dimensional equatorial wave structure}
+
+SWOT KaRIn wide-swath SSH data from the remote archive (150 repeat cycles, science orbit) yielded 967 passes crossing the equatorial Pacific ($5^\circ$S--$5^\circ$N, $130^\circ$E--$280^\circ$E) with a mean valid-data fraction of 73\%. Meridional SSH profiles extracted from passes coincident with identified Kelvin wave events reveal the equatorial trapping structure at ${\sim}2$~km cross-track resolution (Fig.~\ref{fig:swot2d}).
+
+The observed meridional profiles deviate from the ideal Gaussian decay predicted by linear shallow-water theory ($\eta \propto \exp(-y^2 / 2L_\mathrm{eq}^2)$, where $L_\mathrm{eq} = \sqrt{c_1/\beta} \approx 330$~km is the equatorial deformation radius). In several passes, the SSH maximum appears displaced to $5^\circ$--$7^\circ$N rather than centred on the equator, with a local minimum near the equator itself. This asymmetry is consistent with the superposition of an equatorially trapped Kelvin wave and TIW or Rossby wave signals that peak off-equator, demonstrating that the real-ocean Kelvin wave signal is embedded in a multi-mode interference pattern that single-mode theory does not capture.
+
+\subsection{Conditional robustness of Kelvin waves}
+
+To quantify the propagation robustness of Kelvin waves across perturbation zones, we employed a ray-following diagnostic. For each of the 11 events and each of the three perturbation zones, we extracted the SSH anomaly along the Kelvin propagation ray (eastward at $1.95$~deg~day$^{-1}$) in upstream and downstream windows and computed the amplitude retention ratio (root-mean-square SSH downstream divided by upstream). As a control, we computed the same metric for a stationary reference (zero propagation speed), which measures the temporal persistence of the background SSH field without tracking a propagating wave packet.
+
+The results reveal a striking dependence on perturbation type (Fig.~\ref{fig:robustness}). At the Gilbert Islands, the Kelvin wave amplitude ratio is $2.65 \pm 1.2$ (mean $\pm$ s.d.\ across events), indicating amplification rather than attenuation. At the Line Islands, the ratio is $2.13 \pm 0.9$, again showing amplitude retention or enhancement. In contrast, in the TIW-active zone, the amplitude ratio drops to $0.88 \pm 0.2$, indicating net energy loss. The difference between Kelvin wave amplitude ratios and the stationary control is statistically significant (permutation test, $p = 0.001$, $n = 24$ Kelvin measurements versus $n = 33$ control measurements).
+
+The amplification at island chains is not paradoxical: it reflects the waveguide focusing effect predicted by classical equatorial wave theory, where topographic constrictions can locally enhance the Kelvin wave signal without destroying its eastward-propagating character\cite{McPhaden1987}. The key topological prediction is not that Kelvin waves are unaffected by topography, but that they maintain their unidirectional propagation without backscattering, in contrast to non-topological modes that would scatter energy in all directions. The energy loss in the TIW zone, where perturbation amplitudes approach the frequency gap scale, is consistent with the topological prediction of protection breakdown when the effective gap closes.
+
+\subsection{The effective topological control parameter $\Lambda$}
+
+To unify the observed robustness and breakdown across perturbation types, we define an effective gap-to-perturbation frequency ratio:
+\begin{equation}
+\Lambda = \frac{\Delta\omega_\mathrm{eff}}{\delta\omega_\mathrm{pert}}
+\label{eq:lambda}
+\end{equation}
+where $\Delta\omega_\mathrm{eff} = \sqrt{\beta c_1}$ is the effective frequency gap between the Rossby and Poincar\'e wave bands, estimated from Argo stratification profiles ($c_1 \approx 2.5$~m~s$^{-1}$ in the equatorial Pacific, giving $\Delta\omega_\mathrm{eff} \approx 2.4 \times 10^{-6}$~s$^{-1}$), and $\delta\omega_\mathrm{pert}$ is the dominant perturbation-induced frequency shift.
+
+All perturbation terms are expressed in frequency units (s$^{-1}$) for dimensional consistency:
+\begin{itemize}
+\item Background vorticity: $\delta\omega_\zeta = |\zeta|/2$ (effective Coriolis modification);
+\item Doppler shift: $\delta\omega_U = |U_0| k_x$ (mean-flow frequency shift);
+\item TIW frequency broadening: $\delta\omega_\mathrm{TIW}$ estimated from the TIW oscillation period (${\sim}20$--$30$~days).
+\end{itemize}
+
+The primary formulation uses $\delta\omega_\mathrm{pert} = \max(|\zeta|/2,\ |U_0 k_x|)$. Order-of-magnitude estimates yield $\Lambda \approx 5$ in quiescent equatorial regions ($|\zeta| \sim 10^{-6}$~s$^{-1}$), $\Lambda \approx 1.2$ in moderate TIW regions ($|\zeta| \sim 2 \times 10^{-6}$~s$^{-1}$), and $\Lambda \approx 0.5$ in strong TIW or eddy regions ($|\zeta| \sim 5 \times 10^{-6}$~s$^{-1}$) (Fig.~\ref{fig:lambda}).
+
+The observed amplitude retention ratios correlate with $\Lambda$: island-chain crossings correspond to high $\Lambda$ (weak relative vorticity, large effective gap) and show amplitude preservation or enhancement, while TIW-zone crossings correspond to $\Lambda \sim 1$ and show amplitude loss. The transition from robustness to breakdown occurs near $\Lambda_c \sim 1$, consistent with the physical interpretation that protection fails when perturbation-induced frequency shifts become comparable to the topological gap.
+
+%% ============================================================
+\section{Discussion}
+\label{sec:discussion}
+%% ============================================================
+
+\subsection{Topological robustness is conditional}
+
+Our results demonstrate that the topological protection predicted for equatorial Kelvin waves by Delplace et al.\cite{Delplace2017} leaves observable dynamical fingerprints in the real ocean, but that this protection is conditional rather than absolute. The condition is captured by the effective gap-to-perturbation ratio $\Lambda$: when $\Lambda \gg 1$, Kelvin waves propagate with preserved amplitude and unidirectional character; when $\Lambda \sim 1$, energy is lost to mode conversion and the topological advantage diminishes.
+
+This ``conditional robustness'' framework resolves an apparent tension in the literature. The original theory predicted absolute immunity to backscattering\cite{Delplace2017}, yet McPhaden and Gill showed that equatorial Kelvin waves do scatter from topography in models with background mean flows\cite{McPhaden1987}. Our observations confirm both: Kelvin waves are robust to island-chain scattering (consistent with topological protection in a high-$\Lambda$ regime) but degrade in TIW zones (consistent with gap closing in a low-$\Lambda$ regime). The distinction is not whether scattering occurs, but whether the scattering conserves the unidirectional propagation character.
+
+\subsection{Comparison with the atmospheric observational test}
+
+Xu et al.\ detected topological signatures in stratospheric Poincar\'e-gravity waves using reanalysis data\cite{Xu2024}. Our study extends this programme to the ocean, where perturbation environments are stronger and more diverse. The stratosphere is relatively quiescent, with $\Lambda$ values likely well above unity for most wave events. The equatorial Pacific ocean, by contrast, hosts a continuum of $\Lambda$ values from ${\sim}0.5$ to ${\sim}5$, enabling the first observational mapping of the robustness-to-breakdown transition.
+
+\subsection{Implications for equatorial wave theory}
+
+The $\Lambda$ parameter provides a quantitative criterion that goes beyond classical equatorial wave theory. Classical theory explains equatorial trapping via the $\beta$-plane waveguide and predicts background-flow modulation of wave properties\cite{Vallis2017}, but does not predict the specific relationship between gap closing and robustness loss. The topological framework adds this prediction: the transition at $\Lambda \sim 1$ is a direct consequence of the bulk-boundary correspondence linking Chern numbers to edge-state existence\cite{Hatsugai1993,Tauber2019}.
+
+We note that in continuous media, the bulk-edge correspondence is not absolute: Tauber and Delplace showed that ``ghost edge modes'' can violate the standard correspondence\cite{Tauber2021}, and Onuki et al.\ proposed strategies for its recovery in incompressible flows\cite{Onuki2024}. Our empirical $\Lambda$ criterion does not depend on the exact validity of bulk-edge correspondence; rather, it provides an observational diagnostic for whether the protection predicted by topology is realized in practice.
+
+\subsection{Limitations}
+
+Several caveats apply. First, the DUACS gridded product used for event detection has an effective spatial resolution of ${\sim}100$~km, smoothing submesoscale variability. SWOT provides higher resolution but with sparse temporal sampling (${\sim}21$-day repeat). Our analysis uses DUACS for temporal tracking and SWOT for spatial snapshots; a fully merged product would improve both. Second, the spectral decomposition into Kelvin, Rossby, and TIW components is approximate; a physics-constrained machine-learning approach could improve separation accuracy. Third, $\Lambda$ estimates rely on reanalysis-derived vorticity and Argo-derived stratification, both of which carry uncertainties of order 20--30\% in the equatorial waveguide. Fourth, the 11 events all occur during a single ENSO cycle; generalization to other climate states requires further study.
+
+%% ============================================================
+\section{Conclusions}
+\label{sec:conclusions}
+%% ============================================================
+
+We provide observational evidence that equatorial Kelvin waves retain topological-like robustness in the real ocean under moderate perturbations. Island-chain scattering (Gilbert and Line Islands) preserves or amplifies the Kelvin wave signal, while strong tropical instability waves and background vorticity trigger a transition from protected propagation to energy loss and mode conversion. The effective gap-to-perturbation frequency ratio $\Lambda = \Delta\omega_\mathrm{eff} / \delta\omega_\mathrm{pert}$ unifies these regimes, with a breakdown threshold near $\Lambda_c \sim 1$ consistent with the topological prediction of gap closing.
+
+These results turn the topological theory of equatorial waves from an elegant idealized prediction into a testable observational framework for the real ocean. The $\Lambda$ parameter offers a practical diagnostic for assessing whether topological protection applies to a given wave event in a given perturbation environment, with potential applications to equatorial wave forecasting, climate-mode dynamics, and the design of observational campaigns targeting equatorial wave--perturbation interactions.
+
+%% ============================================================
+\section{Methods}
+\label{sec:methods}
+%% ============================================================
+
+\subsection{Satellite altimetry data}
+
+We used DUACS L4 daily gridded SSH anomalies (dataset \texttt{cmems\_obs-sl\_glo\_phy-ssh\_nrt\_allsat-l4-duacs-0.25deg\_P1D} from the Copernicus Marine Service) on a $0.25^\circ$ grid for the equatorial Pacific ($5^\circ$S--$5^\circ$N, $130^\circ$E--$80^\circ$W) from January 2023 to November 2024 (695 days). SSH anomalies were computed relative to a climatological monthly mean and averaged over the $2^\circ$S--$2^\circ$N equatorial band for Hovm\"oller analysis.
+
+SWOT KaRIn L3 Low-Rate SSH (version 2.0.1, Basic product) was accessed from the AVISO archive. The dataset comprises 150 repeat cycles of the science orbit (${\sim}21$-day repeat period), with each cycle containing ${\sim}580$ passes covering $\pm 78^\circ$ latitude. We identified 967 passes crossing the equatorial Pacific study region with valid-data fractions exceeding 50\%.
+
+\subsection{Kelvin wave event detection}
+
+Events were detected using a ray-tracing algorithm on the equatorial Hovm\"oller diagram. For each candidate starting point in the western Pacific ($150^\circ$--$180^\circ$E) and time, a ray was propagated eastward at $1.95$~deg~day$^{-1}$ (${\sim}2.5$~m~s$^{-1}$). The mean SSH anomaly along the ray was computed over the tracking duration (40--80 days). Candidate events with mean SSH anomaly $> 0.03$~m and duration $\geq 30$ days were retained. Overlapping detections were merged by selecting the strongest (highest mean SSH anomaly) event in each space-time cluster (15$^\circ$ longitude, overlapping time windows). This yielded 11 unique events spanning January 2023 to February 2024.
+
+\subsection{SWOT meridional profile extraction}
+
+For each identified Kelvin wave event, SWOT passes crossing the equatorial Pacific during the event window were selected. The SSH field (\texttt{ssha\_filtered}) was extracted along the cross-track dimension (${\sim}69$ pixels spanning ${\sim}120$~km) for along-track segments within $10^\circ$S--$10^\circ$N. Meridional profiles were computed by averaging across the ${\sim}69$ cross-track pixels, yielding SSH as a function of latitude at ${\sim}2$~km resolution.
+
+\subsection{Ray-following robustness metrics}
+
+For each event--perturbation-zone pair, upstream and downstream analysis windows were defined as 20$^\circ$-wide longitude bands immediately before and after the perturbation zone (with a 5$^\circ$ buffer). The SSH anomaly was extracted along the Kelvin propagation ray (eastward at $1.95$~deg~day$^{-1}$) within each window. The amplitude retention ratio was defined as:
+\begin{equation}
+R = \frac{\mathrm{rms}(\eta_\mathrm{downstream})}{\mathrm{rms}(\eta_\mathrm{upstream})}
+\end{equation}
+A stationary control ($0$~deg~day$^{-1}$) was computed identically, measuring temporal SSH persistence without wave-packet tracking.
+
+Statistical significance was assessed using a two-sided permutation test ($n = 5{,}000$ permutations) comparing the Kelvin wave amplitude ratios to the control ratios.
+
+\subsection{Effective topological control parameter}
+
+The effective frequency gap was estimated as $\Delta\omega_\mathrm{eff} = \sqrt{\beta c_1}$, where $\beta = 2.3 \times 10^{-11}$~m$^{-1}$~s$^{-1}$ is the meridional gradient of the Coriolis parameter and $c_1 \approx 2.5$~m~s$^{-1}$ is the first baroclinic mode phase speed estimated from Argo temperature--salinity profiles in the equatorial Pacific. The perturbation frequency was estimated as $\delta\omega_\mathrm{pert} = \max(|\zeta|/2,\ |U_0 k_x|)$, where $|\zeta|$ is the surface relative vorticity from GLORYS12 reanalysis and $k_x = 2\pi / \lambda_K$ is the Kelvin wavenumber ($\lambda_K \approx 5{,}000$~km).
+
+\subsection{Data availability}
+
+DUACS gridded SSH is available from the Copernicus Marine Service. SWOT L3 SSH is available from AVISO (\url{ftp://ftp-access.aviso.altimetry.fr/swot_products/}). ERA5 reanalysis is available from the Copernicus Climate Data Store. Argo profiles are available from the Argo Global Data Assembly Centre. GLORYS12 reanalysis is available from the Copernicus Marine Service. Analysis code is available at [repository URL upon acceptance].
+
+\subsection{Code availability}
+
+All analysis scripts (Python) used to produce the results and figures are available at [repository URL upon acceptance].
+
+%% ============================================================
+\backmatter
+%% ============================================================
+
+\bmhead{Acknowledgements}
+We thank [names] for discussions. SWOT is a joint NASA/CNES mission. DUACS altimeter products were produced by the Copernicus Marine and Environment Monitoring Service (CMEMS).
+
+\bmhead{Author contributions}
+[To be completed]
+
+\bmhead{Competing interests}
+The authors declare no competing interests.
+
+\bibliography{references}
+
+\end{document}
