@@ -1,28 +1,30 @@
 % !TEX program = pdflatex
-\documentclass[sn-nature]{sn-jnl}
+\documentclass[11pt]{article}
 
+\usepackage[margin=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
-\usepackage{natbib}
+\usepackage[numbers,sort&compress]{natbib}
 \usepackage{url}
+\usepackage{lineno}
 
+\linenumbers
 \raggedbottom
 
 \begin{document}
 
-\title[Topological equatorial waves in the real ocean]{Robustness and breakdown of topological equatorial waves in the real ocean revealed by SWOT altimetry}
+\title{Robustness and breakdown of topological equatorial waves in the real ocean revealed by SWOT altimetry}
 
-\author[1]{Author One\thanks{Corresponding author: email@institution.edu}}
-\author[2]{Author Two}
-
-\affil[1]{Institution 1, City, Country}
-\affil[2]{Institution 2, City, Country}
+\author{Author One$^{1,*}$, Author Two$^{2}$ \\[6pt]
+\small $^1$Institution 1, City, Country \\
+\small $^2$Institution 2, City, Country \\
+\small $^*$Corresponding author: email@institution.edu}
 
 \abstract{
 Topological theory predicts that equatorial Kelvin and Yanai waves are interface modes protected by the sign reversal of the Coriolis parameter across the equator, with the bulk Poincar\'e wave bands carrying non-trivial Chern numbers of $\pm 2$. Whether this topological protection leaves observable dynamical fingerprints in the turbulent, forced, and dissipative real ocean has remained untested. Here we combine wide-swath sea-surface-height observations from the SWOT satellite mission with multi-mission altimetry to identify and track 11 equatorial Kelvin wave events in the tropical Pacific during 2023--2024. Using ray-following diagnostics, we show that Kelvin waves maintain or enhance their amplitude when traversing island chains (Gilbert and Line Islands; amplitude ratio $2.6\times$ and $2.1\times$, respectively), consistent with waveguide focusing, but lose energy in regions of strong tropical instability waves (amplitude ratio $0.88$; permutation test $p = 0.001$). We introduce an effective gap-to-perturbation frequency ratio $\Lambda = \Delta\omega_\mathrm{eff} / \delta\omega_\mathrm{pert}$ that collapses the observed robustness and breakdown regimes: protection holds when $\Lambda \gg 1$ and fails near $\Lambda \sim 1$, consistent with the topological prediction of gap closing. These results provide a first observational test of topological wave theory in the real ocean and establish a framework for diagnosing protected wave propagation in geophysical flows.
 }
 
-\keywords{topological waves \and equatorial Kelvin waves \and SWOT altimetry \and ocean dynamics \and bulk-boundary correspondence}
+% Keywords: topological waves, equatorial Kelvin waves, SWOT altimetry, ocean dynamics, bulk-boundary correspondence
 
 \maketitle
 
@@ -98,14 +100,14 @@ The observed amplitude retention ratios correlate with $\Lambda$: island-chain c
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\textwidth]{../figures/p2_spectral_decomposition.png}
+\includegraphics[width=\textwidth]{figures/fig5_spectral}
 \caption{\textbf{Spectral decomposition of equatorial Pacific SSH.} Hovm\"oller diagrams of (\textbf{a}) eastward-propagating Kelvin wave component (2.3\% of total variance), (\textbf{b}) westward-propagating Rossby wave component (2.0\%), (\textbf{c}) TIW component (0.2\%), and (\textbf{d}) residual (95.7\%). Components separated by 2D wavenumber-frequency filtering of the equatorial SSH anomaly.}
 \label{fig:spectral}
 \end{figure}
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.7\textwidth]{../figures/p3_robustness_comparison.png}
+\includegraphics[width=0.7\textwidth]{figures/fig6_lambda}
 \caption{\textbf{Effective topological control parameter $\Lambda$ versus robustness.} Order-of-magnitude estimates of $\Lambda = \Delta\omega_\mathrm{eff} / \delta\omega_\mathrm{pert}$ for different perturbation regimes. Island-chain crossings (high $\Lambda$) show amplitude preservation or enhancement; TIW-zone crossings ($\Lambda \sim 1$) show energy loss. The transition near $\Lambda_c \sim 1$ is consistent with topological gap closing.}
 \label{fig:lambda}
 \end{figure}
@@ -186,18 +188,19 @@ DUACS gridded SSH is available from the Copernicus Marine Service. SWOT L3 SSH i
 All analysis scripts (Python) used to produce the results and figures are available at [repository URL upon acceptance].
 
 %% ============================================================
-\backmatter
+%% backmatter
 %% ============================================================
 
-\bmhead{Acknowledgements}
+\subsection*{Acknowledgements}
 We thank [names] for discussions. SWOT is a joint NASA/CNES mission. DUACS altimeter products were produced by the Copernicus Marine and Environment Monitoring Service (CMEMS).
 
-\bmhead{Author contributions}
+\subsection*{Author contributions}
 [To be completed]
 
-\bmhead{Competing interests}
+\subsection*{Competing interests}
 The authors declare no competing interests.
 
+\bibliographystyle{unsrtnat}
 \bibliography{references}
 
 \end{document}
