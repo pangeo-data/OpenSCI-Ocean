@@ -39,15 +39,25 @@
 | **输出目录** | `/Users/zhulin/aitest/OpenSCI-Ocean/projects/p02/figures/` |
 | **文件同步** | 坚果云（Mac ↔ Windows 同步） |
 
+**数据获取优先级（铁律）**：
+
+| 优先级 | 方式 | 本项目示例 |
+|---|---|---|
+| **P0 本地已有** | 远程台式机 D 盘 | SWOT L3 全量数据（150 cycle, D:\v2_0_1\Basic\） |
+| **P1 云端计算** | ARCO-ERA5 zarr / GEE | ERA5 风应力统计量 |
+| **P2 云端导出（小量）** | CMEMS subset / GEE export | DUACS L4 SSH 赤道子集（~2GB） |
+| **P3 公开直链** | NOAA/GEBCO | TAO 浮标、GEBCO 地形 |
+| **P4 已认证下载** | earthaccess / CMEMS | Argo、GLORYS（Phase 3） |
+
 **任务分工**：
 
 | 任务类型 | 执行环境 | 备注 |
 |---|---|---|
-| 数据下载（CMEMS/SWOT/ERA5） | 本地 Mac | copernicusmarine/earthaccess 已配置 |
-| 数据处理/分析/Hovmöller | 本地 Mac | xarray + netCDF4 |
-| 绘图/可视化 | 本地 Mac | matplotlib + cartopy |
-| AI 模式分解训练 | 远程 WSL | PyTorch + CUDA（Phase 2 后期） |
-| OSSE 浅水模型 | 本地 Mac 或远程 | 视计算量定 |
+| SWOT 数据处理（大量 I/O） | **远程 WSL** | 数据在 D:\v2_0_1\Basic\，不搬回 Mac |
+| DUACS/ERA5 小量下载 | 本地 Mac 或远程 | copernicusmarine/ARCO-ERA5 zarr |
+| Hovmöller 分析/绘图 | 本地 Mac | xarray + matplotlib + cartopy |
+| AI 模式分解训练 | 远程 WSL | PyTorch + CUDA（Phase 2） |
+| 结果同步 | 坚果云 | 远程→Mac：结果文件放 /mnt/e/Documents/temp/ |
 
 ## 3. 初步判断
 
