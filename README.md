@@ -25,11 +25,11 @@ See [projects/DASHBOARD.md](projects/DASHBOARD.md) for live status of all 10 pro
 
 | # | Direction | Status |
 |---|---|---|
-| [P01](projects/p01/) | TBD | ⬜ |
-| [P02](projects/p02/) | TBD | ⬜ |
-| [P03](projects/p03/) | TBD | ⬜ |
-| [P04](projects/p04/) | TBD | ⬜ |
-| [P05](projects/p05/) | TBD | ⬜ |
+| [P01](projects/p01/) | Submesoscale air-sea coupling regime transition (SWOT) | 🔬 D0 |
+| [P02](projects/p02/) | Topological equatorial wave robustness & breakdown (SWOT) | ✍️ D1 |
+| [P03](projects/p03/) | Neglected eddy boundary signals (SWOT altimetry) | 🔬 D0 |
+| [P04](projects/p04/) | Antarctic sea ice tipping point — SWOT SSH/EKE evidence | ✍️ D1 |
+| [P05](projects/p05/) | Deep ocean mixing energy deficit — SWOT SSH constraints | ✍️ D1 |
 | [P06](projects/p06/) | TBD | ⬜ |
 | [P07](projects/p07/) | TBD | ⬜ |
 | [P08](projects/p08/) | TBD | ⬜ |
