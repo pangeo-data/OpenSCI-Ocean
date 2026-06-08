@@ -48,7 +48,49 @@
 
 ---
 
-## 3. 署名制度 / Authorship Policy
+## 3. 参与者要求与加入方式 / Participant Requirements & How to Join
+
+### 3.1 基本要求
+
+本项目欢迎所有对海洋科学研究感兴趣的参与者。由于 AI 承担了大部分技术执行工作，我们对参与者的要求侧重于**科学判断能力**而非特定技术栈：
+
+| 要求 | 说明 |
+|---|---|
+| 学科背景 | 自然科学相关专业（物理、数学、地学、海洋、大气、遥感、环境、生态、计算机等均可）。非自然科学背景的参与者若能证明具备相关知识储备，同样欢迎 |
+| 学位要求 | **不设学位门槛。** 本科在读、硕博研究生、博士后、教职人员、独立研究者、行业从业者均可参与。关键是能看懂英文论文、能对研究结论作出独立判断 |
+| 英文能力 | 能阅读和理解英文学术论文。论文写作由 AI 辅助完成，但审稿回复和与编辑的通信需要基本的英文写作能力 |
+| 工具能力 | 能使用 GitHub 进行基本的协作操作（Fork、Branch、PR、Issue）。不熟悉的参与者可参考 [CONTRIBUTING.md](CONTRIBUTING.md) 快速上手 |
+| 时间投入 | 不要求全职参与。但加入某个项目后，需要在关键节点（D2 审查、D3 评审）及时响应，承诺响应时间不超过 48 小时 |
+
+### 3.2 不同角色的额外要求
+
+| 角色 | 额外要求 |
+|---|---|
+| Domain Expert / 物理把关人 | 需具备相关研究方向的专业知识，能判断物理量级是否合理、因果推断是否成立。通常为相关方向的研究生及以上 |
+| Code Reviewer / 代码审查员 | 熟悉 Python 数据分析生态（NumPy、xarray、Matplotlib 等），能看懂和调试数据处理代码 |
+| Literature Scout / 文献侦察兵 | 能高效使用 Google Scholar、Web of Science 等文献检索工具，具备识别文献真伪的能力 |
+| Prompt Engineer / AI 交互 | 有使用 Claude / GPT 等大模型的经验，能将科研问题拆解为有效的 Prompt 指令 |
+
+### 3.3 如何加入
+
+1. **阅读本文档和 [README.md](README.md)**，了解项目性质和协作规则
+2. **选择感兴趣的项目**，查看 [projects/DASHBOARD.md](projects/DASHBOARD.md) 了解各项目状态
+3. **通过以下任一方式联系**：
+   - 在 GitHub 上 [提交 Issue](https://github.com/pangeo-data/OpenSCI-Ocean/issues)，标题格式：`[加入] 你的姓名 - 感兴趣的项目编号`
+   - 直接向感兴趣的项目提交 PR（如文献补充、代码审查、分析改进）
+   - 通过微信群联系（见 [招募帖](docs/recruitment_cn.md)）
+4. **项目负责人确认后**，在 CONTRIBUTORS.md 中登记，正式加入项目
+
+### 3.4 试用期
+
+新参与者加入后有一个自然的磨合期（通常为一个完整的项目阶段，如 D0 或 D1）。磨合期内：
+- 双方相互了解协作风格和能力水平
+- 参与者可以随时无条件退出（参见第 9 节退出机制）
+- 若项目负责人认为参与者的贡献与项目需求不匹配，会坦诚沟通，协商调整角色或退出
+
+---
+
+## 4. 署名制度 / Authorship Policy
 
 署名是学术项目最敏感的问题。我们采用**贡献导向、透明量化、前置协商**的原则。
 
@@ -133,7 +175,7 @@ AI（Claude、GPT 等）**不列为作者**。原因：
 
 ---
 
-## 4. 项目结构与工作流 / Project Structure & Workflow
+## 5. 项目结构与工作流 / Project Structure & Workflow
 
 ### 4.1 多项目并行
 
@@ -204,7 +246,7 @@ D0 (< 1天)    D1 (1天)       D2 (2-3天)       D3 (~3天)       D4 (1天)
 
 ---
 
-## 5. AI 使用规范 / AI Usage Policy
+## 6. AI 使用规范 / AI Usage Policy
 
 ### 5.1 透明记录
 
@@ -255,7 +297,7 @@ projects/p01/
 
 ---
 
-## 6. 数据管理 / Data Policy
+## 7. 数据管理 / Data Policy
 
 **核心原则：GitHub 仓库不存储任何原始数据文件，只保存数据的链接地址和下载脚本。**
 
@@ -285,7 +327,7 @@ projects/p01/
 
 ---
 
-## 7. 知识产权 / Intellectual Property
+## 8. 知识产权 / Intellectual Property
 
 - **代码**：MIT License（详见 LICENSE 文件），任何人可自由使用、修改和分发
 - **未发表数据**（青岛安海 GNSS 浮标等）：不放入公开仓库，所有权归数据提供方
@@ -296,7 +338,7 @@ projects/p01/
 
 ---
 
-## 8. 退出机制 / Exit Policy
+## 9. 退出机制 / Exit Policy
 
 参与者可以在项目任何阶段退出，无需说明理由。但不同阶段退出的处理方式不同：
 
@@ -332,7 +374,7 @@ projects/p01/
 
 ---
 
-## 9. 投稿策略与拒稿处理 / Submission Strategy & Rejection Policy
+## 10. 投稿策略与拒稿处理 / Submission Strategy & Rejection Policy
 
 ### 9.1 目标期刊分级
 
@@ -378,7 +420,7 @@ projects/p01/
 
 ---
 
-## 10. 费用分担 / Cost Sharing
+## 11. 费用分担 / Cost Sharing
 
 ### 10.1 版面费（Article Processing Charge, APC）
 
@@ -416,7 +458,7 @@ projects/p01/
 
 ---
 
-## 11. 争议解决 / Dispute Resolution
+## 12. 争议解决 / Dispute Resolution
 
 1. 技术争议：在 GitHub Issue 中公开讨论，以证据和数据为准
 2. 署名争议：全体参与者协商，项目负责人最终裁定
@@ -424,7 +466,7 @@ projects/p01/
 
 ---
 
-## 12. 修订 / Amendments
+## 13. 修订 / Amendments
 
 本制度可以根据项目进展修订。修订需要：
 - 在 GitHub Issue 中提出修改提案
