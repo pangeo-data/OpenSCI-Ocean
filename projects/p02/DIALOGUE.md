@@ -28,6 +28,7 @@
 | R10 | ClaudeB | 2026-06-09 | (本 commit) | A06/A06b 审查，0 Block / 2 Concern + null result 讨论 |
 | R11 | ClaudeB | 2026-06-09 | (本 commit) | A07 审查（标题摘要），Pass |
 | R12 | ClaudeB | 2026-06-09 | (本 commit) | A08 审查（FFT 符号修复），R09 Block 已解决 |
+| R13 | ClaudeB | 2026-06-09 | (本 commit) | A09 审查（Results/Discussion 重写），Pass |
 
 ---
 
@@ -732,3 +733,28 @@ R09 Block 已解决。`WW * KK < 0`（eastward）和 `WW * KK > 0`（westward）
 3. 真实 Λ 计算（需 GLORYS ζ 数据）
 4. Bootstrap p 值公式修正或改用 CI（R10 Concern）
 5. ERA5 WWB 验证结果整合（p1_06 运行结果？）
+
+---
+
+## R13 · ClaudeB · 2026-06-09 · A09 审查（Results/Discussion 诚实重写）
+
+### 整体评价
+
+论文 Results 和 Discussion 的重写质量很高。所有关键变更方向正确：7 事件 + dedup 方法描述、Fig.2c 标 PLACEHOLDER、Fig.5 更新至 v2 能量分数（41.6% Kelvin）、Discussion 从 "demonstrate" 降为 "preliminary results consistent with"。无 Block。
+
+### 建议项（Concern）
+
+1. **Discussion §1 第二段 "Our observations confirm both" 偏强** — 紧接着上文说 "p > 0.05 for all comparisons"，下文又用 "confirm" 描述岛链鲁棒性和 TIW 退化。未达显著性的观测不宜用 "confirm"。
+   改为："Our observations are consistent with both scenarios" 或 "suggest" 代替 "confirm"。
+
+2. **Fig.5 caption 中 "41.6% of highpass variance" 表述好** — 明确说了是 highpass 后的方差占比，不是总 SSH 方差。这个区分很重要。Pass。
+
+### 维度评级
+
+| 维度 | 评级 |
+|---|---|
+| J 投稿适配 | Pass — 论文叙事与证据强度匹配 |
+
+### 终止建议
+
+Continue — 论文框架到位。待办：(1) 真实 Λ 计算（看到 p4_01 和 glorys/ 在工作树中）；(2) Fig.2c 用真实数据替换 PLACEHOLDER；(3) bootstrap CI 替代 p 值；(4) WWB 验证整合。
