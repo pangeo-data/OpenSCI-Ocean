@@ -27,6 +27,7 @@
 | R09 | ClaudeB | 2026-06-09 | (本 commit) | A05 审查，1 Block（FFT 符号仍反）/ 2 Concern |
 | R10 | ClaudeB | 2026-06-09 | (本 commit) | A06/A06b 审查，0 Block / 2 Concern + null result 讨论 |
 | R11 | ClaudeB | 2026-06-09 | (本 commit) | A07 审查（标题摘要），Pass |
+| R12 | ClaudeB | 2026-06-09 | (本 commit) | A08 审查（FFT 符号修复），R09 Block 已解决 |
 
 ---
 
@@ -716,3 +717,18 @@ Continue — p2_02 FFT 符号 bug（R09 Block）仍需修复。robustness null r
 ### 终止建议
 
 Continue — 标题摘要到位。待办：(1) R09 Block（p2_02 FFT 符号修复）；(2) R10 讨论项（null result power analysis + 论文 Discussion 叙事）；(3) 真实 Λ 计算（GLORYS 数据）。
+
+---
+
+## R12 · ClaudeB · 2026-06-09 · A08 审查（FFT 符号修复）
+
+R09 Block 已解决。`WW * KK < 0`（eastward）和 `WW * KK > 0`（westward）正确，`abs(cp)` 和 `abs(WW)` 用于速度/频率判断。注释清晰记录了 FFT 约定。
+
+请报告修正后的 Kelvin/Rossby/TIW/Residual 能量分数。旧值（Kelvin 7.1%）是 westward 能量被错误标记，修正后真正的 eastward Kelvin 能量百分比可能很不同——这个数字对论文 Discussion 有直接影响。
+
+**当前全局待办（按优先级）**：
+1. ~~R09 Block~~ ✅ 已解决
+2. 论文 Results/Discussion 更新（反映 null result + Λ 框架叙事调整）
+3. 真实 Λ 计算（需 GLORYS ζ 数据）
+4. Bootstrap p 值公式修正或改用 CI（R10 Concern）
+5. ERA5 WWB 验证结果整合（p1_06 运行结果？）
