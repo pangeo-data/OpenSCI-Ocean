@@ -163,6 +163,10 @@ The proposer has worked on ocean submesoscale processes from the master's stage 
 |---|---|---|---|
 | 2026-06-05 | D0 | Initial topic proposal: SWOT wind kinetic energy distribution and coupling | Original local proposal |
 | 2026-06-08 | D0 | Revised after group discussion: retain scale-dependent regime-transition question, restore SWOT wind speed as the primary atmospheric response field | Updated README and Chinese discussion note |
+| 2026-06-08 | D1 proxy | Implemented download entry point, proxy processing pipeline, four diagnostic figures, and AI first draft. Real SWOT download remains blocked by missing Earthdata credentials and `earthaccess`. | `analysis/runbook_proxy_analysis.md`, `analysis/run_p01_proxy_analysis.py`, `figures/fig*.png`, `manuscript/v1_ai_draft/p01_ai_draft_proxy.md` |
+| 2026-06-08 | D1 data access | Installed `earthaccess`, retrieved Gulf Stream SWOT CMR metadata for 6 L2 LR SSH Expert granules, downloaded public SWOT browse images, and confirmed protected NetCDF requires Earthdata authentication. | `analysis/configure_earthdata_credentials.py`, `analysis/swot_download_status.json`, `figures/fig05_swot_public_browse_gulf_stream_20230901.png` |
+| 2026-06-08 | D1 real-data pilot | Downloaded real SWOT L2 LR SSH Expert NetCDF and GOES-16 ABI L3C SST, generated cropped Gulf Stream figures, and wrote a real-data AI draft. | `analysis/run_p01_swot_gs_analysis.py`, `analysis/run_p01_swot_goes_gs_collocation.py`, `figures/fig06_real_swot_gulf_stream_small_window.png`, `figures/fig07_real_swot_goes_gs_collocation.png`, `manuscript/v1_ai_draft/p01_ai_draft_real_gulf_stream.md` |
+| 2026-06-08 | D1 batch screening | Batch-downloaded matched daylight Gulf Stream SWOT/GOES cases, auto-selected compact windows, and plotted SSH, SST, wind speed, plus robust-outlier-removed SST-gradient/wind-gradient cross-spectrum. | `analysis/batch_p01_gs_swot_goes_plots.py`, `analysis/batch_gs_swot_goes_summary.json`, `figures/batch_gs/`, `figures/batch_gs_contact_sheet_top6.png` |
 
 ## AI Interaction Log
 
