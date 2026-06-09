@@ -25,7 +25,8 @@ data:
     passes: data/swot/swot_eq_pac_passes.json
     meridional: data/swot/swot_meridional_profile.json
   events:
-    catalog: data/kelvin_event_catalog.json
+    catalog: data/kelvin_event_catalog_deduped.json
+    catalog_raw: data/kelvin_event_catalog.json
 
 analysis:
   bbox:

@@ -15,8 +15,9 @@ import matplotlib.pyplot as plt
 import json, os
 from scipy import signal as sig
 
-DATA_DIR = "/Users/zhulin/aitest/OpenSCI-Ocean/projects/p02/data/duacs"
-FIG_DIR = "/Users/zhulin/aitest/OpenSCI-Ocean/projects/p02/figures"
+_base = os.path.join(os.path.dirname(__file__), "..")
+DATA_DIR = os.path.join(_base, "data", "duacs")
+FIG_DIR = os.path.join(_base, "figures")
 
 ds = xr.open_dataset(os.path.join(DATA_DIR, "duacs_eqpac_daily_2023_2025.nc"))
 sla = ds["sla"]
@@ -147,21 +148,27 @@ def compute_ray_metrics(data, lon, times, event, zone, speed_deg_day):
     }
 
 # Load events
-with open("/Users/zhulin/aitest/OpenSCI-Ocean/projects/p02/data/kelvin_event_catalog.json") as f:
+import yaml
+_cfg_path = os.path.join(os.path.dirname(__file__), "..", "config.yaml")
+with open(_cfg_path) as _f:
+    _cfg = yaml.safe_load(_f)
+_catalog = os.path.join(os.path.dirname(__file__), "..", _cfg["data"]["events"]["catalog"])
+with open(_catalog) as f:
     events = json.load(f)
 
-kelvin_speed = 1.95  # deg/day (~2.5 m/s)
-# Control: fixed-longitude (no propagation) — measures temporal persistence
-# without the benefit of tracking a propagating wave packet
-control_speed = 0.0
+kelvin_speed = float(_cfg["analysis"]["kelvin_speed_deg_day"])
+rossby_speed = float(_cfg["analysis"]["rossby_speed_deg_day"])
+stationary_speed = 0.0
 
 kelvin_results = []
-rossby_results = []  # actually "control" results (stationary)
+rossby_results = []
+stationary_results = []
 
 for event in events:
     for zone in zones:
         m_k = compute_ray_metrics(sla_anom, lon_pac, times, event, zone, kelvin_speed)
-        m_r = compute_ray_metrics(sla_anom, lon_pac, times, event, zone, control_speed)
+        m_r = compute_ray_metrics(sla_anom, lon_pac, times, event, zone, rossby_speed)
+        m_s = compute_ray_metrics(sla_anom, lon_pac, times, event, zone, stationary_speed)
         if m_k:
             m_k["event"] = event["id"]
             m_k["zone"] = zone["name"]
@@ -170,8 +177,13 @@ for event in events:
             m_r["event"] = event["id"]
             m_r["zone"] = zone["name"]
             rossby_results.append(m_r)
+        if m_s:
+            m_s["event"] = event["id"]
+            m_s["zone"] = zone["name"]
+            stationary_results.append(m_s)
 
-print(f"Ray-following metrics: {len(kelvin_results)} Kelvin, {len(rossby_results)} Rossby")
+print(f"Ray-following metrics: {len(kelvin_results)} Kelvin, "
+      f"{len(rossby_results)} Rossby, {len(stationary_results)} Stationary")
 
 if kelvin_results and rossby_results:
     k_amp = [r["amp_ratio"] for r in kelvin_results]

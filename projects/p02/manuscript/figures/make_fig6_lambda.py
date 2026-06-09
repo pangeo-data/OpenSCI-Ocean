@@ -23,11 +23,11 @@ rng = np.random.default_rng(2026)
 # Generate synthetic but physically motivated data points (SCHEMATIC ONLY)
 # Each point = one event × one perturbation zone
 zones = {
-    "Gilbert Islands": {"n": 8, "lambda_range": (3.0, 8.0), "amp_range": (1.8, 3.5),
+    "Gilbert Islands": {"n": 8, "lambda_range": (8.0, 20.0), "amp_range": (1.8, 3.5),
                         "color": "#27AE60", "marker": "o"},
-    "Line Islands":    {"n": 8, "lambda_range": (2.5, 6.0), "amp_range": (1.5, 2.8),
+    "Line Islands":    {"n": 8, "lambda_range": (6.0, 15.0), "amp_range": (1.5, 2.8),
                         "color": "#2980B9", "marker": "s"},
-    "TIW zone":        {"n": 8, "lambda_range": (0.4, 1.8), "amp_range": (0.6, 1.1),
+    "TIW zone":        {"n": 8, "lambda_range": (1.0, 4.0), "amp_range": (0.6, 1.1),
                         "color": "#E74C3C", "marker": "D"},
 }
 
@@ -68,7 +68,7 @@ ax.text(4.5, 0.5, "protection", fontsize=6, color="#27AE60", ha="center",
 
 ax.set_xlabel("$\\Lambda = \\Delta\\omega_{\\mathrm{eff}} \\,/\\, \\delta\\omega_{\\mathrm{pert}}$", fontsize=8)
 ax.set_ylabel("Amplitude ratio (dn/up)", fontsize=7)
-ax.set_xlim(0.3, 9)
+ax.set_xlim(0.5, 25)
 ax.set_ylim(0.3, 3.8)
 ax.set_xscale("log")
 ax.legend(fontsize=6, loc="upper left", handletextpad=0.3)
@@ -77,8 +77,8 @@ ax.text(0.02, 0.96, "a", transform=ax.transAxes, fontsize=10, fontweight="bold",
 # Panel (b): Lambda estimates by scenario
 ax2 = axes[1]
 scenarios = ["Quiescent\nPacific", "Moderate\nTIW", "Strong\nTIW/eddy", "Cold tongue\nfront"]
-lambda_vals = [5.0, 1.2, 0.5, 0.8]
-lambda_err = [1.5, 0.4, 0.2, 0.3]
+lambda_vals = [15.0, 4.0, 1.5, 2.4]
+lambda_err = [4.0, 1.2, 0.5, 0.8]
 colors_bar = ["#27AE60", "#F39C12", "#E74C3C", "#E74C3C"]
 
 bars = ax2.bar(range(len(scenarios)), lambda_vals, yerr=lambda_err,
@@ -90,7 +90,7 @@ ax2.text(3.6, 1.1, "$\\Lambda_c \\sim 1$", fontsize=7, color="grey", style="ital
 ax2.set_xticks(range(len(scenarios)))
 ax2.set_xticklabels(scenarios, fontsize=6)
 ax2.set_ylabel("$\\Lambda$", fontsize=9)
-ax2.set_ylim(0, 7.5)
+ax2.set_ylim(0, 22)
 ax2.text(0.02, 0.96, "b", transform=ax2.transAxes, fontsize=10, fontweight="bold", va="top")
 
 plt.tight_layout(w_pad=1.5)
