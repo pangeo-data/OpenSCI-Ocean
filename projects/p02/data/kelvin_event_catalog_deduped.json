@@ -1,0 +1,132 @@
+[
+  {
+    "id": "KE01",
+    "original_ids": [
+      "K11"
+    ],
+    "start": "2023-01-06",
+    "end": "2023-03-11",
+    "lon0": 150.1,
+    "lon1": 274.6,
+    "days": 65,
+    "mean_sla": 0.0371,
+    "max_sla": 0.1066,
+    "phase_speed_mps": 2.5,
+    "tau_intercept": -72.0,
+    "cluster_size": 1,
+    "confidence": "moderate",
+    "source_wind_flag": "pending_era5"
+  },
+  {
+    "id": "KE02",
+    "original_ids": [
+      "K07",
+      "K06"
+    ],
+    "start": "2023-03-12",
+    "end": "2023-05-08",
+    "lon0": 163.1,
+    "lon1": 274.4,
+    "days": 58,
+    "mean_sla": 0.0711,
+    "max_sla": 0.1182,
+    "phase_speed_mps": 2.5,
+    "tau_intercept": -12.7,
+    "cluster_size": 2,
+    "confidence": "high",
+    "source_wind_flag": "pending_era5"
+  },
+  {
+    "id": "KE03",
+    "original_ids": [
+      "K02",
+      "K01"
+    ],
+    "start": "2023-05-16",
+    "end": "2023-07-13",
+    "lon0": 162.1,
+    "lon1": 274.9,
+    "days": 59,
+    "mean_sla": 0.0951,
+    "max_sla": 0.1531,
+    "phase_speed_mps": 2.5,
+    "tau_intercept": 52.5,
+    "cluster_size": 2,
+    "confidence": "high",
+    "source_wind_flag": "pending_era5"
+  },
+  {
+    "id": "KE04",
+    "original_ids": [
+      "K08"
+    ],
+    "start": "2023-07-25",
+    "end": "2023-09-20",
+    "lon0": 163.1,
+    "lon1": 274.1,
+    "days": 58,
+    "mean_sla": 0.0703,
+    "max_sla": 0.1486,
+    "phase_speed_mps": 2.5,
+    "tau_intercept": 121.4,
+    "cluster_size": 1,
+    "confidence": "high",
+    "source_wind_flag": "pending_era5"
+  },
+  {
+    "id": "KE05",
+    "original_ids": [
+      "K05"
+    ],
+    "start": "2023-08-19",
+    "end": "2023-10-07",
+    "lon0": 178.1,
+    "lon1": 273.4,
+    "days": 50,
+    "mean_sla": 0.0768,
+    "max_sla": 0.1282,
+    "phase_speed_mps": 2.5,
+    "tau_intercept": 138.7,
+    "cluster_size": 1,
+    "confidence": "high",
+    "source_wind_flag": "pending_era5"
+  },
+  {
+    "id": "KE06",
+    "original_ids": [
+      "K04",
+      "K03"
+    ],
+    "start": "2023-10-03",
+    "end": "2023-11-30",
+    "lon0": 161.1,
+    "lon1": 273.9,
+    "days": 59,
+    "mean_sla": 0.0863,
+    "max_sla": 0.15,
+    "phase_speed_mps": 2.5,
+    "tau_intercept": 193.0,
+    "cluster_size": 2,
+    "confidence": "high",
+    "source_wind_flag": "pending_era5"
+  },
+  {
+    "id": "KE07",
+    "original_ids": [
+      "K10",
+      "K09"
+    ],
+    "start": "2023-12-12",
+    "end": "2024-02-08",
+    "lon0": 162.1,
+    "lon1": 274.9,
+    "days": 59,
+    "mean_sla": 0.042,
+    "max_sla": 0.1015,
+    "phase_speed_mps": 2.5,
+    "tau_intercept": 262.5,
+    "cluster_size": 2,
+    "confidence": "moderate",
+    "source_wind_flag": "pending_era5"
+  }
+]
