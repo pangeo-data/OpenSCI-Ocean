@@ -1,0 +1,127 @@
+{
+  "stage": "D1 real-data pilot",
+  "generated_by": "projects/p01/analysis/p01_d1_realdata_pipeline.py",
+  "raw_data_root": "D:\\AI-try\\data\\p01",
+  "note": "Raw data are stored outside the repository. Results are first-pass D1 diagnostics, not final science.",
+  "bbox": [
+    -82.0,
+    -50.0,
+    30.0,
+    46.0
+  ],
+  "case_count": 3,
+  "summary_figure": "D:\\AI-try\\OpenSCI-Ocean\\projects\\p01\\figures\\p01_d1_summary_scale_response.png",
+  "cases": [
+    {
+      "case_id": "003_048_20230902T152335_20230902T161326_PGC0_01",
+      "swot_file": "D:\\AI-try\\data\\p01\\batch_gs\\swot\\SWOT_L2_LR_SSH_Expert_003_048_20230902T152335_20230902T161326_PGC0_01.nc",
+      "sst_file": "D:\\AI-try\\data\\p01\\batch_gs\\goes16_sst\\20230902160000-STAR-L3C_GHRSST-SSTsubskin-ABI_G16-ACSPO_V2.70-v02.0-fv01.0.nc",
+      "swot_start": "2023-09-02T15:23:35+00:00",
+      "goes_time": "2023-09-02T16:00:00+00:00",
+      "lon_min": -75.75129800000002,
+      "lon_max": -72.77829700000001,
+      "lat_min": 30.461744,
+      "lat_max": 38.029264,
+      "swot_good_pixels": 21109,
+      "collocated_pixels": 2709,
+      "sst_coverage": 0.12833388602018098,
+      "sst_range_c": [
+        22.99304827287574,
+        29.04229919042689
+      ],
+      "wind_range_ms": [
+        2.737,
+        10.945
+      ],
+      "k10_range": [
+        3.7455845,
+        59.8965125
+      ],
+      "ssha_range_m": [
+        -0.6835,
+        1.2829000000000002
+      ],
+      "sst_wind_slope": 1.139645404818211,
+      "sst_wind_r": 0.8841860497023306,
+      "grad_slope": -0.026092063645187534,
+      "grad_r": -0.05221648535476407,
+      "peak_coherence": 0.9959103737252828,
+      "peak_coherence_wavelength_km": 2.6666666666666665,
+      "figure": "D:\\AI-try\\OpenSCI-Ocean\\projects\\p01\\figures\\p01_d1_case01_SWOT_L2_LR_SSH_Expert_003_048_20230902T152335_20230902T161326_PGC0_01_swot_goes.png"
+    },
+    {
+      "case_id": "003_076_20230903T152229_20230903T161357_PGC0_01",
+      "swot_file": "D:\\AI-try\\data\\p01\\batch_gs\\swot\\SWOT_L2_LR_SSH_Expert_003_076_20230903T152229_20230903T161357_PGC0_01.nc",
+      "sst_file": "D:\\AI-try\\data\\p01\\batch_gs\\goes16_sst\\20230903160000-STAR-L3C_GHRSST-SSTsubskin-ABI_G16-ACSPO_V2.70-v02.0-fv01.0.nc",
+      "swot_start": "2023-09-03T15:22:29+00:00",
+      "goes_time": "2023-09-03T16:00:00+00:00",
+      "lon_min": -77.42061799999999,
+      "lon_max": -75.102821,
+      "lat_min": 30.000342,
+      "lat_max": 34.691922999999996,
+      "swot_good_pixels": 12619,
+      "collocated_pixels": 6849,
+      "sst_coverage": 0.5427529915207228,
+      "sst_range_c": [
+        26.46568656280556,
+        29.839901033867648
+      ],
+      "wind_range_ms": [
+        2.568,
+        8.288
+      ],
+      "k10_range": [
+        3.2973120000000002,
+        34.345472
+      ],
+      "ssha_range_m": [
+        -0.52,
+        0.9736
+      ],
+      "sst_wind_slope": 1.1389534764677072,
+      "sst_wind_r": 0.5629821592272795,
+      "grad_slope": -0.039808797381068975,
+      "grad_r": -0.03793726999712842,
+      "peak_coherence": 0.9993285496366471,
+      "peak_coherence_wavelength_km": 11.636363636363637,
+      "figure": "D:\\AI-try\\OpenSCI-Ocean\\projects\\p01\\figures\\p01_d1_case02_SWOT_L2_LR_SSH_Expert_003_076_20230903T152229_20230903T161357_PGC0_01_swot_goes.png"
+    },
+    {
+      "case_id": "003_102_20230904T134037_20230904T143053_PGC0_01",
+      "swot_file": "D:\\AI-try\\data\\p01\\batch_gs\\swot\\SWOT_L2_LR_SSH_Expert_003_102_20230904T134037_20230904T143053_PGC0_01.nc",
+      "sst_file": "D:\\AI-try\\data\\p01\\batch_gs\\goes16_sst\\20230904140000-STAR-L3C_GHRSST-SSTsubskin-ABI_G16-ACSPO_V2.70-v02.0-fv01.0.nc",
+      "swot_start": "2023-09-04T13:40:37+00:00",
+      "goes_time": "2023-09-04T14:00:00+00:00",
+      "lon_min": -55.39387300000004,
+      "lon_max": -52.133411000000024,
+      "lat_min": 31.875284999999998,
+      "lat_max": 39.491178,
+      "swot_good_pixels": 21685,
+      "collocated_pixels": 7436,
+      "sst_coverage": 0.34290984551533316,
+      "sst_range_c": [
+        26.82320431657911,
+        28.765481115210434
+      ],
+      "wind_range_ms": [
+        4.588,
+        12.907
+      ],
+      "k10_range": [
+        10.524872,
+        83.2953245
+      ],
+      "ssha_range_m": [
+        -1.0151000000000001,
+        1.1892
+      ],
+      "sst_wind_slope": -1.4902210069496693,
+      "sst_wind_r": -0.5358284642030989,
+      "grad_slope": 0.015842090557129724,
+      "grad_r": 0.010035816938427543,
+      "peak_coherence": 0.9877572927803313,
+      "peak_coherence_wavelength_km": 2.4615384615384617,
+      "figure": "D:\\AI-try\\OpenSCI-Ocean\\projects\\p01\\figures\\p01_d1_case03_SWOT_L2_LR_SSH_Expert_003_102_20230904T134037_20230904T143053_PGC0_01_swot_goes.png"
+    }
+  ]
+}
