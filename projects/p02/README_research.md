@@ -206,7 +206,7 @@ L = L_rec + λ₁L_disp + λ₂L_meridional + λ₃L_direction + λ₄L_energy +
 
 | 物理过程 | 等效频率偏移 | 来源 |
 |---|---|---|
-| 有效谱隙（分子） | Δω_eff = βc/f₀ ≈ f at equator | Argo 层化 → 等效深度 H_eq → c = √(g'H_eq) → β-平面谱隙估计 |
+| 有效谱隙（分子） | Δω_eff = √(βc₁) ≈ 7.6×10⁻⁶ s⁻¹ (angular freq) | β ≈ 2.3×10⁻¹¹ m⁻¹s⁻¹, c₁ ≈ 2.5 m/s from Argo |
 | 背景流 Doppler 偏移 | δω_U = U·k | GLORYS12 赤道流速 × Kelvin 波数 |
 | 涡度诱导频率偏移 | δω_ζ = ζ/2 | GLORYS12 相对涡度的一半（有效 Coriolis 修正） |
 | 内潮频率混叠 | δω_IT = ω_M2 · √(E_IT/E_0) | FES2022 内潮能量归一化后的等效频率扰动 |

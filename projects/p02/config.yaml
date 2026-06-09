@@ -1,0 +1,56 @@
+# P02 project configuration
+# All scripts should read paths from this file instead of hardcoding.
+
+project:
+  name: P02-TopologicalEquatorialWaves
+  root: .  # relative to this file
+
+paths:
+  # Mac local
+  mac:
+    data: /Users/zhulin/aitest/OpenSCI-Ocean/projects/p02/data
+    figures: /Users/zhulin/aitest/OpenSCI-Ocean/projects/p02/figures
+    manuscript_figures: /Users/zhulin/aitest/OpenSCI-Ocean/projects/p02/manuscript/figures
+  # Remote WSL (think@100.111.65.40)
+  wsl:
+    swot_raw: /mnt/d/v2_0_1/Basic
+    data: /home/think/projects/p02/data
+    figures: /home/think/projects/p02/figures
+
+data:
+  duacs:
+    file: data/duacs/duacs_eqpac_daily_2023_2025.nc
+    variable: sla
+  swot:
+    passes: data/swot/swot_eq_pac_passes.json
+    meridional: data/swot/swot_meridional_profile.json
+  events:
+    catalog: data/kelvin_event_catalog.json
+
+analysis:
+  bbox:
+    lat_min: -5.0
+    lat_max: 5.0
+    lon_min: 130.0
+    lon_max: 280.0
+  kelvin_speed_mps: 2.5
+  kelvin_speed_deg_day: 1.95
+  rossby_speed_deg_day: -0.39
+
+physics:
+  beta: 2.3e-11        # m⁻¹ s⁻¹
+  c1: 2.5              # m/s, 1st baroclinic mode
+  delta_omega_eff: 7.6e-6  # s⁻¹, √(β·c₁), angular frequency
+
+event_schema:
+  required_fields:
+    - id
+    - start
+    - end
+    - lon0
+    - lon1
+    - phase_speed_mps
+    - mean_sla
+    - max_sla
+    - confidence
+    - source_wind_flag

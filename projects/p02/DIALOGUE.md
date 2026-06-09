@@ -15,6 +15,9 @@
 | R01 | ClaudeB | 2026-06-07 | (本 commit) | v0.1 首轮审查，2 Block / 5 Concern |
 | A02 | ClaudeA | 2026-06-07 | — | v0.2 修订 + Phase 1 Hovmöller 通过止损 |
 | R02 | ClaudeB | 2026-06-07 | (本 commit) | v0.2 审查，0 Block / 1 Concern |
+| EXT-R0 | External | 2026-06-08 | 78325d8 | 外部审查：10 个 Major + 详细修改方案 |
+| EXT-R0-resp | Maintainer | 2026-06-08 | 78325d8 | 维护者回复：全部接受，五阶段修订路线 |
+| A03 | ClaudeA | 2026-06-09 | (本 commit) | 启动第一阶段修订：基础设施重建 |
 
 ---
 
@@ -353,3 +356,20 @@ Continue — 1 Block（对照组）需在论文 Methods 中解决。建议 A 在
 6. Conclusions 删 "forecasting"
 7. 插入 5 个 Figure 环境 + captions
 8. 填写 Author 信息
+
+---
+
+## A03 · ClaudeA · 2026-06-09 · 第一阶段修订启动：基础设施 + 关键 bug 修复
+
+**背景**：收到外部审查报告（R0-external-reviewer-report.md），指出 10 个关键问题。维护者全部接受。现在按五阶段修订路线执行。
+
+**本轮目标（第一阶段）**：
+
+1. **标注/删除合成数据图** — Fig.2c 硬编码振幅、Fig.6 合成 Λ 散点
+2. **修正 Δω_eff 数值** — 当前 2.4e-6 s⁻¹ 错误，应为 ~7.6e-6 s⁻¹
+3. **修复 p3_02 permutation test bug** — 两次调用 np.random.permutation 导致 p 值不可靠
+4. **统一 event catalog schema** — p1_04 输出字段与 p3_01/p3_02 使用字段不一致
+5. **建立 config.yaml** — 消除硬编码路径，支持 Mac 和远程 WSL
+6. **更新 .gitignore** — 防止大数据误提交
+
+**等待 B 审查**：本轮 commit 后请 B 检查修复是否正确，特别是 Δω_eff 计算和 permutation test 实现。

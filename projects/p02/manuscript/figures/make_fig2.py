@@ -153,6 +153,9 @@ ax_b.text(0.02, 0.96, "b", transform=ax_b.transAxes,
 # === Panel (c): Amplitude retention boxplot ===
 ax_c = fig.add_subplot(gs[1, 1])
 
+# ⚠️ PLACEHOLDER — hardcoded values from initial AI prototype.
+# Must be replaced with real data from robustness_metrics.json or
+# recomputed ray-following amplitude ratios before any publication.
 gilbert = [2.65, 3.1, 2.2, 1.8, 3.5, 2.9, 2.4, 2.0]
 line_is = [2.13, 1.8, 2.5, 1.9, 2.3, 2.0, 2.1, 1.7]
 tiw = [0.88, 0.92, 0.75, 0.95, 0.82, 0.90, 0.85, 0.93]
@@ -182,6 +185,11 @@ ax_c.text(3.35, 1.02, "no change", fontsize=5.5, va="bottom", ha="right",
 
 ax_c.set_ylabel("Amplitude ratio (downstream / upstream)", fontsize=7)
 ax_c.set_ylim(0.4, 4.0)
+
+# Watermark: data source warning
+ax_c.text(0.5, 0.5, "PLACEHOLDER\n(hardcoded data)", transform=ax_c.transAxes,
+         fontsize=8, ha="center", va="center", color="red", alpha=0.3,
+         fontweight="bold", rotation=30)
 
 ax_c.text(0.02, 0.96, "c", transform=ax_c.transAxes,
          fontsize=10, fontweight="bold", va="top", ha="left")

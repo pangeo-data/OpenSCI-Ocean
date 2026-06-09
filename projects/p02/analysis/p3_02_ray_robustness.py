@@ -187,21 +187,22 @@ if kelvin_results and rossby_results:
     print(f"{'Coherence (up-dn)':<25} {np.mean(k_coh):.3f} ± {np.std(k_coh):.3f}{'':<5} {np.mean(r_coh):.3f} ± {np.std(r_coh):.3f}")
     print(f"{'Persistence (dn)':<25} {np.mean(k_per):.3f} ± {np.std(k_per):.3f}{'':<5} {np.mean(r_per):.3f} ± {np.std(r_per):.3f}")
 
-    # Permutation tests
+    # Permutation tests (fixed: single permutation per iteration, two-sided)
+    rng = np.random.default_rng(2026)
     for metric_name, k_vals, r_vals in [
         ("Amp ratio", k_amp, r_amp),
         ("Coherence", k_coh, r_coh),
         ("Persistence", k_per, r_per)
     ]:
-        combined = k_vals + r_vals
+        combined = np.array(k_vals + r_vals)
         n_k = len(k_vals)
         obs = np.mean(k_vals) - np.mean(r_vals)
-        perms = [np.mean(np.random.permutation(combined)[:n_k]) - np.mean(np.random.permutation(combined)[n_k:]) for _ in range(5000)]
-        if obs > 0:
-            p = np.mean(np.array(perms) >= obs)
-        else:
-            p = np.mean(np.array(perms) <= obs)
-        print(f"  {metric_name}: Kelvin-Control diff = {obs:+.4f}, p = {p:.4f} {'*' if p < 0.05 else ''}")
+        diffs = []
+        for _ in range(10000):
+            perm = rng.permutation(combined)
+            diffs.append(np.mean(perm[:n_k]) - np.mean(perm[n_k:]))
+        p_two_sided = np.mean(np.abs(diffs) >= abs(obs))
+        print(f"  {metric_name}: Kelvin-Control diff = {obs:+.4f}, p = {p_two_sided:.4f} {'*' if p_two_sided < 0.05 else ''}")
 
     # Figure: 3 panel comparison
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))

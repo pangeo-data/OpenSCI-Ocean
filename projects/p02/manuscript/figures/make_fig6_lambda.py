@@ -14,12 +14,13 @@ mpl.rcParams.update({
 
 OUT = "/Users/zhulin/aitest/OpenSCI-Ocean/projects/p02/manuscript/figures"
 
-# Order-of-magnitude estimates from ClaudeB's lambda_parameter_physics.md
-# Δω_eff = sqrt(β * c1) ≈ 2.4e-6 s^-1
-# Perturbation: |ζ|/2
+# ⚠️ CONCEPTUAL SCHEMATIC — all data points are synthetic random numbers.
+# Must be replaced with real GLORYS/Argo-derived Λ values before publication.
+# Corrected Δω_eff = sqrt(β * c1) ≈ 7.6e-6 s⁻¹ (not 2.4e-6 as previously stated)
+# where β = 2.3e-11 m⁻¹s⁻¹, c1 = 2.5 m/s
 rng = np.random.default_rng(2026)
 
-# Generate synthetic but physically motivated data points
+# Generate synthetic but physically motivated data points (SCHEMATIC ONLY)
 # Each point = one event × one perturbation zone
 zones = {
     "Gilbert Islands": {"n": 8, "lambda_range": (3.0, 8.0), "amp_range": (1.8, 3.5),
@@ -93,7 +94,13 @@ ax2.set_ylim(0, 7.5)
 ax2.text(0.02, 0.96, "b", transform=ax2.transAxes, fontsize=10, fontweight="bold", va="top")
 
 plt.tight_layout(w_pad=1.5)
+# Watermark both panels
+for ax_w in axes:
+    ax_w.text(0.5, 0.5, "SCHEMATIC\n(synthetic data)", transform=ax_w.transAxes,
+             fontsize=9, ha="center", va="center", color="red", alpha=0.25,
+             fontweight="bold", rotation=30)
+
 fig.savefig(os.path.join(OUT, "fig6_lambda.pdf"), bbox_inches="tight")
 fig.savefig(os.path.join(OUT, "fig6_lambda.png"), dpi=300, bbox_inches="tight")
 plt.close()
-print("Fig.6 saved")
+print("Fig.6 saved (SCHEMATIC — synthetic data, not observations)")
