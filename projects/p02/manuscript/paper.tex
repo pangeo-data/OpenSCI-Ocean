@@ -145,16 +145,36 @@ We note that in continuous media, the bulk-edge correspondence is not absolute: 
 
 \subsection{Limitations}
 
-Several caveats apply. First, the DUACS gridded product used for event detection has an effective spatial resolution of ${\sim}100$~km, smoothing submesoscale variability. SWOT provides higher resolution but with sparse temporal sampling (${\sim}21$-day repeat). Our analysis uses DUACS for temporal tracking and SWOT for spatial snapshots; a fully merged product would improve both. Second, the spectral decomposition into Kelvin, Rossby, and TIW components is approximate; a physics-constrained machine-learning approach could improve separation accuracy. Third, $\Lambda$ estimates rely on reanalysis-derived vorticity and Argo-derived stratification, both of which carry uncertainties of order 20--30\% in the equatorial waveguide. Fourth, the 11 events all occur during a single ENSO cycle; generalization to other climate states requires further study. Fifth, this study focuses on Kelvin waves; the topological theory predicts that Yanai (mixed Rossby-gravity) waves are also protected, but their weaker SSH signature makes ray-following analysis unreliable with the current data. Extending the framework to Yanai modes is a natural next step.
+Several caveats apply and must be stated explicitly.
+
+First, and most critically, none of the robustness comparisons between Kelvin waves and three control groups (Rossby, stationary, time-shifted) reach statistical significance at the 7-event sample size (block bootstrap $p > 0.05$ for all metrics). The observed tendency for Kelvin waves to retain amplitude better than controls is suggestive but not conclusive. Extending the event catalog to ${\geq}20$ events across multiple ENSO cycles (using historical DUACS data back to 1993) is necessary for definitive statistical attribution.
+
+Second, the DUACS gridded product used for event detection has an effective spatial resolution of ${\sim}100$~km, smoothing submesoscale variability. SWOT provides higher resolution but with sparse temporal sampling (${\sim}21$-day repeat). Our analysis uses DUACS for temporal tracking and SWOT for spatial snapshots; a fully merged product would improve both.
+
+Third, the spectral decomposition into Kelvin, Rossby, and TIW components, while improved over preliminary versions (41.6\% Kelvin variance after 90-day highpass filtering, vs.\ 95.7\% residual in an initial attempt without proper preprocessing), remains approximate. A physics-constrained machine-learning approach or Wheeler--Kiladis-style symmetric/antisymmetric decomposition could improve separation accuracy.
+
+Fourth, $\Lambda$ estimates rely on reanalysis-derived vorticity (GLORYS12) and Argo-derived stratification, both carrying uncertainties of order 20--30\% in the equatorial waveguide. The $\Lambda_c \sim 1$ threshold is a prediction from this framework, not yet observationally confirmed.
+
+Fifth, this study focuses on Kelvin waves; the topological theory predicts that Yanai (mixed Rossby-gravity) waves are also protected, but their weaker SSH signature makes ray-following analysis unreliable with the current data.
+
+Sixth, the SWOT meridional profile shown in Fig.~\ref{fig:hovmoller}b deviates substantially from the theoretical Gaussian, with peak SSH at $5^\circ$--$7^\circ$N rather than at the equator. This likely reflects superposition of multiple equatorial modes rather than a single Kelvin wave, and caution is needed when interpreting any individual SWOT snapshot as evidence for or against equatorial trapping.
 
 %% ============================================================
 \section{Conclusions}
 \label{sec:conclusions}
 %% ============================================================
 
-We provide observational evidence that equatorial Kelvin waves retain topological-like robustness in the real ocean under moderate perturbations. Island-chain scattering (Gilbert and Line Islands) preserves or amplifies the Kelvin wave signal, while strong tropical instability waves and background vorticity trigger a transition from protected propagation to energy loss and mode conversion. The effective gap-to-perturbation frequency ratio $\Lambda = \Delta\omega_\mathrm{eff} / \delta\omega_\mathrm{pert}$ unifies these regimes, with a breakdown threshold near $\Lambda_c \sim 1$ consistent with the topological prediction of gap closing.
+We have developed an observational framework for testing topological wave theory in the real ocean. From DUACS multi-mission altimetry, we identified 7 independent Kelvin wave events during the 2023--2024 El Ni\~no, applied ridge-intercept clustering to remove duplicate detections, and computed ray-following robustness metrics against three independent control groups (Rossby, stationary, time-shifted placebo).
 
-These results turn the topological theory of equatorial waves from an elegant idealized prediction into a testable observational framework for the real ocean. The $\Lambda$ parameter offers a practical diagnostic for assessing whether topological protection applies to a given wave event in a given perturbation environment, with potential applications to equatorial wave dynamics, climate-mode research, and the design of observational campaigns targeting wave--perturbation interactions.
+The key findings are:
+\begin{enumerate}
+\item Kelvin wave amplitude retention shows a perturbation-type dependence consistent with conditional robustness: higher at island chains, lower in TIW zones.
+\item However, no pairwise comparison reaches statistical significance at the current 7-event sample size (block bootstrap $p > 0.05$).
+\item Spectral decomposition (with corrected FFT sign convention, detrending, and 90-day highpass) reveals that Kelvin modes account for 41.6\% of the intraseasonal SSH variance in the equatorial Pacific during 2023--2024.
+\item We propose the gap-to-perturbation frequency ratio $\Lambda = \sqrt{\beta c_1} / \delta\omega_\mathrm{pert}$ as a quantitative framework for predicting where topological protection should hold and where it should fail.
+\end{enumerate}
+
+The framework established here---event detection, deduplication, multi-control robustness diagnostics, and the $\Lambda$ parameter---is ready to be applied to the full 30-year altimetric record (1993--present) to achieve the statistical power needed for definitive conclusions about topological protection in the ocean.
 
 %% ============================================================
 \section{Methods}
@@ -169,7 +189,9 @@ SWOT KaRIn L3 Low-Rate SSH (version 2.0.1, Basic product) was accessed from the 
 
 \subsection{Kelvin wave event detection}
 
-Events were detected using a ray-tracing algorithm on the equatorial Hovm\"oller diagram. For each candidate starting point in the western Pacific ($150^\circ$--$180^\circ$E) and time, a ray was propagated eastward at $1.95$~deg~day$^{-1}$ (${\sim}2.5$~m~s$^{-1}$). The mean SSH anomaly along the ray was computed over the tracking duration (40--80 days). Candidate events with mean SSH anomaly $> 0.03$~m and duration $\geq 30$ days were retained. Overlapping detections were merged by selecting the strongest (highest mean SSH anomaly) event in each space-time cluster (15$^\circ$ longitude, overlapping time windows). This yielded 11 unique events spanning January 2023 to February 2024.
+Events were detected using a ray-tracing algorithm on the equatorial Hovm\"oller diagram. For each candidate starting point in the western Pacific ($150^\circ$--$180^\circ$E) and time, a ray was propagated eastward at $1.95$~deg~day$^{-1}$ (${\sim}2.5$~m~s$^{-1}$). The mean SSH anomaly along the ray was computed over the tracking duration (40--80 days). Candidate events with mean SSH anomaly $> 0.03$~m and duration $\geq 30$ days were retained, yielding 11 candidate rays.
+
+To identify independent events, we applied ridge-intercept clustering. For each ray, the intercept $\tau = t_\mathrm{start} - x_0/c$ was computed, where $x_0$ is the starting longitude and $c = 1.95$~deg~day$^{-1}$. Rays with $|\Delta\tau| < 10$~days were merged as detections of the same SSH anomaly ridge, keeping the longest-duration representative. This reduced 11 candidates to 7 independent events, with 4 duplicate pairs identified. All subsequent statistical analyses use the 7 independent events as the sampling unit.
 
 \subsection{SWOT meridional profile extraction}
 
@@ -181,9 +203,9 @@ For each event--perturbation-zone pair, upstream and downstream analysis windows
 \begin{equation}
 R = \frac{\mathrm{rms}(\eta_\mathrm{downstream})}{\mathrm{rms}(\eta_\mathrm{upstream})}
 \end{equation}
-A stationary control ($0$~deg~day$^{-1}$) was computed identically, measuring temporal SSH persistence without wave-packet tracking. A westward-propagating Rossby control was not used because equatorial Rossby wave signals in the SSH anomaly are spatially diffuse and intermittent, precluding reliable ray-following at the individual event level; the stationary control provides a conservative baseline against which the propagation advantage of Kelvin waves can be assessed.
+Three control groups were used: (i) a westward Rossby ray ($-0.39$~deg~day$^{-1}$, starting 25$^\circ$ east of each perturbation zone), (ii) a stationary reference ($0$~deg~day$^{-1}$), and (iii) a time-shifted placebo (Kelvin speed but offset by 60 days from the event start). The Rossby control tests whether eastward-propagating waves are more robust than westward modes crossing the same perturbation environment. The stationary and time-shifted controls test whether observed amplitude retention is attributable to wave-packet tracking rather than background SSH variability.
 
-Statistical significance was assessed using a two-sided permutation test ($n = 5{,}000$ permutations) comparing the Kelvin wave amplitude ratios to the control ratios.
+Statistical significance was assessed using block bootstrap with events as the blocking unit ($n = 10{,}000$ resamples). For each metric, the observed difference between Kelvin and control group means was compared against the bootstrap distribution to obtain two-sided $p$-values and 95\% confidence intervals. This approach avoids treating event$\times$zone measurements as independent samples.
 
 \subsection{Effective topological control parameter}
 
