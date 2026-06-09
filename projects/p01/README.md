@@ -6,7 +6,7 @@
 
 | Item | Content |
 |---|---|
-| Current stage | D0 Explore (candidate) |
+| Current stage | D1 Draft (real-data Gulf Stream pilot) |
 | Lead / proposer | Kris19999 |
 | Target journal | Nature Communications (high-impact target); GRL or JGR: Oceans as realistic fallback targets |
 | Start date | 2026-06-05 |
@@ -14,12 +14,13 @@
 
 ## D0 Priority Checklist
 
-- [ ] Verify SWOT L2 sigma0-derived wind speed quality in the Gulf Stream and Kuroshio Extension pilot boxes.
-- [ ] Download SWOT KaRIn L2 SSH for the same swaths and characterize SSH gradients, fronts, filaments, and eddy-edge structures.
-- [ ] Download concurrent GOES-East and Himawari SST; quantify clear-sky collocation with SWOT passes.
-- [ ] Compute the first scale-dependent coupling diagnostics using SWOT wind speed and geostationary SST, not ASCAT as the primary wind field.
-- [ ] Use ASCAT, ERA5, and CCMP as coarse-scale benchmarks and vector-wind references, especially for scales that they can actually resolve.
-- [ ] Search and verify recent literature on SWOT-derived wind speed and submesoscale air-sea coupling.
+- [x] Verify SWOT L2 sigma0-derived wind speed quality in a Gulf Stream pilot box.
+- [x] Download/use SWOT KaRIn L2 SSH for the same swaths and characterize SSH gradients, fronts, and eddy-edge structures.
+- [x] Download/use concurrent GOES-East SST and quantify clear-sky collocation with SWOT passes.
+- [x] Compute first-pass coupling diagnostics using SWOT wind speed and geostationary SST, not ASCAT as the primary wind field.
+- [ ] Extend the workflow to Himawari SST and the Kuroshio Extension.
+- [ ] Add ASCAT, ERA5, and CCMP as coarse-scale benchmarks for traditional wind products.
+- [ ] Complete manual literature verification on SWOT-derived wind speed and submesoscale air-sea coupling.
 
 ## Scientific Question
 
@@ -45,7 +46,7 @@ ASCAT is valuable, but it should not replace SWOT as the main wind dataset for t
 2. The scale-dependent air-sea coupling coefficient changes from mesoscale to submesoscale, especially in the Gulf Stream and Kuroshio Extension.
 3. The strongest SWOT wind-speed kinetic energy anomalies are tied to sharp geostationary-SST fronts and SWOT SSH-gradient structures.
 4. SWOT SSH gradients help identify the dynamical ocean structures that set the regime boundary, while GOES/Himawari SST provides the thermal frontal forcing.
-5. ASCAT vector winds can support coarse-scale direction-based diagnostics, but sub-25-km wind-response claims should come primarily from SWOT wind speed.
+5. ASCAT, ERA5, and CCMP should be used primarily as coarse-scale benchmarks for traditional wind products; sub-25-km wind-response claims should come from SWOT wind speed.
 
 ## Data
 
@@ -140,7 +141,7 @@ Repeat the analysis in weaker-front regions to test whether the scale-dependent 
 **Critical risks:**
 
 - SWOT wind speed quality and rain/sea-state contamination must be checked carefully before making submesoscale claims.
-- SWOT provides wind speed magnitude, not a full vector wind. Direction-based diagnostics require ASCAT, ERA5, or another vector-wind source and should be treated as coarse-scale support.
+- SWOT provides wind speed magnitude, not a full vector wind. This D1 package therefore focuses on wind-speed and wind-speed-kinetic-energy diagnostics, not vector-wind curl/divergence diagnostics.
 - Collocation between SWOT, clear-sky geostationary SST, and comparison wind products may be limited by clouds and sampling.
 
 **Scientific risks:**
@@ -163,10 +164,7 @@ The proposer has worked on ocean submesoscale processes from the master's stage 
 |---|---|---|---|
 | 2026-06-05 | D0 | Initial topic proposal: SWOT wind kinetic energy distribution and coupling | Original local proposal |
 | 2026-06-08 | D0 | Revised after group discussion: retain scale-dependent regime-transition question, restore SWOT wind speed as the primary atmospheric response field | Updated README and Chinese discussion note |
-| 2026-06-08 | D1 proxy | Implemented download entry point, proxy processing pipeline, four diagnostic figures, and AI first draft. Real SWOT download remains blocked by missing Earthdata credentials and `earthaccess`. | `analysis/runbook_proxy_analysis.md`, `analysis/run_p01_proxy_analysis.py`, `figures/fig*.png`, `manuscript/v1_ai_draft/p01_ai_draft_proxy.md` |
-| 2026-06-08 | D1 data access | Installed `earthaccess`, retrieved Gulf Stream SWOT CMR metadata for 6 L2 LR SSH Expert granules, downloaded public SWOT browse images, and confirmed protected NetCDF requires Earthdata authentication. | `analysis/configure_earthdata_credentials.py`, `analysis/swot_download_status.json`, `figures/fig05_swot_public_browse_gulf_stream_20230901.png` |
-| 2026-06-08 | D1 real-data pilot | Downloaded real SWOT L2 LR SSH Expert NetCDF and GOES-16 ABI L3C SST, generated cropped Gulf Stream figures, and wrote a real-data AI draft. | `analysis/run_p01_swot_gs_analysis.py`, `analysis/run_p01_swot_goes_gs_collocation.py`, `figures/fig06_real_swot_gulf_stream_small_window.png`, `figures/fig07_real_swot_goes_gs_collocation.png`, `manuscript/v1_ai_draft/p01_ai_draft_real_gulf_stream.md` |
-| 2026-06-08 | D1 batch screening | Batch-downloaded matched daylight Gulf Stream SWOT/GOES cases, auto-selected compact windows, and plotted SSH, SST, wind speed, plus robust-outlier-removed SST-gradient/wind-gradient cross-spectrum. | `analysis/batch_p01_gs_swot_goes_plots.py`, `analysis/batch_gs_swot_goes_summary.json`, `figures/batch_gs/`, `figures/batch_gs_contact_sheet_top6.png` |
+| 2026-06-09 | D1 real-data pilot | Rebuilt a compact D1 package from real Gulf Stream SWOT L2 LR SSH Expert wind speed / SSH and GOES-16 ABI SST. Three collocated cases passed QC and cloud-screening thresholds. | `analysis/p01_d1_realdata_pipeline.py`, `analysis/d1_results_summary.json`, `figures/p01_d1_*.png`, `manuscript/v1_ai_draft/P01-D1-Manuscript-CN.md` |
 
 ## AI Interaction Log
 
@@ -174,4 +172,4 @@ See `logs/2026-06-05_D0_topic_proposal.md`.
 
 ## References
 
-See `literature/literature_seed.md` and `literature/P01_discussion_note_zh.md`. All references must be manually verified before manuscript use.
+See `literature/literature_seed.md`. All references must be manually verified before manuscript use.
