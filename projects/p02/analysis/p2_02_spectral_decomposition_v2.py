@@ -113,16 +113,22 @@ with np.errstate(divide="ignore", invalid="ignore"):
     cp = np.where(KK != 0, WW / KK, 0)
 
 # --- Step 6: Mode filters ---
-# Eastward Kelvin: ω>0, k>0, phase speed 1.0-4.0 deg/day, period 10-200 days
+# FFT sign convention (verified by synthetic test above):
+#   eastward cos(kx - ωt) → energy in Q2(ω>0,k<0) + Q4(ω<0,k>0)
+#   i.e. eastward = WW * KK < 0
+#   westward cos(kx + ωt) → energy in Q1(ω>0,k>0) + Q3(ω<0,k<0)
+#   i.e. westward = WW * KK > 0
+
+# Eastward Kelvin: WW*KK < 0, phase speed 1.0-4.0 deg/day, period 10-200 days
 kelvin_mask = (
-    (WW > 0) & (KK > 0) &
-    (cp >= 1.0) & (cp <= 4.0) &
-    (WW > 1 / 200) & (WW < 1 / 10)
+    (WW * KK < 0) &
+    (np.abs(cp) >= 1.0) & (np.abs(cp) <= 4.0) &
+    (np.abs(WW) > 1 / 200) & (np.abs(WW) < 1 / 10)
 )
 
-# Westward Rossby: ω<0, k<0, phase speed 0.1-1.5 deg/day, period 20-200 days
+# Westward Rossby: WW*KK > 0, phase speed 0.1-1.5 deg/day, period 20-200 days
 rossby_mask = (
-    (WW < 0) & (KK < 0) &
+    (WW * KK > 0) &
     (np.abs(cp) >= 0.1) & (np.abs(cp) <= 1.5) &
     (np.abs(WW) > 1 / 200) & (np.abs(WW) < 1 / 20)
 )
