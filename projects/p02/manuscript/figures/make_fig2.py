@@ -80,23 +80,29 @@ gs = fig.add_gridspec(2, 2, height_ratios=[1.2, 1],
 # === Panel (a): Hovmöller (spans full top row) ===
 ax_a = fig.add_subplot(gs[0, :])
 
-pcm = ax_a.pcolormesh(lon_pac, times, sla_anom,
+# Convert datetime64 to matplotlib date numbers for uniform Y axis
+import pandas as pd
+times_dt = pd.to_datetime(times)
+times_num = mdates.date2num(times_dt)
+
+pcm = ax_a.pcolormesh(lon_pac, times_num, sla_anom,
                        cmap="RdBu_r", vmin=-0.15, vmax=0.15,
                        shading="auto", rasterized=True)
 
 for i, e in enumerate(events):
-    t0 = np.datetime64(e["start"])
-    t1 = np.datetime64(e["end"])
+    t0 = mdates.date2num(pd.Timestamp(e["start"]))
+    t1 = mdates.date2num(pd.Timestamp(e["end"]))
     ax_a.plot([e["lon0"], e["lon1"]], [t0, t1],
              color="k", linewidth=1.2, alpha=0.8, solid_capstyle="round")
 
 # Reference slope
-t_ref = np.datetime64("2023-02-15")
+t_ref = mdates.date2num(pd.Timestamp("2023-02-15"))
+t_ref_end = mdates.date2num(pd.Timestamp("2023-02-15") + pd.Timedelta(days=60))
 kelvin_speed = 1.95
 ax_a.plot([140, 140 + kelvin_speed * 60],
-         [t_ref, t_ref + np.timedelta64(60, "D")],
+         [t_ref, t_ref_end],
          "k--", linewidth=0.8, alpha=0.6)
-ax_a.text(140 + kelvin_speed * 62, t_ref + np.timedelta64(55, "D"),
+ax_a.text(140 + kelvin_speed * 62, t_ref_end - 5,
          "c = 2.5 m s$^{-1}$", fontsize=6, ha="left", va="center",
          style="italic")
 
@@ -105,14 +111,16 @@ for lon_c, name, col in [(175, "Gilbert\nIs.", COL_GILBERT),
                           (202, "Line\nIs.", COL_LINE),
                           (240, "TIW", COL_TIW)]:
     ax_a.axvline(lon_c, color=col, linewidth=0.6, linestyle=":", alpha=0.6)
-    ax_a.text(lon_c, times[-1] + np.timedelta64(15, "D"), name,
+    ax_a.text(lon_c, times_num[-1] + 15, name,
              fontsize=5.5, ha="center", va="bottom", color=col, fontweight="bold")
 
 ax_a.set_xlabel("Longitude (°E)", fontsize=7)
 ax_a.set_ylabel("Time", fontsize=7)
+ax_a.yaxis_date()
 ax_a.yaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
 ax_a.yaxis.set_major_locator(mdates.MonthLocator(interval=3))
 ax_a.set_xlim(130, 280)
+ax_a.set_ylim(times_num[0], times_num[-1])
 
 cb = plt.colorbar(pcm, ax=ax_a, shrink=0.7, aspect=25, pad=0.02)
 cb.set_label("SLA (m)", fontsize=6.5)
