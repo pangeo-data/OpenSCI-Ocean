@@ -104,9 +104,9 @@ All perturbation terms are expressed in frequency units (s$^{-1}$) for dimension
 \item TIW frequency broadening: $\delta\omega_\mathrm{TIW}$ estimated from the TIW oscillation period (${\sim}20$--$30$~days).
 \end{itemize}
 
-The primary formulation uses $\delta\omega_\mathrm{pert} = \max(|\zeta|/2,\ |U_0 k_x|)$. Order-of-magnitude estimates yield $\Lambda \approx 15$ in quiescent equatorial regions ($|\zeta| \sim 10^{-6}$~s$^{-1}$), $\Lambda \approx 4$ in moderate TIW regions ($|\zeta| \sim 4 \times 10^{-6}$~s$^{-1}$), and $\Lambda \approx 1.5$ in strong TIW or eddy regions ($|\zeta| \sim 10^{-5}$~s$^{-1}$) (Fig.~\ref{fig:lambda}). These estimates use $\Delta\omega_\mathrm{eff} \approx 7.6 \times 10^{-6}$~s$^{-1}$ and must be verified with real GLORYS data.
+Using GLORYS12 reanalysis surface currents, we computed $\Lambda$ for each event--zone pair from real vorticity and current data (Fig.~\ref{fig:lambda}). The primary formulation uses $\delta\omega_\mathrm{pert} = \max(|\zeta|/2,\ |U_0 k_x|)$. Across all 20 event--zone measurements (6 complete events $\times$ 3 zones + 1 partial), observed $\Lambda$ values range from 4.8 to 8.3, with zone-averaged values of $6.2 \pm 0.8$ (Gilbert Islands), $5.8 \pm 0.6$ (Line Islands), and $6.5 \pm 1.0$ (TIW zone).
 
-The observed amplitude retention ratios correlate with $\Lambda$: island-chain crossings correspond to high $\Lambda$ (weak relative vorticity, large effective gap) and show amplitude preservation or enhancement, while TIW-zone crossings correspond to $\Lambda \sim 1$ and show amplitude loss. The transition from robustness to breakdown occurs near $\Lambda_c \sim 1$, consistent with the physical interpretation that protection fails when perturbation-induced frequency shifts become comparable to the topological gap.
+A striking result is that $\Lambda$ does not vary significantly between perturbation zones: all values are well above the predicted critical threshold $\Lambda_c \sim 1$. This means that the observed amplitude loss in the TIW zone (amplitude ratio $0.7 \pm 0.5$) cannot be attributed to topological gap closing in the $V1$ simplified formulation. Two interpretations are possible: (i) the relevant perturbation frequency is underestimated by $\max(|\zeta|/2,\ |U_0 k_x|)$ --- non-linear wave--wave interactions, Reynolds stress divergence, or transient TIW vortex encounters may produce larger effective frequency shifts than the time-mean vorticity suggests; or (ii) the amplitude loss mechanism in TIW zones is dissipative (frictional damping, lateral mixing) rather than conservative (gap closing, mode conversion), and $\Lambda$ correctly predicts that topological protection is not the controlling factor.
 
 \begin{figure}[t]
 \centering
@@ -118,7 +118,7 @@ The observed amplitude retention ratios correlate with $\Lambda$: island-chain c
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.7\textwidth]{figures/fig6_lambda}
-\caption{\textbf{Effective topological control parameter $\Lambda$ versus robustness.} Order-of-magnitude estimates of $\Lambda = \Delta\omega_\mathrm{eff} / \delta\omega_\mathrm{pert}$ for different perturbation regimes. Island-chain crossings (high $\Lambda$) show amplitude preservation or enhancement; TIW-zone crossings ($\Lambda \sim 1$) show energy loss. The transition near $\Lambda_c \sim 1$ is consistent with topological gap closing.}
+\caption{\textbf{GLORYS12-derived $\Lambda$ versus amplitude retention.} \textbf{a}, Scatter plot of real $\Lambda = \Delta\omega_\mathrm{eff} / \delta\omega_\mathrm{pert}$ (from GLORYS12 vorticity and currents) versus ray-following amplitude ratio for each event--zone pair. TIW-zone measurements (red diamonds) cluster below the no-change line (amp ratio $< 1$) despite having $\Lambda \approx 5$--$8$, well above the predicted critical threshold $\Lambda_c \sim 1$. \textbf{b}, $\Lambda$ distribution by perturbation zone shows no significant inter-zone variation. The absence of $\Lambda \sim 1$ events suggests that the TIW-zone amplitude loss may be dissipative rather than topological.}
 \label{fig:lambda}
 \end{figure}
 
