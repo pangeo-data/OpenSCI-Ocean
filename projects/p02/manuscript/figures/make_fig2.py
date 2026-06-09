@@ -161,12 +161,17 @@ ax_b.text(0.02, 0.96, "b", transform=ax_b.transAxes,
 # === Panel (c): Amplitude retention boxplot ===
 ax_c = fig.add_subplot(gs[1, 1])
 
-# ⚠️ PLACEHOLDER — hardcoded values from initial AI prototype.
-# Must be replaced with real data from robustness_metrics.json or
-# recomputed ray-following amplitude ratios before any publication.
-gilbert = [2.65, 3.1, 2.2, 1.8, 3.5, 2.9, 2.4, 2.0]
-line_is = [2.13, 1.8, 2.5, 1.9, 2.3, 2.0, 2.1, 1.7]
-tiw = [0.88, 0.92, 0.75, 0.95, 0.82, 0.90, 0.85, 0.93]
+# Real data from robustness_metrics_v2.json (p3_03 output)
+metrics_file = os.path.join(BASE, "data/duacs/robustness_metrics_v2.json")
+with open(metrics_file) as f:
+    metrics = json.load(f)
+MIN_RMS_UP = 0.01
+gilbert = [r["amp_ratio"] for r in metrics["kelvin"]
+           if r["zone"] == "Gilbert Islands" and r["rms_up"] > MIN_RMS_UP]
+line_is = [r["amp_ratio"] for r in metrics["kelvin"]
+           if r["zone"] == "Line Islands" and r["rms_up"] > MIN_RMS_UP]
+tiw = [r["amp_ratio"] for r in metrics["kelvin"]
+       if r["zone"] == "TIW zone" and r["rms_up"] > MIN_RMS_UP]
 
 bp = ax_c.boxplot([gilbert, line_is, tiw],
                    tick_labels=["Gilbert\nIslands", "Line\nIslands", "TIW\nzone"],
@@ -192,12 +197,10 @@ ax_c.text(3.35, 1.02, "no change", fontsize=5.5, va="bottom", ha="right",
          color="grey", style="italic")
 
 ax_c.set_ylabel("Amplitude ratio (downstream / upstream)", fontsize=7)
-ax_c.set_ylim(0.4, 4.0)
-
-# Watermark: data source warning
-ax_c.text(0.5, 0.5, "PLACEHOLDER\n(hardcoded data)", transform=ax_c.transAxes,
-         fontsize=8, ha="center", va="center", color="red", alpha=0.3,
-         fontweight="bold", rotation=30)
+if not gilbert:
+    ax_c.set_ylim(0.0, 3.5)
+else:
+    ax_c.set_ylim(0.0, max(max(gilbert, default=3), max(line_is, default=3), max(tiw, default=1)) * 1.2)
 
 ax_c.text(0.02, 0.96, "c", transform=ax_c.transAxes,
          fontsize=10, fontweight="bold", va="top", ha="left")
