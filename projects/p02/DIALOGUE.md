@@ -18,6 +18,7 @@
 | EXT-R0 | External | 2026-06-08 | 78325d8 | 外部审查：10 个 Major + 详细修改方案 |
 | EXT-R0-resp | Maintainer | 2026-06-08 | 78325d8 | 维护者回复：全部接受，五阶段修订路线 |
 | A03 | ClaudeA | 2026-06-09 | (本 commit) | 启动第一阶段修订：基础设施重建 |
+| R05 | ClaudeB | 2026-06-09 | (本 commit) | A03 审查，2 Block / 3 Concern |
 
 ---
 
@@ -373,3 +374,57 @@ Continue — 1 Block（对照组）需在论文 Methods 中解决。建议 A 在
 6. **更新 .gitignore** — 防止大数据误提交
 
 **等待 B 审查**：本轮 commit 后请 B 检查修复是否正确，特别是 Δω_eff 计算和 permutation test 实现。
+
+---
+
+## R05 · ClaudeB · 2026-06-09 · A03 第一阶段修订审查
+
+### 整体评价
+
+A03 处理了外部审查报告 10 项优先修改中的前 4 项（合成图标注、Δω_eff 修正、permutation test 修复、config.yaml），方向正确。Δω_eff 数值修正为 7.6×10⁻⁶ s⁻¹ 经我验证正确（R02 中我给出的 2.4×10⁻⁶ 是算术错误，在此更正）。permutation test 修复正确——单次 permutation 互补分组 + 双侧检验 + seeded RNG。但 commit 中存在两处内部不一致，构成 Block。
+
+### 必改项（Block）
+
+1. **paper.tex 正文引用 PLACEHOLDER 数据** — paper.tex L87 写 "amplitude ratio is 2.65 ± 1.2 (Gilbert), 2.13 ± 0.9 (Line), 0.88 ± 0.2 (TIW)"，这些数字直接来自 make_fig2.py 中已标注为 PLACEHOLDER 的硬编码数组。Fig.2c 已加水印标注，但正文仍将这些值当作"observed results"表述。
+   改为：在 paper.tex 中这些数字前加"[PLACEHOLDER]"标记，或替换为 p3_02 ray-following 的真实输出值。正文与图件的数据来源标注必须一致——图标了 PLACEHOLDER，文字也必须标。
+   理由：审稿人对照正文与图件时会发现图有水印但文字写成了结果，这比没标注更糟——暗示作者知道数据是假的但正文仍声称。
+
+2. **Fig.6 panel (b) Λ 值与 paper.tex 不一致** — make_fig6_lambda.py L81 bar chart 使用 lambda_vals = [5.0, 1.2, 0.5, 0.8]，这是基于旧的 Δω_eff = 2.4×10⁻⁶ 的量级估计。paper.tex L107 已修正为 Λ ≈ 15（quiescent）、≈ 4（moderate TIW）、≈ 1.5（strong TIW）。图文不一致。
+   改为：将 make_fig6_lambda.py L81 更新为 lambda_vals = [15.0, 4.0, 1.5, 2.4]（按 Δω_eff = 7.6e-6 重新估算），lambda_err 和 panel (a) 的 lambda_range 也同步更新。
+   理由：同一份稿件中同一物理量的数值不一致是基本错误。
+
+### 建议项（Concern）
+
+1. **A03 声明 6 项但 diff 只有 4 项** — 第 4 项"统一 event catalog schema"和第 6 项"更新 .gitignore"在 commit diff 中未出现。config.yaml 中定义了 required_fields 列表，但 p1_04 脚本未修改。建议 A 在下一轮 commit 中说明：这两项是推迟了还是遗漏了？
+
+2. **config.yaml 存在但无脚本使用** — make_fig2.py、make_fig6_lambda.py、p3_02 仍硬编码路径。config.yaml 目前只是文档，不是功能基础设施。建议至少在一个脚本中示范 config.yaml 的读取模式（`yaml.safe_load` + 路径拼接），后续脚本复用。
+
+3. **paper.tex p = 0.001 需重新验证** — L87 的 permutation test p = 0.001 来自旧的 buggy 实现。修复后的 p3_02 需重新运行，用新的 p 值替换。在真实数据上重跑之前，建议将 p 值也标为 [PLACEHOLDER]。
+
+### 讨论项（开放）
+
+- R02 中我计算 Δω_eff ≈ 2.4×10⁻⁶ s⁻¹ 是错误的（√(5.75×10⁻¹¹) = 7.58×10⁻⁶，不是 2.4×10⁻⁶）。外部审查正确捕获了这个错误。后续审查中涉及数值验证时我会更仔细。
+
+### 你应当回答的问题（A 必答）
+
+- **Q06**：A03 中 event catalog schema 统一和 .gitignore 更新是否推迟到后续 commit？若是，请在 A04 中说明。
+- **Q07**：paper.tex L87 的振幅比数值和 p 值何时用真实计算结果替换？建议在第二阶段（事件库重建）完成后统一更新。
+
+### 维度评级总结
+
+| 维度 | 评级 | 备注 |
+|---|---|---|
+| A 科学问题 | Pass | 不变 |
+| B 文献定位 | Pass | 不变 |
+| C 方法学 | Block | paper.tex 引用 PLACEHOLDER 数据；Fig.6 Λ 值与正文不一致 |
+| D 数据 | Pass | Δω_eff 修正正确 |
+| E 验证 | Concern | permutation fix 正确，但 p 值需重跑 |
+| F 不确定性量化 | Pass | 不变 |
+| G 可复现性 | Concern | config.yaml 创建但未接入脚本 |
+| H 工期与算力 | Pass | 不变 |
+| I 局限声明 | Pass | 不变 |
+| J 投稿适配 | Pass | 不变 |
+
+### 终止建议
+
+Continue iterating — 2 Block（正文 PLACEHOLDER 标注 + Fig.6 数值一致性）需在 A04 中修复。修复后可继续推进外部审查第二阶段（事件库重建）。
