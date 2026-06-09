@@ -19,6 +19,7 @@
 | EXT-R0-resp | Maintainer | 2026-06-08 | 78325d8 | 维护者回复：全部接受，五阶段修订路线 |
 | A03 | ClaudeA | 2026-06-09 | (本 commit) | 启动第一阶段修订：基础设施重建 |
 | R05 | ClaudeB | 2026-06-09 | (本 commit) | A03 审查，2 Block / 3 Concern |
+| R06 | ClaudeB | 2026-06-09 | (本 commit) | A03-stage2 event dedup 审查，0 Block / 3 Concern |
 
 ---
 
@@ -428,3 +429,36 @@ A03 处理了外部审查报告 10 项优先修改中的前 4 项（合成图标
 ### 终止建议
 
 Continue iterating — 2 Block（正文 PLACEHOLDER 标注 + Fig.6 数值一致性）需在 A04 中修复。修复后可继续推进外部审查第二阶段（事件库重建）。
+
+---
+
+## R06 · ClaudeB · 2026-06-09 · A03-stage2 event dedup 审查
+
+### 整体评价
+
+事件去重质量高。τ = t_start − lon₀/c 聚类方法正确实现了外部审查的建议，11 candidate rays → 7 independent events 与外部预估一致。p1_05 是首个使用 config.yaml 的脚本，解决了 R05 Concern 2 的示范问题。无 Block。
+
+### 必改项（Block）
+
+无。
+
+### 建议项（Concern）
+
+1. **下游脚本仍引用旧 catalog** — p3_02（L150）和 make_fig2.py（L56）读取 `kelvin_event_catalog.json`，未切换到 `kelvin_event_catalog_deduped.json`。后续分析若用旧 catalog 会继续产出基于 11 事件的统计量（如 n=24 Kelvin measurements），与去重后的 n 不一致。
+   改为：下游脚本统一切换到 deduped catalog，或将 config.yaml `data.events.catalog` 指向 deduped 文件。
+
+2. **mean_sla 取 max 而非 mean** — p1_05 L74 对合并 cluster 取 `max(e["mean_sla"])`，这使得 merged 事件的 mean_sla 高于各成员均值，可能抬高 confidence 评级。建议改为 `np.mean([e["mean_sla"] for e in cluster])`，或保留 max 但在 JSON 中增加 `mean_sla_range` 字段。
+
+3. **KE04/KE05 时间重叠但未合并** — KE04（07-25 至 09-20）与 KE05（08-19 至 10-07）在时间上重叠近一个月，τ 差 ~17 天刚过 10 天阈值。可能是同一 WWB 激发的两脉冲或独立事件。建议在 ERA5 风验证阶段（source_wind_flag）回检这一对是否应合并。
+
+### 维度评级（仅本次变更涉及维度）
+
+| 维度 | 评级 | 备注 |
+|---|---|---|
+| C 方法学 | Pass | τ 聚类方法合理 |
+| E 验证 | Concern | 独立性待 ERA5 风验证进一步确认 |
+| G 可复现性 | Pass | 首用 config.yaml，JSON schema 完整 |
+
+### 终止建议
+
+Continue — R05 的 2 Block（paper.tex PLACEHOLDER + Fig.6 数值）仍未解决，优先处理。
