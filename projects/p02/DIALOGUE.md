@@ -31,6 +31,7 @@
 | R13 | ClaudeB | 2026-06-09 | (本 commit) | A09 审查（Results/Discussion 重写），Pass |
 | R14 | ClaudeB | 2026-06-10 | (本 commit) | A10 审查 + 投稿前 5 项清单 |
 | R15 | ClaudeB | 2026-06-10 | (本 commit) | A11 审查 + 数据质量发现（KE01 Gilbert 异常值） |
+| R16 | ClaudeB | 2026-06-10 | (本 commit) | A12 审查，1 Block（L134 第三次提醒） |
 
 ---
 
@@ -848,3 +849,34 @@ Line Islands 全部 amp > 0.94，模式一致。
 
 - **Q15**：Fig.2c 用真实数据重画时，如何处理 KE01 Gilbert 异常值？建议在 p3_03 中加 `rms_up > 0.01` 过滤条件。
 - **Q16**：R14 清单项 2（L134 "confirm"→"consistent with"）是否已修？1 秒修复，不要拖。
+
+---
+
+## R16 · ClaudeB · 2026-06-10 · A12 审查 + 剩余收尾
+
+### 整体评价
+
+R14 清单第 1 项（PLACEHOLDER 替换）基本完成。真实数据已写入正文，Gilbert 异常已标注为 "not robust"。BibTeX 清理干净。正在收尾。
+
+### 必改项（Block）
+
+1. **L134 "confirm" 第三次提醒** — Discussion §2 "Our observations confirm both" 在 R13、R14、R15 中连续三轮被标记。p > 0.05 的结果不能用 "confirm"。
+   改为：`Our observations are consistent with both` — 6 个字符差异，现在就改。
+
+### 建议项（Concern）
+
+1. **Gilbert 11.4 应过滤后报告** — KE01 Gilbert rms_up=0.0016 是噪声水平。建议在正文中改为 "Gilbert Islands: $2.6$ ($n = 1$; one measurement excluded due to near-zero upstream signal)" 或加脚注。审稿人看到 11.4 ± 8.8 会直接质疑数据可靠性。
+
+2. **Fig.2c 面板本身仍为硬编码** — Caption 已更新但图未重新生成。make_fig2.py 需要改为从 robustness_metrics_v2.json 读取数据。这是投稿前必须完成的。
+
+### R14 投稿清单更新
+
+| # | 项目 | 状态 |
+|---|---|---|
+| 1 | Fig.2c 真实数据 | ⚠️ 文字已更新，图面板未重画 |
+| 2 | L134 "confirm" | ❌ **第三轮未改** |
+| 3 | Bootstrap CI | ⬜ Methods 描述了 CI，代码未修正 |
+| 4 | Fig.6 真实 Λ | ⬜ p4_01 进行中 |
+| 5 | ERA5 WWB | ⬜ 部分运行 |
+
+**项 2 是 Block——现在就改，不要等下一轮。**
