@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+\usepackage{caption}
+\captionsetup[figure]{name=Supplementary Figure, labelfont=bf}
+\captionsetup[table]{name=Supplementary Table, labelfont=bf}
+
+\graphicspath{{../figures/}}
+
+\title{Supplementary Information for:\\
+\large Conditional robustness of equatorial Kelvin waves in the real ocean from multi-mission altimetry and SWOT snapshots}
+\author{Author One, Author Two}
+\date{}
+
+\begin{document}
+\maketitle
+
+%% ------------------------------------------------------------
+\section*{Supplementary Note 1: Kelvin wave event detection and deduplication}
+
+Candidate events were detected by ray tracing on the equatorial Hovm\"oller diagram (Methods), yielding 11 candidate rays. Ridge-intercept clustering on $\tau = t_\mathrm{start} - x_0/c$ merged co-ridge detections and produced 7 independent events (KE01--KE07), used as the sampling unit in all statistics.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{p1_kelvin_events_detected.png}
+\caption{Kelvin wave events detected from the DUACS equatorial Hovm\"oller diagram (2$^\circ$S--2$^\circ$N mean sea-level anomaly). Black lines mark detected rays (phase speed ${\sim}2.5$~m~s$^{-1}$) before ridge-intercept deduplication.}
+\label{sfig:events}
+\end{figure}
+
+%% ------------------------------------------------------------
+\section*{Supplementary Note 2: Westerly wind burst verification}
+
+Wind forcing was verified with localized ERA5 10-m zonal wind analysis (Methods, ``Wind forcing verification''). Box-averaging over the full $150^\circ$E--$180^\circ$ search region yields easterly means for all seven events and would produce uniform false negatives; spatially localized detection is essential.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{p1_wwb_localized.png}
+\caption{ERA5 equatorial ($2^\circ$S--$2^\circ$N) zonal wind around each Kelvin event onset. Red shading denotes westerlies; the dashed line marks the event onset; the star marks the westerly peak used in Supplementary Table~\ref{stab:wwb}.}
+\label{sfig:wwb}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Localized WWB detection per event (from \texttt{wwb\_event\_confirmation\_localized.json}). Peak westerly is the daily maximum of the $5^\circ$-smoothed, $2^\circ$S--$2^\circ$N-averaged zonal wind in the window from 20 days before to 5 days after onset. ``Edge'' indicates a peak at the $150^\circ$E search boundary; the signal may extend further west.}
+\label{stab:wwb}
+\begin{tabular}{lllrrrl}
+\toprule
+Event & Verdict & Peak day & Peak (m\,s$^{-1}$) & Lon ($^\circ$E) & Days $>3$~m\,s$^{-1}$ & Note \\
+\midrule
+KE01 & marginal  & 2023-01-03 & $+3.0$ & 150.0 & 0  & edge \\
+KE02 & marginal  & 2023-02-22 & $+4.3$ & 150.0 & 2  & edge \\
+KE03 & confirmed & 2023-05-19 & $+9.5$ & 150.0 & 6  & edge \\
+KE04 & confirmed & 2023-07-19 & $+6.4$ & 157.2 & 9  & \\
+KE05 & confirmed & 2023-07-31 & $+5.8$ & 154.5 & 8  & \\
+KE06 & confirmed & 2023-10-07 & $+6.0$ & 163.2 & 13 & \\
+KE07 & confirmed & 2023-12-17 & $+6.2$ & 166.8 & 11 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+
+%% ------------------------------------------------------------
+\section*{Supplementary Note 3: Scale dependence of the amplitude-based criterion}
+
+The along-ray $\Lambda_\mathrm{min}$ uses the local maximum perturbation in a $\pm 1.5^\circ$ longitude $\times$ $\pm 3^\circ$ latitude window centred on the ray position, after $0.5^\circ$ boxcar smoothing. All three zones collapse to $\Lambda_\mathrm{min} \approx 1$, demonstrating that the amplitude criterion carries no zone information at the local-extreme scale (main text, Fig.~4b).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{p4_lambda_along_ray.png}
+\caption{Along-ray $\Lambda_\mathrm{min}$ versus zone-averaged $\Lambda$ for all event--zone pairs. The dashed diagonal marks equality; the dotted line marks $\Lambda_c \sim 1$.}
+\label{sfig:alongray}
+\end{figure}
+
+%% ------------------------------------------------------------
+\section*{Supplementary Note 4: $\Lambda_2$ correlation statistics and record-length caveat}
+
+\begin{table}[h]
+\centering
+\caption{Correlations between $\log \Lambda_2$ and $\log$ amplitude ratio (from \texttt{lambda\_v2\_correlations.json}; quality filter $\mathrm{rms}_\mathrm{up} > 0.01$~m). The full sample is reported first; zone subsets follow. The Gilbert Islands retain only one valid pair after filtering and are omitted.}
+\label{stab:corr}
+\begin{tabular}{lrrrrr}
+\toprule
+Sample & $n$ & Spearman $\rho$ & $p$ & Pearson $r$ (log--log) & $p$ \\
+\midrule
+All event--zone pairs & 14 & $+0.420$ & 0.135 & $+0.394$ & 0.164 \\
+TIW zone              & 7  & $+0.643$ & 0.119 & $+0.690$ & 0.086 \\
+Line Islands          & 6  & $-0.543$ & 0.266 & $-0.634$ & 0.177 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{p4_lambda_v2.png}
+\caption{$\Lambda_2$ by perturbation zone (left) and against the observed amplitude ratio (right), as in main-text Fig.~4c but showing all zones with the per-zone statistics of Supplementary Table~\ref{stab:corr}.}
+\label{sfig:lambda2}
+\end{figure}
+
+\paragraph{Record-length caveat.} Event windows shorter than twice the longest resonant period ($2 \times 50$~days) resolve that period with fewer than two frequency bins. This affects one event (KE05, 50-day window), flagged as \texttt{window\_caveat} in the released data. Excluding KE05, the TIW-zone correlation retains its sign and approximate magnitude (Pearson $r = 0.63$ at $n = 6$, versus $r = 0.69$ at $n = 7$), although the rank correlation weakens at this sample size (Spearman $\rho = 0.43$ versus $0.64$).
+
+\end{document}
