@@ -1,0 +1,92 @@
+{
+  "W15-50": {
+    "overall": {
+      "n": 210,
+      "spearman_rho": 0.436,
+      "spearman_p": 0.0,
+      "pearson_r": 0.419,
+      "pearson_p": 0.0
+    },
+    "Gilbert Islands": {
+      "n": 44,
+      "spearman_rho": 0.262,
+      "spearman_p": 0.0862,
+      "pearson_r": 0.292,
+      "pearson_p": 0.0545
+    },
+    "Line Islands": {
+      "n": 83,
+      "spearman_rho": 0.289,
+      "spearman_p": 0.0081,
+      "pearson_r": 0.254,
+      "pearson_p": 0.0207
+    },
+    "TIW zone": {
+      "n": 83,
+      "spearman_rho": 0.303,
+      "spearman_p": 0.0054,
+      "pearson_r": 0.333,
+      "pearson_p": 0.0021
+    }
+  },
+  "W15-40": {
+    "overall": {
+      "n": 210,
+      "spearman_rho": 0.42,
+      "spearman_p": 0.0,
+      "pearson_r": 0.403,
+      "pearson_p": 0.0
+    },
+    "Gilbert Islands": {
+      "n": 44,
+      "spearman_rho": 0.262,
+      "spearman_p": 0.0862,
+      "pearson_r": 0.292,
+      "pearson_p": 0.0545
+    },
+    "Line Islands": {
+      "n": 83,
+      "spearman_rho": 0.259,
+      "spearman_p": 0.0183,
+      "pearson_r": 0.234,
+      "pearson_p": 0.0336
+    },
+    "TIW zone": {
+      "n": 83,
+      "spearman_rho": 0.321,
+      "spearman_p": 0.0031,
+      "pearson_r": 0.347,
+      "pearson_p": 0.0013
+    }
+  },
+  "W15-30": {
+    "overall": {
+      "n": 210,
+      "spearman_rho": 0.366,
+      "spearman_p": 0.0,
+      "pearson_r": 0.343,
+      "pearson_p": 0.0
+    },
+    "Gilbert Islands": {
+      "n": 44,
+      "spearman_rho": 0.194,
+      "spearman_p": 0.2075,
+      "pearson_r": 0.135,
+      "pearson_p": 0.3812
+    },
+    "Line Islands": {
+      "n": 83,
+      "spearman_rho": 0.105,
+      "spearman_p": 0.3453,
+      "pearson_r": 0.071,
+      "pearson_p": 0.5245
+    },
+    "TIW zone": {
+      "n": 83,
+      "spearman_rho": 0.296,
+      "spearman_p": 0.0066,
+      "pearson_r": 0.304,
+      "pearson_p": 0.0052
+    }
+  }
+}

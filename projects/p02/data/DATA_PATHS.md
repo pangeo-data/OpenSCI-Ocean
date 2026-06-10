@@ -9,8 +9,8 @@
 | 数据集 | 路径（WSL 视角） | 内容 | 生成脚本 | 状态 |
 |---|---|---|---|---|
 | DUACS L4 历史（事件库扩展用） | `/mnt/d/p02_data/duacs_hist/duacs_eqpac_<YYYY>.nc` | sla 日均，1993–2022 逐年，5°S–5°N，130°E–80°W，0.125°（MY 数据集 `cmems_obs-sl_glo_phy-ssh_my_allsat-l4-duacs-0.125deg_P1D`，version 202411），约 133 MB/年 | `~/p02/download_duacs_hist.py`（日志 `~/p02/duacs_hist.log`） | ✅ 完成（30/30 年，2026-06-10） |
-| 历史事件目录 | `/mnt/d/p02_data/duacs_hist/kelvin_event_catalog_historical.json` | p1_08 射线检测 + τ 去重，1993–2022 | `~/p02/p1_08_detect_events_historical.py`（日志 `~/p02/p1_08.log`；仓库内 `analysis/p1_08_*.py`） | 检测运行中 |
-| GLORYS 历史事件子集 | `/mnt/d/p02_data/glorys_hist/glorys_uv_<KH>_<zone>.nc` | uo/vo 表层日均，事件×3 zones；my（≤2021-06）/ myint（之后）自动切换 | `~/p02/p0_05_download_glorys_historical.py`（仓库内 `analysis/p0_05_*.py`） | 待检测完成后启动 |
+| 历史事件目录 | `/mnt/d/p02_data/duacs_hist/kelvin_event_catalog_historical.json` | p1_08 射线检测 + τ 去重，1993–2022，84 events | `~/p02/p1_08_detect_events_historical.py`（日志 `~/p02/p1_08.log`；仓库内 `analysis/p1_08_*.py`） | ✅ 完成（2026-06-10） |
+| GLORYS 历史事件子集 | `/mnt/d/p02_data/glorys_hist/glorys_uv_<KH>_<zone>.nc` | uo/vo 表层日均，84 events × 3 zones = 252 文件；全部使用 `my` 数据集（MY 已扩展覆盖 2022+） | `~/p02/p0_05_download_glorys_historical.py`（仓库内 `analysis/p0_05_*.py`） | ✅ 完成（252/252，2026-06-10） |
 | ERA5 u10 扩展域（WWB 边界复查用） | `/mnt/d/p02_data/era5/u10_eq_fullyear_130E-180E.nc` | 10m 纬向风日均，2022-12-01–2024-01-15，5°S–5°N，130–180°E，0.25°（ARCO-ERA5 zarr，逐月临时文件在 `monthly_tmp/`） | `~/p02/download_era5_u10.py`（日志 `~/p02/era5_u10.log`） | 下载中（曾因脚本传空卡住，2026-06-10 修复重启） |
 | SWOT L3 LR SSH 全量 | `D:\v2_0_1\Basic\`（WSL `/mnt/d/v2_0_1/Basic/`） | 150 cycles, science orbit, v2.0.1 Basic | （项目启动前已有） | 完整 |
 

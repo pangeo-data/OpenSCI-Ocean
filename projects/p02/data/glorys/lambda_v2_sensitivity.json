@@ -1,0 +1,6812 @@
+{
+  "W15-50": [
+    {
+      "event_id": "KH01",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 11.03,
+      "delta_omega_res": 6.889e-07,
+      "resonant_fraction": 0.060243,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH01",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 13.18,
+      "delta_omega_res": 5.768e-07,
+      "resonant_fraction": 0.082053,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH01",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 11.3,
+      "delta_omega_res": 6.724e-07,
+      "resonant_fraction": 0.194581,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 27.73,
+      "delta_omega_res": 2.741e-07,
+      "resonant_fraction": 0.03284,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.81,
+      "delta_omega_res": 4.04e-07,
+      "resonant_fraction": 0.108957,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 46.41,
+      "delta_omega_res": 1.637e-07,
+      "resonant_fraction": 0.031049,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "Gilbert Islands",
+      "n_days": 52,
+      "lambda_v2": 19.53,
+      "delta_omega_res": 3.892e-07,
+      "resonant_fraction": 0.075955,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "Line Islands",
+      "n_days": 52,
+      "lambda_v2": 13.61,
+      "delta_omega_res": 5.584e-07,
+      "resonant_fraction": 0.105143,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "TIW zone",
+      "n_days": 52,
+      "lambda_v2": 8.01,
+      "delta_omega_res": 9.49e-07,
+      "resonant_fraction": 0.133987,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 14.5,
+      "delta_omega_res": 5.243e-07,
+      "resonant_fraction": 0.041214,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 13.72,
+      "delta_omega_res": 5.538e-07,
+      "resonant_fraction": 0.091778,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.33,
+      "delta_omega_res": 8.144e-07,
+      "resonant_fraction": 0.190261,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 26.23,
+      "delta_omega_res": 2.897e-07,
+      "resonant_fraction": 0.040879,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 23.16,
+      "delta_omega_res": 3.282e-07,
+      "resonant_fraction": 0.043441,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 13.84,
+      "delta_omega_res": 5.49e-07,
+      "resonant_fraction": 0.088686,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 10.19,
+      "delta_omega_res": 7.461e-07,
+      "resonant_fraction": 0.070846,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 16.37,
+      "delta_omega_res": 4.642e-07,
+      "resonant_fraction": 0.087852,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 12.06,
+      "delta_omega_res": 6.303e-07,
+      "resonant_fraction": 0.128282,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 17.02,
+      "delta_omega_res": 4.466e-07,
+      "resonant_fraction": 0.081329,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 16.34,
+      "delta_omega_res": 4.652e-07,
+      "resonant_fraction": 0.051045,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 11.58,
+      "delta_omega_res": 6.56e-07,
+      "resonant_fraction": 0.128552,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 24.87,
+      "delta_omega_res": 3.056e-07,
+      "resonant_fraction": 0.027778,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 38.85,
+      "delta_omega_res": 1.956e-07,
+      "resonant_fraction": 0.01166,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 50.76,
+      "delta_omega_res": 1.497e-07,
+      "resonant_fraction": 0.01729,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 38.91,
+      "delta_omega_res": 1.953e-07,
+      "resonant_fraction": 0.015573,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 37.15,
+      "delta_omega_res": 2.046e-07,
+      "resonant_fraction": 0.018236,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 37.18,
+      "delta_omega_res": 2.044e-07,
+      "resonant_fraction": 0.023477,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 26.33,
+      "delta_omega_res": 2.887e-07,
+      "resonant_fraction": 0.024341,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 16.11,
+      "delta_omega_res": 4.719e-07,
+      "resonant_fraction": 0.079822,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 16.05,
+      "delta_omega_res": 4.735e-07,
+      "resonant_fraction": 0.096528,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 18.07,
+      "delta_omega_res": 4.205e-07,
+      "resonant_fraction": 0.037832,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.79,
+      "delta_omega_res": 4.046e-07,
+      "resonant_fraction": 0.053579,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 25.03,
+      "delta_omega_res": 3.036e-07,
+      "resonant_fraction": 0.029173,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 13.64,
+      "delta_omega_res": 5.572e-07,
+      "resonant_fraction": 0.129027,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 13.2,
+      "delta_omega_res": 5.757e-07,
+      "resonant_fraction": 0.079661,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 17.81,
+      "delta_omega_res": 4.268e-07,
+      "resonant_fraction": 0.107674,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 14.41,
+      "delta_omega_res": 5.273e-07,
+      "resonant_fraction": 0.052068,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.47,
+      "delta_omega_res": 3.382e-07,
+      "resonant_fraction": 0.025354,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 23.81,
+      "delta_omega_res": 3.192e-07,
+      "resonant_fraction": 0.072444,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 9.0,
+      "delta_omega_res": 8.443e-07,
+      "resonant_fraction": 0.082361,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 17.99,
+      "delta_omega_res": 4.223e-07,
+      "resonant_fraction": 0.044056,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 22.12,
+      "delta_omega_res": 3.437e-07,
+      "resonant_fraction": 0.10381,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 20.54,
+      "delta_omega_res": 3.699e-07,
+      "resonant_fraction": 0.086209,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 22.59,
+      "delta_omega_res": 3.365e-07,
+      "resonant_fraction": 0.029945,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 7.09,
+      "delta_omega_res": 1.0725e-06,
+      "resonant_fraction": 0.194261,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 19.2,
+      "delta_omega_res": 3.959e-07,
+      "resonant_fraction": 0.039361,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 20.52,
+      "delta_omega_res": 3.704e-07,
+      "resonant_fraction": 0.036176,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 13.46,
+      "delta_omega_res": 5.647e-07,
+      "resonant_fraction": 0.087925,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 21.35,
+      "delta_omega_res": 3.56e-07,
+      "resonant_fraction": 0.062442,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 23.87,
+      "delta_omega_res": 3.185e-07,
+      "resonant_fraction": 0.036562,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 8.17,
+      "delta_omega_res": 9.306e-07,
+      "resonant_fraction": 0.207104,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 16.81,
+      "delta_omega_res": 4.522e-07,
+      "resonant_fraction": 0.068949,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 14.45,
+      "delta_omega_res": 5.26e-07,
+      "resonant_fraction": 0.094721,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 5.85,
+      "delta_omega_res": 1.2999e-06,
+      "resonant_fraction": 0.308727,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.41,
+      "delta_omega_res": 3.915e-07,
+      "resonant_fraction": 0.018163,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 16.58,
+      "delta_omega_res": 4.583e-07,
+      "resonant_fraction": 0.065254,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 17.47,
+      "delta_omega_res": 4.351e-07,
+      "resonant_fraction": 0.05254,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 15.58,
+      "delta_omega_res": 4.88e-07,
+      "resonant_fraction": 0.034061,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 18.2,
+      "delta_omega_res": 4.176e-07,
+      "resonant_fraction": 0.084293,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 14.2,
+      "delta_omega_res": 5.354e-07,
+      "resonant_fraction": 0.124792,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 23.09,
+      "delta_omega_res": 3.291e-07,
+      "resonant_fraction": 0.046153,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 26.4,
+      "delta_omega_res": 2.879e-07,
+      "resonant_fraction": 0.03417,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 8.23,
+      "delta_omega_res": 9.232e-07,
+      "resonant_fraction": 0.140258,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 19.84,
+      "delta_omega_res": 3.83e-07,
+      "resonant_fraction": 0.071207,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 10.77,
+      "delta_omega_res": 7.058e-07,
+      "resonant_fraction": 0.12306,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.38,
+      "delta_omega_res": 8.104e-07,
+      "resonant_fraction": 0.180566,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 16.31,
+      "delta_omega_res": 4.66e-07,
+      "resonant_fraction": 0.047746,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 13.13,
+      "delta_omega_res": 5.79e-07,
+      "resonant_fraction": 0.061596,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 9.63,
+      "delta_omega_res": 7.889e-07,
+      "resonant_fraction": 0.268091,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 23.05,
+      "delta_omega_res": 3.297e-07,
+      "resonant_fraction": 0.048752,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 39.49,
+      "delta_omega_res": 1.924e-07,
+      "resonant_fraction": 0.025704,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 24.71,
+      "delta_omega_res": 3.075e-07,
+      "resonant_fraction": 0.049573,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 19.34,
+      "delta_omega_res": 3.93e-07,
+      "resonant_fraction": 0.07192,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 27.16,
+      "delta_omega_res": 2.799e-07,
+      "resonant_fraction": 0.032024,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 8.23,
+      "delta_omega_res": 9.24e-07,
+      "resonant_fraction": 0.115479,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 10.52,
+      "delta_omega_res": 7.224e-07,
+      "resonant_fraction": 0.071118,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 11.87,
+      "delta_omega_res": 6.4e-07,
+      "resonant_fraction": 0.126071,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 8.52,
+      "delta_omega_res": 8.922e-07,
+      "resonant_fraction": 0.190188,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 17.09,
+      "delta_omega_res": 4.448e-07,
+      "resonant_fraction": 0.056839,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 14.98,
+      "delta_omega_res": 5.075e-07,
+      "resonant_fraction": 0.067934,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 13.28,
+      "delta_omega_res": 5.725e-07,
+      "resonant_fraction": 0.124406,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 15.18,
+      "delta_omega_res": 5.006e-07,
+      "resonant_fraction": 0.074933,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 12.09,
+      "delta_omega_res": 6.286e-07,
+      "resonant_fraction": 0.092401,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 11.54,
+      "delta_omega_res": 6.583e-07,
+      "resonant_fraction": 0.137658,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 23.58,
+      "delta_omega_res": 3.223e-07,
+      "resonant_fraction": 0.027578,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 18.25,
+      "delta_omega_res": 4.165e-07,
+      "resonant_fraction": 0.047291,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 11.64,
+      "delta_omega_res": 6.529e-07,
+      "resonant_fraction": 0.179737,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 15.55,
+      "delta_omega_res": 4.888e-07,
+      "resonant_fraction": 0.031705,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 15.56,
+      "delta_omega_res": 4.885e-07,
+      "resonant_fraction": 0.063869,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 10.81,
+      "delta_omega_res": 7.029e-07,
+      "resonant_fraction": 0.11986,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 16.09,
+      "delta_omega_res": 4.722e-07,
+      "resonant_fraction": 0.075377,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 12.12,
+      "delta_omega_res": 6.271e-07,
+      "resonant_fraction": 0.109649,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.64,
+      "delta_omega_res": 8.801e-07,
+      "resonant_fraction": 0.180328,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 20.09,
+      "delta_omega_res": 3.783e-07,
+      "resonant_fraction": 0.059676,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 16.34,
+      "delta_omega_res": 4.651e-07,
+      "resonant_fraction": 0.062941,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 8.94,
+      "delta_omega_res": 8.499e-07,
+      "resonant_fraction": 0.17313,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 15.47,
+      "delta_omega_res": 4.912e-07,
+      "resonant_fraction": 0.072979,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 18.75,
+      "delta_omega_res": 4.054e-07,
+      "resonant_fraction": 0.104256,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 22.86,
+      "delta_omega_res": 3.325e-07,
+      "resonant_fraction": 0.079736,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 41.41,
+      "delta_omega_res": 1.835e-07,
+      "resonant_fraction": 0.020629,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 40.18,
+      "delta_omega_res": 1.891e-07,
+      "resonant_fraction": 0.018139,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 21.29,
+      "delta_omega_res": 3.57e-07,
+      "resonant_fraction": 0.057262,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 18.81,
+      "delta_omega_res": 4.041e-07,
+      "resonant_fraction": 0.058144,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 9.11,
+      "delta_omega_res": 8.345e-07,
+      "resonant_fraction": 0.143681,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 7.09,
+      "delta_omega_res": 1.0713e-06,
+      "resonant_fraction": 0.266701,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 20.23,
+      "delta_omega_res": 3.758e-07,
+      "resonant_fraction": 0.034185,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.26,
+      "delta_omega_res": 4.163e-07,
+      "resonant_fraction": 0.055829,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 12.34,
+      "delta_omega_res": 6.157e-07,
+      "resonant_fraction": 0.078898,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 18.34,
+      "delta_omega_res": 4.144e-07,
+      "resonant_fraction": 0.091911,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 14.18,
+      "delta_omega_res": 5.36e-07,
+      "resonant_fraction": 0.118127,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 10.0,
+      "delta_omega_res": 7.602e-07,
+      "resonant_fraction": 0.10143,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 24.83,
+      "delta_omega_res": 3.06e-07,
+      "resonant_fraction": 0.051801,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.91,
+      "delta_omega_res": 4.019e-07,
+      "resonant_fraction": 0.072065,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 15.56,
+      "delta_omega_res": 4.885e-07,
+      "resonant_fraction": 0.091764,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 11.48,
+      "delta_omega_res": 6.619e-07,
+      "resonant_fraction": 0.06176,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 15.44,
+      "delta_omega_res": 4.921e-07,
+      "resonant_fraction": 0.120352,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 12.06,
+      "delta_omega_res": 6.299e-07,
+      "resonant_fraction": 0.188137,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 16.01,
+      "delta_omega_res": 4.747e-07,
+      "resonant_fraction": 0.023741,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.81,
+      "delta_omega_res": 3.331e-07,
+      "resonant_fraction": 0.070562,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 19.6,
+      "delta_omega_res": 3.878e-07,
+      "resonant_fraction": 0.063346,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 26.14,
+      "delta_omega_res": 2.907e-07,
+      "resonant_fraction": 0.030024,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 25.49,
+      "delta_omega_res": 2.982e-07,
+      "resonant_fraction": 0.021323,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 39.83,
+      "delta_omega_res": 1.908e-07,
+      "resonant_fraction": 0.037038,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 22.94,
+      "delta_omega_res": 3.313e-07,
+      "resonant_fraction": 0.048277,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 14.56,
+      "delta_omega_res": 5.219e-07,
+      "resonant_fraction": 0.084388,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 6.76,
+      "delta_omega_res": 1.124e-06,
+      "resonant_fraction": 0.236114,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 16.52,
+      "delta_omega_res": 4.602e-07,
+      "resonant_fraction": 0.053311,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 10.33,
+      "delta_omega_res": 7.359e-07,
+      "resonant_fraction": 0.140645,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 7.87,
+      "delta_omega_res": 9.652e-07,
+      "resonant_fraction": 0.179787,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 16.71,
+      "delta_omega_res": 4.547e-07,
+      "resonant_fraction": 0.039193,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 17.01,
+      "delta_omega_res": 4.468e-07,
+      "resonant_fraction": 0.058549,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 13.08,
+      "delta_omega_res": 5.811e-07,
+      "resonant_fraction": 0.150944,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 15.88,
+      "delta_omega_res": 4.786e-07,
+      "resonant_fraction": 0.046267,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 10.09,
+      "delta_omega_res": 7.533e-07,
+      "resonant_fraction": 0.129183,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 7.11,
+      "delta_omega_res": 1.0688e-06,
+      "resonant_fraction": 0.231574,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 15.0,
+      "delta_omega_res": 5.065e-07,
+      "resonant_fraction": 0.075599,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 10.13,
+      "delta_omega_res": 7.504e-07,
+      "resonant_fraction": 0.129231,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 7.57,
+      "delta_omega_res": 1.004e-06,
+      "resonant_fraction": 0.1892,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 17.02,
+      "delta_omega_res": 4.464e-07,
+      "resonant_fraction": 0.065504,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 19.78,
+      "delta_omega_res": 3.843e-07,
+      "resonant_fraction": 0.050664,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 20.88,
+      "delta_omega_res": 3.639e-07,
+      "resonant_fraction": 0.049634,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 16.39,
+      "delta_omega_res": 4.638e-07,
+      "resonant_fraction": 0.143545,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 20.92,
+      "delta_omega_res": 3.633e-07,
+      "resonant_fraction": 0.127549,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 12.37,
+      "delta_omega_res": 6.145e-07,
+      "resonant_fraction": 0.219923,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 20.84,
+      "delta_omega_res": 3.647e-07,
+      "resonant_fraction": 0.076603,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 24.4,
+      "delta_omega_res": 3.115e-07,
+      "resonant_fraction": 0.098877,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 15.12,
+      "delta_omega_res": 5.026e-07,
+      "resonant_fraction": 0.130756,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 20.29,
+      "delta_omega_res": 3.745e-07,
+      "resonant_fraction": 0.042,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 11.41,
+      "delta_omega_res": 6.659e-07,
+      "resonant_fraction": 0.091074,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 9.09,
+      "delta_omega_res": 8.357e-07,
+      "resonant_fraction": 0.187414,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 19.51,
+      "delta_omega_res": 3.895e-07,
+      "resonant_fraction": 0.060125,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 14.03,
+      "delta_omega_res": 5.418e-07,
+      "resonant_fraction": 0.065839,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.44,
+      "delta_omega_res": 8.053e-07,
+      "resonant_fraction": 0.174543,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 21.82,
+      "delta_omega_res": 3.483e-07,
+      "resonant_fraction": 0.035972,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.13,
+      "delta_omega_res": 4.191e-07,
+      "resonant_fraction": 0.058987,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 10.46,
+      "delta_omega_res": 7.268e-07,
+      "resonant_fraction": 0.201791,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 15.18,
+      "delta_omega_res": 5.005e-07,
+      "resonant_fraction": 0.069142,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 14.51,
+      "delta_omega_res": 5.236e-07,
+      "resonant_fraction": 0.090325,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 9.64,
+      "delta_omega_res": 7.883e-07,
+      "resonant_fraction": 0.295389,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.91,
+      "delta_omega_res": 3.817e-07,
+      "resonant_fraction": 0.06506,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 29.82,
+      "delta_omega_res": 2.549e-07,
+      "resonant_fraction": 0.024062,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 35.46,
+      "delta_omega_res": 2.143e-07,
+      "resonant_fraction": 0.021742,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 27.35,
+      "delta_omega_res": 2.778e-07,
+      "resonant_fraction": 0.059226,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 41.19,
+      "delta_omega_res": 1.845e-07,
+      "resonant_fraction": 0.027782,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 22.89,
+      "delta_omega_res": 3.321e-07,
+      "resonant_fraction": 0.041993,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.0,
+      "delta_omega_res": 3.999e-07,
+      "resonant_fraction": 0.047515,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 24.81,
+      "delta_omega_res": 3.064e-07,
+      "resonant_fraction": 0.043828,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.48,
+      "delta_omega_res": 8.957e-07,
+      "resonant_fraction": 0.136675,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.14,
+      "delta_omega_res": 3.97e-07,
+      "resonant_fraction": 0.036713,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 23.58,
+      "delta_omega_res": 3.223e-07,
+      "resonant_fraction": 0.04077,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 17.04,
+      "delta_omega_res": 4.46e-07,
+      "resonant_fraction": 0.05458,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 23.64,
+      "delta_omega_res": 3.215e-07,
+      "resonant_fraction": 0.037145,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 20.39,
+      "delta_omega_res": 3.728e-07,
+      "resonant_fraction": 0.061283,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 16.96,
+      "delta_omega_res": 4.482e-07,
+      "resonant_fraction": 0.077591,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 21.79,
+      "delta_omega_res": 3.488e-07,
+      "resonant_fraction": 0.069569,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 11.27,
+      "delta_omega_res": 6.746e-07,
+      "resonant_fraction": 0.100054,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 6.57,
+      "delta_omega_res": 1.1572e-06,
+      "resonant_fraction": 0.282952,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 12.34,
+      "delta_omega_res": 6.161e-07,
+      "resonant_fraction": 0.058616,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 12.01,
+      "delta_omega_res": 6.326e-07,
+      "resonant_fraction": 0.164655,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 12.12,
+      "delta_omega_res": 6.268e-07,
+      "resonant_fraction": 0.268649,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 17.47,
+      "delta_omega_res": 4.349e-07,
+      "resonant_fraction": 0.064788,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 24.82,
+      "delta_omega_res": 3.062e-07,
+      "resonant_fraction": 0.027823,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 29.74,
+      "delta_omega_res": 2.555e-07,
+      "resonant_fraction": 0.040581,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 22.84,
+      "delta_omega_res": 3.328e-07,
+      "resonant_fraction": 0.05194,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.62,
+      "delta_omega_res": 3.359e-07,
+      "resonant_fraction": 0.040309,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.2,
+      "delta_omega_res": 9.272e-07,
+      "resonant_fraction": 0.190268,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 12.58,
+      "delta_omega_res": 6.043e-07,
+      "resonant_fraction": 0.070955,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 10.95,
+      "delta_omega_res": 6.938e-07,
+      "resonant_fraction": 0.085919,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 9.93,
+      "delta_omega_res": 7.653e-07,
+      "resonant_fraction": 0.122189,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 12.27,
+      "delta_omega_res": 6.196e-07,
+      "resonant_fraction": 0.053173,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 10.09,
+      "delta_omega_res": 7.529e-07,
+      "resonant_fraction": 0.136709,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 14.62,
+      "delta_omega_res": 5.199e-07,
+      "resonant_fraction": 0.171559,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "Gilbert Islands",
+      "n_days": 54,
+      "lambda_v2": 17.33,
+      "delta_omega_res": 4.386e-07,
+      "resonant_fraction": 0.043352,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "Line Islands",
+      "n_days": 54,
+      "lambda_v2": 19.0,
+      "delta_omega_res": 4.001e-07,
+      "resonant_fraction": 0.056101,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "TIW zone",
+      "n_days": 54,
+      "lambda_v2": 20.92,
+      "delta_omega_res": 3.632e-07,
+      "resonant_fraction": 0.062499,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 17.99,
+      "delta_omega_res": 4.225e-07,
+      "resonant_fraction": 0.053965,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 22.04,
+      "delta_omega_res": 3.448e-07,
+      "resonant_fraction": 0.038227,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 20.68,
+      "delta_omega_res": 3.674e-07,
+      "resonant_fraction": 0.049446,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 21.39,
+      "delta_omega_res": 3.553e-07,
+      "resonant_fraction": 0.043518,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 9.64,
+      "delta_omega_res": 7.884e-07,
+      "resonant_fraction": 0.12779,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 7.52,
+      "delta_omega_res": 1.0105e-06,
+      "resonant_fraction": 0.230031,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 16.06,
+      "delta_omega_res": 4.731e-07,
+      "resonant_fraction": 0.053746,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 9.6,
+      "delta_omega_res": 7.919e-07,
+      "resonant_fraction": 0.138136,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 9.97,
+      "delta_omega_res": 7.622e-07,
+      "resonant_fraction": 0.110554,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 21.64,
+      "delta_omega_res": 3.512e-07,
+      "resonant_fraction": 0.052853,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 14.56,
+      "delta_omega_res": 5.22e-07,
+      "resonant_fraction": 0.079017,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 10.3,
+      "delta_omega_res": 7.38e-07,
+      "resonant_fraction": 0.163218,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 28.87,
+      "delta_omega_res": 2.632e-07,
+      "resonant_fraction": 0.021459,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 23.14,
+      "delta_omega_res": 3.284e-07,
+      "resonant_fraction": 0.049498,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 24.39,
+      "delta_omega_res": 3.116e-07,
+      "resonant_fraction": 0.046678,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 28.49,
+      "delta_omega_res": 2.668e-07,
+      "resonant_fraction": 0.042883,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 33.4,
+      "delta_omega_res": 2.275e-07,
+      "resonant_fraction": 0.035586,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 14.18,
+      "delta_omega_res": 5.36e-07,
+      "resonant_fraction": 0.100458,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 19.8,
+      "delta_omega_res": 3.839e-07,
+      "resonant_fraction": 0.044006,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 11.36,
+      "delta_omega_res": 6.69e-07,
+      "resonant_fraction": 0.121479,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 6.71,
+      "delta_omega_res": 1.1318e-06,
+      "resonant_fraction": 0.303699,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 17.18,
+      "delta_omega_res": 4.425e-07,
+      "resonant_fraction": 0.048226,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 15.88,
+      "delta_omega_res": 4.787e-07,
+      "resonant_fraction": 0.054715,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 8.06,
+      "delta_omega_res": 9.435e-07,
+      "resonant_fraction": 0.147302,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 14.81,
+      "delta_omega_res": 5.133e-07,
+      "resonant_fraction": 0.077447,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 11.57,
+      "delta_omega_res": 6.571e-07,
+      "resonant_fraction": 0.10975,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 9.58,
+      "delta_omega_res": 7.93e-07,
+      "resonant_fraction": 0.197068,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "Gilbert Islands",
+      "n_days": 54,
+      "lambda_v2": 17.5,
+      "delta_omega_res": 4.343e-07,
+      "resonant_fraction": 0.058236,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "Line Islands",
+      "n_days": 54,
+      "lambda_v2": 17.58,
+      "delta_omega_res": 4.323e-07,
+      "resonant_fraction": 0.058995,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "TIW zone",
+      "n_days": 54,
+      "lambda_v2": 9.1,
+      "delta_omega_res": 8.356e-07,
+      "resonant_fraction": 0.181692,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 16.88,
+      "delta_omega_res": 4.502e-07,
+      "resonant_fraction": 0.040146,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 13.57,
+      "delta_omega_res": 5.601e-07,
+      "resonant_fraction": 0.125416,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 10.92,
+      "delta_omega_res": 6.96e-07,
+      "resonant_fraction": 0.234404,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 22.18,
+      "delta_omega_res": 3.426e-07,
+      "resonant_fraction": 0.035894,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 14.36,
+      "delta_omega_res": 5.294e-07,
+      "resonant_fraction": 0.073261,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 6.29,
+      "delta_omega_res": 1.2085e-06,
+      "resonant_fraction": 0.288008,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 22.49,
+      "delta_omega_res": 3.379e-07,
+      "resonant_fraction": 0.035867,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 37.71,
+      "delta_omega_res": 2.015e-07,
+      "resonant_fraction": 0.016017,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 29.3,
+      "delta_omega_res": 2.594e-07,
+      "resonant_fraction": 0.047631,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 27.38,
+      "delta_omega_res": 2.775e-07,
+      "resonant_fraction": 0.035143,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 24.69,
+      "delta_omega_res": 3.079e-07,
+      "resonant_fraction": 0.03457,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 25.41,
+      "delta_omega_res": 2.991e-07,
+      "resonant_fraction": 0.070191,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 18.08,
+      "delta_omega_res": 4.203e-07,
+      "resonant_fraction": 0.048211,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 8.96,
+      "delta_omega_res": 8.485e-07,
+      "resonant_fraction": 0.123845,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 8.84,
+      "delta_omega_res": 8.597e-07,
+      "resonant_fraction": 0.215523,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 13.46,
+      "delta_omega_res": 5.647e-07,
+      "resonant_fraction": 0.087784,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 12.01,
+      "delta_omega_res": 6.329e-07,
+      "resonant_fraction": 0.072385,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 8.87,
+      "delta_omega_res": 8.567e-07,
+      "resonant_fraction": 0.170051,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 13.12,
+      "delta_omega_res": 5.793e-07,
+      "resonant_fraction": 0.068341,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 16.71,
+      "delta_omega_res": 4.548e-07,
+      "resonant_fraction": 0.055432,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 13.12,
+      "delta_omega_res": 5.791e-07,
+      "resonant_fraction": 0.22383,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 20.66,
+      "delta_omega_res": 3.678e-07,
+      "resonant_fraction": 0.038505,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 23.85,
+      "delta_omega_res": 3.187e-07,
+      "resonant_fraction": 0.02554,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 9.03,
+      "delta_omega_res": 8.415e-07,
+      "resonant_fraction": 0.189131,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 18.14,
+      "delta_omega_res": 4.189e-07,
+      "resonant_fraction": 0.037373,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 9.54,
+      "delta_omega_res": 7.963e-07,
+      "resonant_fraction": 0.130247,
+      "window": "W15-50"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 7.52,
+      "delta_omega_res": 1.01e-06,
+      "resonant_fraction": 0.215893,
+      "window": "W15-50"
+    }
+  ],
+  "W15-40": [
+    {
+      "event_id": "KH01",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 14.57,
+      "delta_omega_res": 5.215e-07,
+      "resonant_fraction": 0.034521,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH01",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 15.9,
+      "delta_omega_res": 4.781e-07,
+      "resonant_fraction": 0.056366,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH01",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 15.51,
+      "delta_omega_res": 4.9e-07,
+      "resonant_fraction": 0.103333,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 27.73,
+      "delta_omega_res": 2.741e-07,
+      "resonant_fraction": 0.03284,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.81,
+      "delta_omega_res": 4.04e-07,
+      "resonant_fraction": 0.108957,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 46.41,
+      "delta_omega_res": 1.637e-07,
+      "resonant_fraction": 0.031049,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "Gilbert Islands",
+      "n_days": 52,
+      "lambda_v2": 19.53,
+      "delta_omega_res": 3.892e-07,
+      "resonant_fraction": 0.075955,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "Line Islands",
+      "n_days": 52,
+      "lambda_v2": 13.61,
+      "delta_omega_res": 5.584e-07,
+      "resonant_fraction": 0.105143,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "TIW zone",
+      "n_days": 52,
+      "lambda_v2": 8.01,
+      "delta_omega_res": 9.49e-07,
+      "resonant_fraction": 0.133987,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 14.5,
+      "delta_omega_res": 5.243e-07,
+      "resonant_fraction": 0.041214,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 13.72,
+      "delta_omega_res": 5.538e-07,
+      "resonant_fraction": 0.091778,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.33,
+      "delta_omega_res": 8.144e-07,
+      "resonant_fraction": 0.190261,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 26.23,
+      "delta_omega_res": 2.897e-07,
+      "resonant_fraction": 0.040879,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 23.16,
+      "delta_omega_res": 3.282e-07,
+      "resonant_fraction": 0.043441,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 13.84,
+      "delta_omega_res": 5.49e-07,
+      "resonant_fraction": 0.088686,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 15.09,
+      "delta_omega_res": 5.037e-07,
+      "resonant_fraction": 0.032297,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 20.76,
+      "delta_omega_res": 3.661e-07,
+      "resonant_fraction": 0.054659,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 16.2,
+      "delta_omega_res": 4.692e-07,
+      "resonant_fraction": 0.071109,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 17.02,
+      "delta_omega_res": 4.466e-07,
+      "resonant_fraction": 0.081329,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 16.34,
+      "delta_omega_res": 4.652e-07,
+      "resonant_fraction": 0.051045,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 11.58,
+      "delta_omega_res": 6.56e-07,
+      "resonant_fraction": 0.128552,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 24.87,
+      "delta_omega_res": 3.056e-07,
+      "resonant_fraction": 0.027778,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 38.85,
+      "delta_omega_res": 1.956e-07,
+      "resonant_fraction": 0.01166,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 50.76,
+      "delta_omega_res": 1.497e-07,
+      "resonant_fraction": 0.01729,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 38.91,
+      "delta_omega_res": 1.953e-07,
+      "resonant_fraction": 0.015573,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 37.15,
+      "delta_omega_res": 2.046e-07,
+      "resonant_fraction": 0.018236,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 37.18,
+      "delta_omega_res": 2.044e-07,
+      "resonant_fraction": 0.023477,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 26.33,
+      "delta_omega_res": 2.887e-07,
+      "resonant_fraction": 0.024341,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 16.11,
+      "delta_omega_res": 4.719e-07,
+      "resonant_fraction": 0.079822,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 16.05,
+      "delta_omega_res": 4.735e-07,
+      "resonant_fraction": 0.096528,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 18.07,
+      "delta_omega_res": 4.205e-07,
+      "resonant_fraction": 0.037832,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.79,
+      "delta_omega_res": 4.046e-07,
+      "resonant_fraction": 0.053579,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 25.03,
+      "delta_omega_res": 3.036e-07,
+      "resonant_fraction": 0.029173,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 16.89,
+      "delta_omega_res": 4.5e-07,
+      "resonant_fraction": 0.084163,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 17.34,
+      "delta_omega_res": 4.384e-07,
+      "resonant_fraction": 0.046195,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 24.77,
+      "delta_omega_res": 3.068e-07,
+      "resonant_fraction": 0.055657,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 14.41,
+      "delta_omega_res": 5.273e-07,
+      "resonant_fraction": 0.052068,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.47,
+      "delta_omega_res": 3.382e-07,
+      "resonant_fraction": 0.025354,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 23.81,
+      "delta_omega_res": 3.192e-07,
+      "resonant_fraction": 0.072444,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 12.86,
+      "delta_omega_res": 5.91e-07,
+      "resonant_fraction": 0.040358,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 23.81,
+      "delta_omega_res": 3.192e-07,
+      "resonant_fraction": 0.025164,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 26.79,
+      "delta_omega_res": 2.837e-07,
+      "resonant_fraction": 0.070729,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 20.54,
+      "delta_omega_res": 3.699e-07,
+      "resonant_fraction": 0.086209,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 22.59,
+      "delta_omega_res": 3.365e-07,
+      "resonant_fraction": 0.029945,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 7.09,
+      "delta_omega_res": 1.0725e-06,
+      "resonant_fraction": 0.194261,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 19.2,
+      "delta_omega_res": 3.959e-07,
+      "resonant_fraction": 0.039361,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 20.52,
+      "delta_omega_res": 3.704e-07,
+      "resonant_fraction": 0.036176,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 13.46,
+      "delta_omega_res": 5.647e-07,
+      "resonant_fraction": 0.087925,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 21.35,
+      "delta_omega_res": 3.56e-07,
+      "resonant_fraction": 0.062442,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 23.87,
+      "delta_omega_res": 3.185e-07,
+      "resonant_fraction": 0.036562,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 8.17,
+      "delta_omega_res": 9.306e-07,
+      "resonant_fraction": 0.207104,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 22.39,
+      "delta_omega_res": 3.394e-07,
+      "resonant_fraction": 0.038849,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 22.2,
+      "delta_omega_res": 3.423e-07,
+      "resonant_fraction": 0.04011,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 7.81,
+      "delta_omega_res": 9.727e-07,
+      "resonant_fraction": 0.172883,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.41,
+      "delta_omega_res": 3.915e-07,
+      "resonant_fraction": 0.018163,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 16.58,
+      "delta_omega_res": 4.583e-07,
+      "resonant_fraction": 0.065254,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 17.47,
+      "delta_omega_res": 4.351e-07,
+      "resonant_fraction": 0.05254,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 15.58,
+      "delta_omega_res": 4.88e-07,
+      "resonant_fraction": 0.034061,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 18.2,
+      "delta_omega_res": 4.176e-07,
+      "resonant_fraction": 0.084293,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 14.2,
+      "delta_omega_res": 5.354e-07,
+      "resonant_fraction": 0.124792,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 23.09,
+      "delta_omega_res": 3.291e-07,
+      "resonant_fraction": 0.046153,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 26.4,
+      "delta_omega_res": 2.879e-07,
+      "resonant_fraction": 0.03417,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 8.23,
+      "delta_omega_res": 9.232e-07,
+      "resonant_fraction": 0.140258,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 19.84,
+      "delta_omega_res": 3.83e-07,
+      "resonant_fraction": 0.071207,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 10.77,
+      "delta_omega_res": 7.058e-07,
+      "resonant_fraction": 0.12306,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.38,
+      "delta_omega_res": 8.104e-07,
+      "resonant_fraction": 0.180566,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 16.31,
+      "delta_omega_res": 4.66e-07,
+      "resonant_fraction": 0.047746,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 13.13,
+      "delta_omega_res": 5.79e-07,
+      "resonant_fraction": 0.061596,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 9.63,
+      "delta_omega_res": 7.889e-07,
+      "resonant_fraction": 0.268091,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 23.05,
+      "delta_omega_res": 3.297e-07,
+      "resonant_fraction": 0.048752,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 39.49,
+      "delta_omega_res": 1.924e-07,
+      "resonant_fraction": 0.025704,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 24.71,
+      "delta_omega_res": 3.075e-07,
+      "resonant_fraction": 0.049573,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 19.34,
+      "delta_omega_res": 3.93e-07,
+      "resonant_fraction": 0.07192,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 27.16,
+      "delta_omega_res": 2.799e-07,
+      "resonant_fraction": 0.032024,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 8.23,
+      "delta_omega_res": 9.24e-07,
+      "resonant_fraction": 0.115479,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 16.8,
+      "delta_omega_res": 4.523e-07,
+      "resonant_fraction": 0.027884,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 16.37,
+      "delta_omega_res": 4.641e-07,
+      "resonant_fraction": 0.066305,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 10.24,
+      "delta_omega_res": 7.421e-07,
+      "resonant_fraction": 0.131571,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 17.09,
+      "delta_omega_res": 4.448e-07,
+      "resonant_fraction": 0.056839,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 14.98,
+      "delta_omega_res": 5.075e-07,
+      "resonant_fraction": 0.067934,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 13.28,
+      "delta_omega_res": 5.725e-07,
+      "resonant_fraction": 0.124406,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 15.18,
+      "delta_omega_res": 5.006e-07,
+      "resonant_fraction": 0.074933,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 12.09,
+      "delta_omega_res": 6.286e-07,
+      "resonant_fraction": 0.092401,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 11.54,
+      "delta_omega_res": 6.583e-07,
+      "resonant_fraction": 0.137658,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 23.58,
+      "delta_omega_res": 3.223e-07,
+      "resonant_fraction": 0.027578,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 18.25,
+      "delta_omega_res": 4.165e-07,
+      "resonant_fraction": 0.047291,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 11.64,
+      "delta_omega_res": 6.529e-07,
+      "resonant_fraction": 0.179737,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 15.55,
+      "delta_omega_res": 4.888e-07,
+      "resonant_fraction": 0.031705,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 15.56,
+      "delta_omega_res": 4.885e-07,
+      "resonant_fraction": 0.063869,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 10.81,
+      "delta_omega_res": 7.029e-07,
+      "resonant_fraction": 0.11986,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 16.09,
+      "delta_omega_res": 4.722e-07,
+      "resonant_fraction": 0.075377,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 12.12,
+      "delta_omega_res": 6.271e-07,
+      "resonant_fraction": 0.109649,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.64,
+      "delta_omega_res": 8.801e-07,
+      "resonant_fraction": 0.180328,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 20.09,
+      "delta_omega_res": 3.783e-07,
+      "resonant_fraction": 0.059676,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 16.34,
+      "delta_omega_res": 4.651e-07,
+      "resonant_fraction": 0.062941,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 8.94,
+      "delta_omega_res": 8.499e-07,
+      "resonant_fraction": 0.17313,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 20.16,
+      "delta_omega_res": 3.769e-07,
+      "resonant_fraction": 0.042972,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 37.55,
+      "delta_omega_res": 2.024e-07,
+      "resonant_fraction": 0.025993,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 45.32,
+      "delta_omega_res": 1.677e-07,
+      "resonant_fraction": 0.020284,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 41.41,
+      "delta_omega_res": 1.835e-07,
+      "resonant_fraction": 0.020629,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 40.18,
+      "delta_omega_res": 1.891e-07,
+      "resonant_fraction": 0.018139,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 21.29,
+      "delta_omega_res": 3.57e-07,
+      "resonant_fraction": 0.057262,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 18.81,
+      "delta_omega_res": 4.041e-07,
+      "resonant_fraction": 0.058144,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 9.11,
+      "delta_omega_res": 8.345e-07,
+      "resonant_fraction": 0.143681,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 7.09,
+      "delta_omega_res": 1.0713e-06,
+      "resonant_fraction": 0.266701,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 20.23,
+      "delta_omega_res": 3.758e-07,
+      "resonant_fraction": 0.034185,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.26,
+      "delta_omega_res": 4.163e-07,
+      "resonant_fraction": 0.055829,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 12.34,
+      "delta_omega_res": 6.157e-07,
+      "resonant_fraction": 0.078898,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 26.14,
+      "delta_omega_res": 2.908e-07,
+      "resonant_fraction": 0.045236,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 20.69,
+      "delta_omega_res": 3.673e-07,
+      "resonant_fraction": 0.055483,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 16.14,
+      "delta_omega_res": 4.709e-07,
+      "resonant_fraction": 0.038928,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 24.83,
+      "delta_omega_res": 3.06e-07,
+      "resonant_fraction": 0.051801,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.91,
+      "delta_omega_res": 4.019e-07,
+      "resonant_fraction": 0.072065,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 15.56,
+      "delta_omega_res": 4.885e-07,
+      "resonant_fraction": 0.091764,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 16.38,
+      "delta_omega_res": 4.641e-07,
+      "resonant_fraction": 0.030361,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 20.56,
+      "delta_omega_res": 3.697e-07,
+      "resonant_fraction": 0.067925,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 15.55,
+      "delta_omega_res": 4.887e-07,
+      "resonant_fraction": 0.11324,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 16.01,
+      "delta_omega_res": 4.747e-07,
+      "resonant_fraction": 0.023741,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.81,
+      "delta_omega_res": 3.331e-07,
+      "resonant_fraction": 0.070562,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 19.6,
+      "delta_omega_res": 3.878e-07,
+      "resonant_fraction": 0.063346,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 26.14,
+      "delta_omega_res": 2.907e-07,
+      "resonant_fraction": 0.030024,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 25.49,
+      "delta_omega_res": 2.982e-07,
+      "resonant_fraction": 0.021323,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 39.83,
+      "delta_omega_res": 1.908e-07,
+      "resonant_fraction": 0.037038,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 22.94,
+      "delta_omega_res": 3.313e-07,
+      "resonant_fraction": 0.048277,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 14.56,
+      "delta_omega_res": 5.219e-07,
+      "resonant_fraction": 0.084388,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 6.76,
+      "delta_omega_res": 1.124e-06,
+      "resonant_fraction": 0.236114,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 16.52,
+      "delta_omega_res": 4.602e-07,
+      "resonant_fraction": 0.053311,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 10.33,
+      "delta_omega_res": 7.359e-07,
+      "resonant_fraction": 0.140645,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 7.87,
+      "delta_omega_res": 9.652e-07,
+      "resonant_fraction": 0.179787,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 16.71,
+      "delta_omega_res": 4.547e-07,
+      "resonant_fraction": 0.039193,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 17.01,
+      "delta_omega_res": 4.468e-07,
+      "resonant_fraction": 0.058549,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 13.08,
+      "delta_omega_res": 5.811e-07,
+      "resonant_fraction": 0.150944,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 15.88,
+      "delta_omega_res": 4.786e-07,
+      "resonant_fraction": 0.046267,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 10.09,
+      "delta_omega_res": 7.533e-07,
+      "resonant_fraction": 0.129183,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 7.11,
+      "delta_omega_res": 1.0688e-06,
+      "resonant_fraction": 0.231574,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 15.0,
+      "delta_omega_res": 5.065e-07,
+      "resonant_fraction": 0.075599,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 10.13,
+      "delta_omega_res": 7.504e-07,
+      "resonant_fraction": 0.129231,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 7.57,
+      "delta_omega_res": 1.004e-06,
+      "resonant_fraction": 0.1892,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 17.02,
+      "delta_omega_res": 4.464e-07,
+      "resonant_fraction": 0.065504,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 19.78,
+      "delta_omega_res": 3.843e-07,
+      "resonant_fraction": 0.050664,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 20.88,
+      "delta_omega_res": 3.639e-07,
+      "resonant_fraction": 0.049634,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 21.11,
+      "delta_omega_res": 3.601e-07,
+      "resonant_fraction": 0.086534,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 28.53,
+      "delta_omega_res": 2.663e-07,
+      "resonant_fraction": 0.068569,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 16.75,
+      "delta_omega_res": 4.536e-07,
+      "resonant_fraction": 0.119855,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 20.84,
+      "delta_omega_res": 3.647e-07,
+      "resonant_fraction": 0.076603,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 24.4,
+      "delta_omega_res": 3.115e-07,
+      "resonant_fraction": 0.098877,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 15.12,
+      "delta_omega_res": 5.026e-07,
+      "resonant_fraction": 0.130756,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 20.29,
+      "delta_omega_res": 3.745e-07,
+      "resonant_fraction": 0.042,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 11.41,
+      "delta_omega_res": 6.659e-07,
+      "resonant_fraction": 0.091074,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 9.09,
+      "delta_omega_res": 8.357e-07,
+      "resonant_fraction": 0.187414,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 19.51,
+      "delta_omega_res": 3.895e-07,
+      "resonant_fraction": 0.060125,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 14.03,
+      "delta_omega_res": 5.418e-07,
+      "resonant_fraction": 0.065839,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.44,
+      "delta_omega_res": 8.053e-07,
+      "resonant_fraction": 0.174543,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 21.82,
+      "delta_omega_res": 3.483e-07,
+      "resonant_fraction": 0.035972,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.13,
+      "delta_omega_res": 4.191e-07,
+      "resonant_fraction": 0.058987,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 10.46,
+      "delta_omega_res": 7.268e-07,
+      "resonant_fraction": 0.201791,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 19.98,
+      "delta_omega_res": 3.805e-07,
+      "resonant_fraction": 0.039948,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 22.14,
+      "delta_omega_res": 3.432e-07,
+      "resonant_fraction": 0.0388,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 12.8,
+      "delta_omega_res": 5.936e-07,
+      "resonant_fraction": 0.167499,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.91,
+      "delta_omega_res": 3.817e-07,
+      "resonant_fraction": 0.06506,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 29.82,
+      "delta_omega_res": 2.549e-07,
+      "resonant_fraction": 0.024062,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 35.46,
+      "delta_omega_res": 2.143e-07,
+      "resonant_fraction": 0.021742,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 27.35,
+      "delta_omega_res": 2.778e-07,
+      "resonant_fraction": 0.059226,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 41.19,
+      "delta_omega_res": 1.845e-07,
+      "resonant_fraction": 0.027782,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 22.89,
+      "delta_omega_res": 3.321e-07,
+      "resonant_fraction": 0.041993,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.0,
+      "delta_omega_res": 3.999e-07,
+      "resonant_fraction": 0.047515,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 24.81,
+      "delta_omega_res": 3.064e-07,
+      "resonant_fraction": 0.043828,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.48,
+      "delta_omega_res": 8.957e-07,
+      "resonant_fraction": 0.136675,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.14,
+      "delta_omega_res": 3.97e-07,
+      "resonant_fraction": 0.036713,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 23.58,
+      "delta_omega_res": 3.223e-07,
+      "resonant_fraction": 0.04077,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 17.04,
+      "delta_omega_res": 4.46e-07,
+      "resonant_fraction": 0.05458,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 23.64,
+      "delta_omega_res": 3.215e-07,
+      "resonant_fraction": 0.037145,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 20.39,
+      "delta_omega_res": 3.728e-07,
+      "resonant_fraction": 0.061283,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 16.96,
+      "delta_omega_res": 4.482e-07,
+      "resonant_fraction": 0.077591,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 21.79,
+      "delta_omega_res": 3.488e-07,
+      "resonant_fraction": 0.069569,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 11.27,
+      "delta_omega_res": 6.746e-07,
+      "resonant_fraction": 0.100054,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 6.57,
+      "delta_omega_res": 1.1572e-06,
+      "resonant_fraction": 0.282952,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 12.34,
+      "delta_omega_res": 6.161e-07,
+      "resonant_fraction": 0.058616,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 12.01,
+      "delta_omega_res": 6.326e-07,
+      "resonant_fraction": 0.164655,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 12.12,
+      "delta_omega_res": 6.268e-07,
+      "resonant_fraction": 0.268649,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 17.47,
+      "delta_omega_res": 4.349e-07,
+      "resonant_fraction": 0.064788,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 24.82,
+      "delta_omega_res": 3.062e-07,
+      "resonant_fraction": 0.027823,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 29.74,
+      "delta_omega_res": 2.555e-07,
+      "resonant_fraction": 0.040581,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 22.84,
+      "delta_omega_res": 3.328e-07,
+      "resonant_fraction": 0.05194,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.62,
+      "delta_omega_res": 3.359e-07,
+      "resonant_fraction": 0.040309,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.2,
+      "delta_omega_res": 9.272e-07,
+      "resonant_fraction": 0.190268,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 12.58,
+      "delta_omega_res": 6.043e-07,
+      "resonant_fraction": 0.070955,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 10.95,
+      "delta_omega_res": 6.938e-07,
+      "resonant_fraction": 0.085919,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 9.93,
+      "delta_omega_res": 7.653e-07,
+      "resonant_fraction": 0.122189,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 12.27,
+      "delta_omega_res": 6.196e-07,
+      "resonant_fraction": 0.053173,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 10.09,
+      "delta_omega_res": 7.529e-07,
+      "resonant_fraction": 0.136709,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 14.62,
+      "delta_omega_res": 5.199e-07,
+      "resonant_fraction": 0.171559,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "Gilbert Islands",
+      "n_days": 54,
+      "lambda_v2": 17.33,
+      "delta_omega_res": 4.386e-07,
+      "resonant_fraction": 0.043352,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "Line Islands",
+      "n_days": 54,
+      "lambda_v2": 19.0,
+      "delta_omega_res": 4.001e-07,
+      "resonant_fraction": 0.056101,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "TIW zone",
+      "n_days": 54,
+      "lambda_v2": 20.92,
+      "delta_omega_res": 3.632e-07,
+      "resonant_fraction": 0.062499,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 17.99,
+      "delta_omega_res": 4.225e-07,
+      "resonant_fraction": 0.053965,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 22.04,
+      "delta_omega_res": 3.448e-07,
+      "resonant_fraction": 0.038227,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 20.68,
+      "delta_omega_res": 3.674e-07,
+      "resonant_fraction": 0.049446,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 21.39,
+      "delta_omega_res": 3.553e-07,
+      "resonant_fraction": 0.043518,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 9.64,
+      "delta_omega_res": 7.884e-07,
+      "resonant_fraction": 0.12779,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 7.52,
+      "delta_omega_res": 1.0105e-06,
+      "resonant_fraction": 0.230031,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 16.06,
+      "delta_omega_res": 4.731e-07,
+      "resonant_fraction": 0.053746,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 9.6,
+      "delta_omega_res": 7.919e-07,
+      "resonant_fraction": 0.138136,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 9.97,
+      "delta_omega_res": 7.622e-07,
+      "resonant_fraction": 0.110554,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 21.64,
+      "delta_omega_res": 3.512e-07,
+      "resonant_fraction": 0.052853,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 14.56,
+      "delta_omega_res": 5.22e-07,
+      "resonant_fraction": 0.079017,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 10.3,
+      "delta_omega_res": 7.38e-07,
+      "resonant_fraction": 0.163218,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 28.87,
+      "delta_omega_res": 2.632e-07,
+      "resonant_fraction": 0.021459,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 23.14,
+      "delta_omega_res": 3.284e-07,
+      "resonant_fraction": 0.049498,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 24.39,
+      "delta_omega_res": 3.116e-07,
+      "resonant_fraction": 0.046678,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 28.49,
+      "delta_omega_res": 2.668e-07,
+      "resonant_fraction": 0.042883,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 33.4,
+      "delta_omega_res": 2.275e-07,
+      "resonant_fraction": 0.035586,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 14.18,
+      "delta_omega_res": 5.36e-07,
+      "resonant_fraction": 0.100458,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 19.8,
+      "delta_omega_res": 3.839e-07,
+      "resonant_fraction": 0.044006,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 11.36,
+      "delta_omega_res": 6.69e-07,
+      "resonant_fraction": 0.121479,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 6.71,
+      "delta_omega_res": 1.1318e-06,
+      "resonant_fraction": 0.303699,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 17.18,
+      "delta_omega_res": 4.425e-07,
+      "resonant_fraction": 0.048226,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 15.88,
+      "delta_omega_res": 4.787e-07,
+      "resonant_fraction": 0.054715,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 8.06,
+      "delta_omega_res": 9.435e-07,
+      "resonant_fraction": 0.147302,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 14.81,
+      "delta_omega_res": 5.133e-07,
+      "resonant_fraction": 0.077447,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 11.57,
+      "delta_omega_res": 6.571e-07,
+      "resonant_fraction": 0.10975,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 9.58,
+      "delta_omega_res": 7.93e-07,
+      "resonant_fraction": 0.197068,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "Gilbert Islands",
+      "n_days": 54,
+      "lambda_v2": 17.5,
+      "delta_omega_res": 4.343e-07,
+      "resonant_fraction": 0.058236,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "Line Islands",
+      "n_days": 54,
+      "lambda_v2": 17.58,
+      "delta_omega_res": 4.323e-07,
+      "resonant_fraction": 0.058995,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "TIW zone",
+      "n_days": 54,
+      "lambda_v2": 9.1,
+      "delta_omega_res": 8.356e-07,
+      "resonant_fraction": 0.181692,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 16.88,
+      "delta_omega_res": 4.502e-07,
+      "resonant_fraction": 0.040146,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 13.57,
+      "delta_omega_res": 5.601e-07,
+      "resonant_fraction": 0.125416,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 10.92,
+      "delta_omega_res": 6.96e-07,
+      "resonant_fraction": 0.234404,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 22.18,
+      "delta_omega_res": 3.426e-07,
+      "resonant_fraction": 0.035894,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 14.36,
+      "delta_omega_res": 5.294e-07,
+      "resonant_fraction": 0.073261,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 6.29,
+      "delta_omega_res": 1.2085e-06,
+      "resonant_fraction": 0.288008,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 22.49,
+      "delta_omega_res": 3.379e-07,
+      "resonant_fraction": 0.035867,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 37.71,
+      "delta_omega_res": 2.015e-07,
+      "resonant_fraction": 0.016017,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 29.3,
+      "delta_omega_res": 2.594e-07,
+      "resonant_fraction": 0.047631,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 27.38,
+      "delta_omega_res": 2.775e-07,
+      "resonant_fraction": 0.035143,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 24.69,
+      "delta_omega_res": 3.079e-07,
+      "resonant_fraction": 0.03457,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 25.41,
+      "delta_omega_res": 2.991e-07,
+      "resonant_fraction": 0.070191,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 18.08,
+      "delta_omega_res": 4.203e-07,
+      "resonant_fraction": 0.048211,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 8.96,
+      "delta_omega_res": 8.485e-07,
+      "resonant_fraction": 0.123845,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 8.84,
+      "delta_omega_res": 8.597e-07,
+      "resonant_fraction": 0.215523,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 13.46,
+      "delta_omega_res": 5.647e-07,
+      "resonant_fraction": 0.087784,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 12.01,
+      "delta_omega_res": 6.329e-07,
+      "resonant_fraction": 0.072385,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 8.87,
+      "delta_omega_res": 8.567e-07,
+      "resonant_fraction": 0.170051,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 19.1,
+      "delta_omega_res": 3.979e-07,
+      "resonant_fraction": 0.032248,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 29.36,
+      "delta_omega_res": 2.589e-07,
+      "resonant_fraction": 0.017967,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 19.92,
+      "delta_omega_res": 3.815e-07,
+      "resonant_fraction": 0.097149,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 20.66,
+      "delta_omega_res": 3.678e-07,
+      "resonant_fraction": 0.038505,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 23.85,
+      "delta_omega_res": 3.187e-07,
+      "resonant_fraction": 0.02554,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 9.03,
+      "delta_omega_res": 8.415e-07,
+      "resonant_fraction": 0.189131,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 18.14,
+      "delta_omega_res": 4.189e-07,
+      "resonant_fraction": 0.037373,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 9.54,
+      "delta_omega_res": 7.963e-07,
+      "resonant_fraction": 0.130247,
+      "window": "W15-40"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 7.52,
+      "delta_omega_res": 1.01e-06,
+      "resonant_fraction": 0.215893,
+      "window": "W15-40"
+    }
+  ],
+  "W15-30": [
+    {
+      "event_id": "KH01",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 14.57,
+      "delta_omega_res": 5.215e-07,
+      "resonant_fraction": 0.034521,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH01",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 15.9,
+      "delta_omega_res": 4.781e-07,
+      "resonant_fraction": 0.056366,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH01",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 15.51,
+      "delta_omega_res": 4.9e-07,
+      "resonant_fraction": 0.103333,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 27.73,
+      "delta_omega_res": 2.741e-07,
+      "resonant_fraction": 0.03284,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.81,
+      "delta_omega_res": 4.04e-07,
+      "resonant_fraction": 0.108957,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH02",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 46.41,
+      "delta_omega_res": 1.637e-07,
+      "resonant_fraction": 0.031049,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "Gilbert Islands",
+      "n_days": 52,
+      "lambda_v2": 19.53,
+      "delta_omega_res": 3.892e-07,
+      "resonant_fraction": 0.075955,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "Line Islands",
+      "n_days": 52,
+      "lambda_v2": 13.61,
+      "delta_omega_res": 5.584e-07,
+      "resonant_fraction": 0.105143,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH03",
+      "zone": "TIW zone",
+      "n_days": 52,
+      "lambda_v2": 8.01,
+      "delta_omega_res": 9.49e-07,
+      "resonant_fraction": 0.133987,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 14.5,
+      "delta_omega_res": 5.243e-07,
+      "resonant_fraction": 0.041214,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 13.72,
+      "delta_omega_res": 5.538e-07,
+      "resonant_fraction": 0.091778,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH04",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.33,
+      "delta_omega_res": 8.144e-07,
+      "resonant_fraction": 0.190261,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 26.23,
+      "delta_omega_res": 2.897e-07,
+      "resonant_fraction": 0.040879,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 23.16,
+      "delta_omega_res": 3.282e-07,
+      "resonant_fraction": 0.043441,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH05",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 13.84,
+      "delta_omega_res": 5.49e-07,
+      "resonant_fraction": 0.088686,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 15.09,
+      "delta_omega_res": 5.037e-07,
+      "resonant_fraction": 0.032297,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 20.76,
+      "delta_omega_res": 3.661e-07,
+      "resonant_fraction": 0.054659,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH06",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 16.2,
+      "delta_omega_res": 4.692e-07,
+      "resonant_fraction": 0.071109,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 23.91,
+      "delta_omega_res": 3.179e-07,
+      "resonant_fraction": 0.041201,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 27.13,
+      "delta_omega_res": 2.801e-07,
+      "resonant_fraction": 0.018512,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH07",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 18.71,
+      "delta_omega_res": 4.062e-07,
+      "resonant_fraction": 0.049289,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 24.87,
+      "delta_omega_res": 3.056e-07,
+      "resonant_fraction": 0.027778,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 38.85,
+      "delta_omega_res": 1.956e-07,
+      "resonant_fraction": 0.01166,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH08",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 50.76,
+      "delta_omega_res": 1.497e-07,
+      "resonant_fraction": 0.01729,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 38.91,
+      "delta_omega_res": 1.953e-07,
+      "resonant_fraction": 0.015573,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 37.15,
+      "delta_omega_res": 2.046e-07,
+      "resonant_fraction": 0.018236,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH09",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 37.18,
+      "delta_omega_res": 2.044e-07,
+      "resonant_fraction": 0.023477,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 26.33,
+      "delta_omega_res": 2.887e-07,
+      "resonant_fraction": 0.024341,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 16.11,
+      "delta_omega_res": 4.719e-07,
+      "resonant_fraction": 0.079822,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH10",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 16.05,
+      "delta_omega_res": 4.735e-07,
+      "resonant_fraction": 0.096528,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 18.07,
+      "delta_omega_res": 4.205e-07,
+      "resonant_fraction": 0.037832,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.79,
+      "delta_omega_res": 4.046e-07,
+      "resonant_fraction": 0.053579,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH11",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 25.03,
+      "delta_omega_res": 3.036e-07,
+      "resonant_fraction": 0.029173,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 16.89,
+      "delta_omega_res": 4.5e-07,
+      "resonant_fraction": 0.084163,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 17.34,
+      "delta_omega_res": 4.384e-07,
+      "resonant_fraction": 0.046195,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH12",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 24.77,
+      "delta_omega_res": 3.068e-07,
+      "resonant_fraction": 0.055657,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 14.41,
+      "delta_omega_res": 5.273e-07,
+      "resonant_fraction": 0.052068,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.47,
+      "delta_omega_res": 3.382e-07,
+      "resonant_fraction": 0.025354,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH13",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 23.81,
+      "delta_omega_res": 3.192e-07,
+      "resonant_fraction": 0.072444,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 12.86,
+      "delta_omega_res": 5.91e-07,
+      "resonant_fraction": 0.040358,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 23.81,
+      "delta_omega_res": 3.192e-07,
+      "resonant_fraction": 0.025164,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH14",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 26.79,
+      "delta_omega_res": 2.837e-07,
+      "resonant_fraction": 0.070729,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 20.54,
+      "delta_omega_res": 3.699e-07,
+      "resonant_fraction": 0.086209,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 22.59,
+      "delta_omega_res": 3.365e-07,
+      "resonant_fraction": 0.029945,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH15",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 7.09,
+      "delta_omega_res": 1.0725e-06,
+      "resonant_fraction": 0.194261,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 26.04,
+      "delta_omega_res": 2.918e-07,
+      "resonant_fraction": 0.021385,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 31.34,
+      "delta_omega_res": 2.425e-07,
+      "resonant_fraction": 0.015502,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH16",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 20.77,
+      "delta_omega_res": 3.659e-07,
+      "resonant_fraction": 0.03691,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 21.35,
+      "delta_omega_res": 3.56e-07,
+      "resonant_fraction": 0.062442,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 23.87,
+      "delta_omega_res": 3.185e-07,
+      "resonant_fraction": 0.036562,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH17",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 8.17,
+      "delta_omega_res": 9.306e-07,
+      "resonant_fraction": 0.207104,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 22.39,
+      "delta_omega_res": 3.394e-07,
+      "resonant_fraction": 0.038849,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 22.2,
+      "delta_omega_res": 3.423e-07,
+      "resonant_fraction": 0.04011,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH18",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 7.81,
+      "delta_omega_res": 9.727e-07,
+      "resonant_fraction": 0.172883,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.41,
+      "delta_omega_res": 3.915e-07,
+      "resonant_fraction": 0.018163,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 16.58,
+      "delta_omega_res": 4.583e-07,
+      "resonant_fraction": 0.065254,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH19",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 17.47,
+      "delta_omega_res": 4.351e-07,
+      "resonant_fraction": 0.05254,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 15.58,
+      "delta_omega_res": 4.88e-07,
+      "resonant_fraction": 0.034061,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 18.2,
+      "delta_omega_res": 4.176e-07,
+      "resonant_fraction": 0.084293,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH20",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 14.2,
+      "delta_omega_res": 5.354e-07,
+      "resonant_fraction": 0.124792,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 30.61,
+      "delta_omega_res": 2.483e-07,
+      "resonant_fraction": 0.026267,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 36.81,
+      "delta_omega_res": 2.065e-07,
+      "resonant_fraction": 0.017579,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH21",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 16.95,
+      "delta_omega_res": 4.485e-07,
+      "resonant_fraction": 0.033102,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 19.84,
+      "delta_omega_res": 3.83e-07,
+      "resonant_fraction": 0.071207,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 10.77,
+      "delta_omega_res": 7.058e-07,
+      "resonant_fraction": 0.12306,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH22",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.38,
+      "delta_omega_res": 8.104e-07,
+      "resonant_fraction": 0.180566,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 22.5,
+      "delta_omega_res": 3.378e-07,
+      "resonant_fraction": 0.025093,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 19.98,
+      "delta_omega_res": 3.804e-07,
+      "resonant_fraction": 0.026584,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH23",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 12.46,
+      "delta_omega_res": 6.1e-07,
+      "resonant_fraction": 0.160252,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 32.28,
+      "delta_omega_res": 2.355e-07,
+      "resonant_fraction": 0.024867,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 57.53,
+      "delta_omega_res": 1.321e-07,
+      "resonant_fraction": 0.012111,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH24",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 49.51,
+      "delta_omega_res": 1.535e-07,
+      "resonant_fraction": 0.01235,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 31.28,
+      "delta_omega_res": 2.43e-07,
+      "resonant_fraction": 0.027496,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 39.47,
+      "delta_omega_res": 1.925e-07,
+      "resonant_fraction": 0.015156,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH25",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 15.24,
+      "delta_omega_res": 4.986e-07,
+      "resonant_fraction": 0.033625,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 16.8,
+      "delta_omega_res": 4.523e-07,
+      "resonant_fraction": 0.027884,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 16.37,
+      "delta_omega_res": 4.641e-07,
+      "resonant_fraction": 0.066305,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH26",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 10.24,
+      "delta_omega_res": 7.421e-07,
+      "resonant_fraction": 0.131571,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 17.09,
+      "delta_omega_res": 4.448e-07,
+      "resonant_fraction": 0.056839,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 14.98,
+      "delta_omega_res": 5.075e-07,
+      "resonant_fraction": 0.067934,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH27",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 13.28,
+      "delta_omega_res": 5.725e-07,
+      "resonant_fraction": 0.124406,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 19.98,
+      "delta_omega_res": 3.803e-07,
+      "resonant_fraction": 0.043264,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 17.96,
+      "delta_omega_res": 4.233e-07,
+      "resonant_fraction": 0.041896,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH28",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 15.08,
+      "delta_omega_res": 5.04e-07,
+      "resonant_fraction": 0.080691,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 23.58,
+      "delta_omega_res": 3.223e-07,
+      "resonant_fraction": 0.027578,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 18.25,
+      "delta_omega_res": 4.165e-07,
+      "resonant_fraction": 0.047291,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH29",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 11.64,
+      "delta_omega_res": 6.529e-07,
+      "resonant_fraction": 0.179737,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 15.55,
+      "delta_omega_res": 4.888e-07,
+      "resonant_fraction": 0.031705,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 15.56,
+      "delta_omega_res": 4.885e-07,
+      "resonant_fraction": 0.063869,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH30",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 10.81,
+      "delta_omega_res": 7.029e-07,
+      "resonant_fraction": 0.11986,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 16.09,
+      "delta_omega_res": 4.722e-07,
+      "resonant_fraction": 0.075377,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 12.12,
+      "delta_omega_res": 6.271e-07,
+      "resonant_fraction": 0.109649,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH31",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.64,
+      "delta_omega_res": 8.801e-07,
+      "resonant_fraction": 0.180328,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 26.97,
+      "delta_omega_res": 2.818e-07,
+      "resonant_fraction": 0.033133,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 27.59,
+      "delta_omega_res": 2.755e-07,
+      "resonant_fraction": 0.022079,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH32",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 12.03,
+      "delta_omega_res": 6.315e-07,
+      "resonant_fraction": 0.09558,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 20.16,
+      "delta_omega_res": 3.769e-07,
+      "resonant_fraction": 0.042972,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 37.55,
+      "delta_omega_res": 2.024e-07,
+      "resonant_fraction": 0.025993,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH33",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 45.32,
+      "delta_omega_res": 1.677e-07,
+      "resonant_fraction": 0.020284,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 41.41,
+      "delta_omega_res": 1.835e-07,
+      "resonant_fraction": 0.020629,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 40.18,
+      "delta_omega_res": 1.891e-07,
+      "resonant_fraction": 0.018139,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH34",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 21.29,
+      "delta_omega_res": 3.57e-07,
+      "resonant_fraction": 0.057262,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 18.81,
+      "delta_omega_res": 4.041e-07,
+      "resonant_fraction": 0.058144,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 9.11,
+      "delta_omega_res": 8.345e-07,
+      "resonant_fraction": 0.143681,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH35",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 7.09,
+      "delta_omega_res": 1.0713e-06,
+      "resonant_fraction": 0.266701,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 20.23,
+      "delta_omega_res": 3.758e-07,
+      "resonant_fraction": 0.034185,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.26,
+      "delta_omega_res": 4.163e-07,
+      "resonant_fraction": 0.055829,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH36",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 12.34,
+      "delta_omega_res": 6.157e-07,
+      "resonant_fraction": 0.078898,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 26.14,
+      "delta_omega_res": 2.908e-07,
+      "resonant_fraction": 0.045236,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 20.69,
+      "delta_omega_res": 3.673e-07,
+      "resonant_fraction": 0.055483,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH37",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 16.14,
+      "delta_omega_res": 4.709e-07,
+      "resonant_fraction": 0.038928,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 24.83,
+      "delta_omega_res": 3.06e-07,
+      "resonant_fraction": 0.051801,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.91,
+      "delta_omega_res": 4.019e-07,
+      "resonant_fraction": 0.072065,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH38",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 15.56,
+      "delta_omega_res": 4.885e-07,
+      "resonant_fraction": 0.091764,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 16.38,
+      "delta_omega_res": 4.641e-07,
+      "resonant_fraction": 0.030361,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 20.56,
+      "delta_omega_res": 3.697e-07,
+      "resonant_fraction": 0.067925,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH39",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 15.55,
+      "delta_omega_res": 4.887e-07,
+      "resonant_fraction": 0.11324,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 16.01,
+      "delta_omega_res": 4.747e-07,
+      "resonant_fraction": 0.023741,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.81,
+      "delta_omega_res": 3.331e-07,
+      "resonant_fraction": 0.070562,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH40",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 19.6,
+      "delta_omega_res": 3.878e-07,
+      "resonant_fraction": 0.063346,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 43.93,
+      "delta_omega_res": 1.73e-07,
+      "resonant_fraction": 0.010631,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 39.56,
+      "delta_omega_res": 1.921e-07,
+      "resonant_fraction": 0.008852,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH41",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 57.72,
+      "delta_omega_res": 1.317e-07,
+      "resonant_fraction": 0.017632,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 22.94,
+      "delta_omega_res": 3.313e-07,
+      "resonant_fraction": 0.048277,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 14.56,
+      "delta_omega_res": 5.219e-07,
+      "resonant_fraction": 0.084388,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH42",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 6.76,
+      "delta_omega_res": 1.124e-06,
+      "resonant_fraction": 0.236114,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 23.41,
+      "delta_omega_res": 3.246e-07,
+      "resonant_fraction": 0.02653,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 16.06,
+      "delta_omega_res": 4.731e-07,
+      "resonant_fraction": 0.058119,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH43",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 10.62,
+      "delta_omega_res": 7.156e-07,
+      "resonant_fraction": 0.098804,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 18.99,
+      "delta_omega_res": 4.002e-07,
+      "resonant_fraction": 0.03036,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 22.49,
+      "delta_omega_res": 3.38e-07,
+      "resonant_fraction": 0.033499,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH44",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 18.53,
+      "delta_omega_res": 4.101e-07,
+      "resonant_fraction": 0.075165,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 22.84,
+      "delta_omega_res": 3.328e-07,
+      "resonant_fraction": 0.022376,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 16.93,
+      "delta_omega_res": 4.488e-07,
+      "resonant_fraction": 0.04586,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH45",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 9.63,
+      "delta_omega_res": 7.894e-07,
+      "resonant_fraction": 0.126335,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 19.37,
+      "delta_omega_res": 3.923e-07,
+      "resonant_fraction": 0.045337,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 15.69,
+      "delta_omega_res": 4.844e-07,
+      "resonant_fraction": 0.053851,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH46",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 12.47,
+      "delta_omega_res": 6.094e-07,
+      "resonant_fraction": 0.069701,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "Gilbert Islands",
+      "n_days": 63,
+      "lambda_v2": 25.05,
+      "delta_omega_res": 3.033e-07,
+      "resonant_fraction": 0.030243,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "Line Islands",
+      "n_days": 63,
+      "lambda_v2": 37.09,
+      "delta_omega_res": 2.049e-07,
+      "resonant_fraction": 0.014404,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH47",
+      "zone": "TIW zone",
+      "n_days": 63,
+      "lambda_v2": 39.43,
+      "delta_omega_res": 1.928e-07,
+      "resonant_fraction": 0.013927,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 21.11,
+      "delta_omega_res": 3.601e-07,
+      "resonant_fraction": 0.086534,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 28.53,
+      "delta_omega_res": 2.663e-07,
+      "resonant_fraction": 0.068569,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH48",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 16.75,
+      "delta_omega_res": 4.536e-07,
+      "resonant_fraction": 0.119855,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 20.84,
+      "delta_omega_res": 3.647e-07,
+      "resonant_fraction": 0.076603,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 24.4,
+      "delta_omega_res": 3.115e-07,
+      "resonant_fraction": 0.098877,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH49",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 15.12,
+      "delta_omega_res": 5.026e-07,
+      "resonant_fraction": 0.130756,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "Gilbert Islands",
+      "n_days": 61,
+      "lambda_v2": 27.75,
+      "delta_omega_res": 2.738e-07,
+      "resonant_fraction": 0.022455,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "Line Islands",
+      "n_days": 61,
+      "lambda_v2": 19.06,
+      "delta_omega_res": 3.988e-07,
+      "resonant_fraction": 0.032662,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH50",
+      "zone": "TIW zone",
+      "n_days": 61,
+      "lambda_v2": 15.07,
+      "delta_omega_res": 5.042e-07,
+      "resonant_fraction": 0.068227,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 19.51,
+      "delta_omega_res": 3.895e-07,
+      "resonant_fraction": 0.060125,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 14.03,
+      "delta_omega_res": 5.418e-07,
+      "resonant_fraction": 0.065839,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH51",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 9.44,
+      "delta_omega_res": 8.053e-07,
+      "resonant_fraction": 0.174543,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 21.82,
+      "delta_omega_res": 3.483e-07,
+      "resonant_fraction": 0.035972,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 18.13,
+      "delta_omega_res": 4.191e-07,
+      "resonant_fraction": 0.058987,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH52",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 10.46,
+      "delta_omega_res": 7.268e-07,
+      "resonant_fraction": 0.201791,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 19.98,
+      "delta_omega_res": 3.805e-07,
+      "resonant_fraction": 0.039948,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 22.14,
+      "delta_omega_res": 3.432e-07,
+      "resonant_fraction": 0.0388,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH53",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 12.8,
+      "delta_omega_res": 5.936e-07,
+      "resonant_fraction": 0.167499,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.91,
+      "delta_omega_res": 3.817e-07,
+      "resonant_fraction": 0.06506,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 29.82,
+      "delta_omega_res": 2.549e-07,
+      "resonant_fraction": 0.024062,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH54",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 35.46,
+      "delta_omega_res": 2.143e-07,
+      "resonant_fraction": 0.021742,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 27.35,
+      "delta_omega_res": 2.778e-07,
+      "resonant_fraction": 0.059226,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 41.19,
+      "delta_omega_res": 1.845e-07,
+      "resonant_fraction": 0.027782,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH55",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 22.89,
+      "delta_omega_res": 3.321e-07,
+      "resonant_fraction": 0.041993,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.0,
+      "delta_omega_res": 3.999e-07,
+      "resonant_fraction": 0.047515,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 24.81,
+      "delta_omega_res": 3.064e-07,
+      "resonant_fraction": 0.043828,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH56",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.48,
+      "delta_omega_res": 8.957e-07,
+      "resonant_fraction": 0.136675,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 19.14,
+      "delta_omega_res": 3.97e-07,
+      "resonant_fraction": 0.036713,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 23.58,
+      "delta_omega_res": 3.223e-07,
+      "resonant_fraction": 0.04077,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH57",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 17.04,
+      "delta_omega_res": 4.46e-07,
+      "resonant_fraction": 0.05458,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 23.64,
+      "delta_omega_res": 3.215e-07,
+      "resonant_fraction": 0.037145,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 20.39,
+      "delta_omega_res": 3.728e-07,
+      "resonant_fraction": 0.061283,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH58",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 16.96,
+      "delta_omega_res": 4.482e-07,
+      "resonant_fraction": 0.077591,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 28.89,
+      "delta_omega_res": 2.631e-07,
+      "resonant_fraction": 0.039575,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 13.58,
+      "delta_omega_res": 5.598e-07,
+      "resonant_fraction": 0.068907,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH59",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 9.9,
+      "delta_omega_res": 7.676e-07,
+      "resonant_fraction": 0.124495,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 15.54,
+      "delta_omega_res": 4.891e-07,
+      "resonant_fraction": 0.036945,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 16.72,
+      "delta_omega_res": 4.546e-07,
+      "resonant_fraction": 0.085028,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH60",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 20.87,
+      "delta_omega_res": 3.642e-07,
+      "resonant_fraction": 0.090712,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "Gilbert Islands",
+      "n_days": 60,
+      "lambda_v2": 17.47,
+      "delta_omega_res": 4.349e-07,
+      "resonant_fraction": 0.064788,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "Line Islands",
+      "n_days": 60,
+      "lambda_v2": 24.82,
+      "delta_omega_res": 3.062e-07,
+      "resonant_fraction": 0.027823,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH61",
+      "zone": "TIW zone",
+      "n_days": 60,
+      "lambda_v2": 29.74,
+      "delta_omega_res": 2.555e-07,
+      "resonant_fraction": 0.040581,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 22.84,
+      "delta_omega_res": 3.328e-07,
+      "resonant_fraction": 0.05194,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 22.62,
+      "delta_omega_res": 3.359e-07,
+      "resonant_fraction": 0.040309,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH62",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 8.2,
+      "delta_omega_res": 9.272e-07,
+      "resonant_fraction": 0.190268,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 16.98,
+      "delta_omega_res": 4.476e-07,
+      "resonant_fraction": 0.038923,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 14.29,
+      "delta_omega_res": 5.317e-07,
+      "resonant_fraction": 0.050467,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH63",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 14.07,
+      "delta_omega_res": 5.402e-07,
+      "resonant_fraction": 0.060887,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 16.71,
+      "delta_omega_res": 4.547e-07,
+      "resonant_fraction": 0.028638,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 15.41,
+      "delta_omega_res": 4.932e-07,
+      "resonant_fraction": 0.058675,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH64",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 24.97,
+      "delta_omega_res": 3.044e-07,
+      "resonant_fraction": 0.058786,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "Gilbert Islands",
+      "n_days": 54,
+      "lambda_v2": 17.33,
+      "delta_omega_res": 4.386e-07,
+      "resonant_fraction": 0.043352,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "Line Islands",
+      "n_days": 54,
+      "lambda_v2": 19.0,
+      "delta_omega_res": 4.001e-07,
+      "resonant_fraction": 0.056101,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH65",
+      "zone": "TIW zone",
+      "n_days": 54,
+      "lambda_v2": 20.92,
+      "delta_omega_res": 3.632e-07,
+      "resonant_fraction": 0.062499,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 24.78,
+      "delta_omega_res": 3.067e-07,
+      "resonant_fraction": 0.028434,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 34.24,
+      "delta_omega_res": 2.22e-07,
+      "resonant_fraction": 0.015845,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH66",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 33.88,
+      "delta_omega_res": 2.243e-07,
+      "resonant_fraction": 0.018428,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 28.77,
+      "delta_omega_res": 2.641e-07,
+      "resonant_fraction": 0.024054,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 11.73,
+      "delta_omega_res": 6.477e-07,
+      "resonant_fraction": 0.086257,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH67",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 9.94,
+      "delta_omega_res": 7.644e-07,
+      "resonant_fraction": 0.131624,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 21.43,
+      "delta_omega_res": 3.547e-07,
+      "resonant_fraction": 0.030212,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 18.58,
+      "delta_omega_res": 4.091e-07,
+      "resonant_fraction": 0.036856,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH68",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 17.32,
+      "delta_omega_res": 4.388e-07,
+      "resonant_fraction": 0.036644,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "Gilbert Islands",
+      "n_days": 58,
+      "lambda_v2": 21.64,
+      "delta_omega_res": 3.512e-07,
+      "resonant_fraction": 0.052853,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "Line Islands",
+      "n_days": 58,
+      "lambda_v2": 14.56,
+      "delta_omega_res": 5.22e-07,
+      "resonant_fraction": 0.079017,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH69",
+      "zone": "TIW zone",
+      "n_days": 58,
+      "lambda_v2": 10.3,
+      "delta_omega_res": 7.38e-07,
+      "resonant_fraction": 0.163218,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 28.87,
+      "delta_omega_res": 2.632e-07,
+      "resonant_fraction": 0.021459,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 23.14,
+      "delta_omega_res": 3.284e-07,
+      "resonant_fraction": 0.049498,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH70",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 24.39,
+      "delta_omega_res": 3.116e-07,
+      "resonant_fraction": 0.046678,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 44.74,
+      "delta_omega_res": 1.699e-07,
+      "resonant_fraction": 0.017383,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 52.46,
+      "delta_omega_res": 1.449e-07,
+      "resonant_fraction": 0.01443,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH71",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 23.4,
+      "delta_omega_res": 3.248e-07,
+      "resonant_fraction": 0.03689,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 27.57,
+      "delta_omega_res": 2.757e-07,
+      "resonant_fraction": 0.0227,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 14.96,
+      "delta_omega_res": 5.08e-07,
+      "resonant_fraction": 0.07004,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH72",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 9.67,
+      "delta_omega_res": 7.857e-07,
+      "resonant_fraction": 0.146343,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "Gilbert Islands",
+      "n_days": 59,
+      "lambda_v2": 17.18,
+      "delta_omega_res": 4.425e-07,
+      "resonant_fraction": 0.048226,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "Line Islands",
+      "n_days": 59,
+      "lambda_v2": 15.88,
+      "delta_omega_res": 4.787e-07,
+      "resonant_fraction": 0.054715,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH73",
+      "zone": "TIW zone",
+      "n_days": 59,
+      "lambda_v2": 8.06,
+      "delta_omega_res": 9.435e-07,
+      "resonant_fraction": 0.147302,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 19.7,
+      "delta_omega_res": 3.857e-07,
+      "resonant_fraction": 0.043736,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 17.54,
+      "delta_omega_res": 4.333e-07,
+      "resonant_fraction": 0.047715,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH74",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 11.9,
+      "delta_omega_res": 6.384e-07,
+      "resonant_fraction": 0.127721,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "Gilbert Islands",
+      "n_days": 54,
+      "lambda_v2": 17.5,
+      "delta_omega_res": 4.343e-07,
+      "resonant_fraction": 0.058236,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "Line Islands",
+      "n_days": 54,
+      "lambda_v2": 17.58,
+      "delta_omega_res": 4.323e-07,
+      "resonant_fraction": 0.058995,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH75",
+      "zone": "TIW zone",
+      "n_days": 54,
+      "lambda_v2": 9.1,
+      "delta_omega_res": 8.356e-07,
+      "resonant_fraction": 0.181692,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 20.69,
+      "delta_omega_res": 3.673e-07,
+      "resonant_fraction": 0.026722,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 16.36,
+      "delta_omega_res": 4.647e-07,
+      "resonant_fraction": 0.086328,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH76",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 15.22,
+      "delta_omega_res": 4.995e-07,
+      "resonant_fraction": 0.120728,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 28.79,
+      "delta_omega_res": 2.64e-07,
+      "resonant_fraction": 0.021314,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 27.57,
+      "delta_omega_res": 2.757e-07,
+      "resonant_fraction": 0.019869,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH77",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 10.37,
+      "delta_omega_res": 7.327e-07,
+      "resonant_fraction": 0.105856,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "Gilbert Islands",
+      "n_days": 55,
+      "lambda_v2": 22.49,
+      "delta_omega_res": 3.379e-07,
+      "resonant_fraction": 0.035867,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "Line Islands",
+      "n_days": 55,
+      "lambda_v2": 37.71,
+      "delta_omega_res": 2.015e-07,
+      "resonant_fraction": 0.016017,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH78",
+      "zone": "TIW zone",
+      "n_days": 55,
+      "lambda_v2": 29.3,
+      "delta_omega_res": 2.594e-07,
+      "resonant_fraction": 0.047631,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 39.42,
+      "delta_omega_res": 1.928e-07,
+      "resonant_fraction": 0.016958,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 45.14,
+      "delta_omega_res": 1.684e-07,
+      "resonant_fraction": 0.01034,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH79",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 39.89,
+      "delta_omega_res": 1.905e-07,
+      "resonant_fraction": 0.028487,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "Gilbert Islands",
+      "n_days": 64,
+      "lambda_v2": 24.07,
+      "delta_omega_res": 3.157e-07,
+      "resonant_fraction": 0.027195,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "Line Islands",
+      "n_days": 64,
+      "lambda_v2": 10.75,
+      "delta_omega_res": 7.073e-07,
+      "resonant_fraction": 0.08604,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH80",
+      "zone": "TIW zone",
+      "n_days": 64,
+      "lambda_v2": 11.63,
+      "delta_omega_res": 6.535e-07,
+      "resonant_fraction": 0.124545,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "Gilbert Islands",
+      "n_days": 65,
+      "lambda_v2": 19.24,
+      "delta_omega_res": 3.95e-07,
+      "resonant_fraction": 0.042944,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "Line Islands",
+      "n_days": 65,
+      "lambda_v2": 18.31,
+      "delta_omega_res": 4.151e-07,
+      "resonant_fraction": 0.031139,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH81",
+      "zone": "TIW zone",
+      "n_days": 65,
+      "lambda_v2": 14.24,
+      "delta_omega_res": 5.336e-07,
+      "resonant_fraction": 0.065968,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "Gilbert Islands",
+      "n_days": 50,
+      "lambda_v2": 19.1,
+      "delta_omega_res": 3.979e-07,
+      "resonant_fraction": 0.032248,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "Line Islands",
+      "n_days": 50,
+      "lambda_v2": 29.36,
+      "delta_omega_res": 2.589e-07,
+      "resonant_fraction": 0.017967,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH82",
+      "zone": "TIW zone",
+      "n_days": 50,
+      "lambda_v2": 19.92,
+      "delta_omega_res": 3.815e-07,
+      "resonant_fraction": 0.097149,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 28.76,
+      "delta_omega_res": 2.642e-07,
+      "resonant_fraction": 0.01987,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 36.43,
+      "delta_omega_res": 2.086e-07,
+      "resonant_fraction": 0.010948,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH83",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 15.0,
+      "delta_omega_res": 5.065e-07,
+      "resonant_fraction": 0.068526,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "Gilbert Islands",
+      "n_days": 62,
+      "lambda_v2": 23.93,
+      "delta_omega_res": 3.177e-07,
+      "resonant_fraction": 0.021486,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "Line Islands",
+      "n_days": 62,
+      "lambda_v2": 14.1,
+      "delta_omega_res": 5.391e-07,
+      "resonant_fraction": 0.059693,
+      "window": "W15-30"
+    },
+    {
+      "event_id": "KH84",
+      "zone": "TIW zone",
+      "n_days": 62,
+      "lambda_v2": 9.64,
+      "delta_omega_res": 7.887e-07,
+      "resonant_fraction": 0.131649,
+      "window": "W15-30"
+    }
+  ]
+}

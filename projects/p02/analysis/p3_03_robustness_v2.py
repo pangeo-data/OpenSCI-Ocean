@@ -3,7 +3,7 @@ P3-03: Robustness metrics v2 — using deduped events + v2 spectral decompositio
 
 Improvements over p3_01/p3_02:
 1. Uses deduped 7-event catalog (not 11 candidates)
-2. Three control groups: Rossby ray, stationary, time-shifted Kelvin
+2. Two control groups: Rossby ray, time-shifted Kelvin
 3. Block bootstrap over independent events (not event×zone as independent)
 4. Uses v2 spectral decomposition (with proper preprocessing)
 5. All paths from config.yaml
@@ -126,16 +126,16 @@ def compute_metrics(data, lon, times, event, zone, speed):
 
 
 # Compute for all events × zones × control types
-all_results = {"kelvin": [], "rossby": [], "stationary": [], "time_shifted": []}
+all_results = {"kelvin": [], "rossby": [], "time_shifted": []}
 
 for event in events:
     for zone in zones:
         m_k = compute_metrics(original, lon, times, event, zone, kelvin_speed)
+        m_k_filt = compute_metrics(kelvin_field, lon, times, event, zone, kelvin_speed)
         # Rossby control: start from east side of domain, propagate westward
         rossby_event = event.copy()
         rossby_event["lon0"] = zone["lon"] + zone["width"] + 25
         m_r = compute_metrics(original, lon, times, rossby_event, zone, rossby_speed)
-        m_s = compute_metrics(original, lon, times, event, zone, 0.0)
 
         # Time-shifted control: same Kelvin speed but 60 days offset
         shifted = event.copy()
@@ -144,10 +144,14 @@ for event in events:
         m_ts = compute_metrics(original, lon, times, shifted, zone, kelvin_speed)
 
         for label, m in [("kelvin", m_k), ("rossby", m_r),
-                         ("stationary", m_s), ("time_shifted", m_ts)]:
+                         ("time_shifted", m_ts)]:
             if m:
                 m["event"] = event["id"]
                 m["zone"] = zone["name"]
+                if label == "kelvin" and m_k_filt:
+                    m["amp_ratio_kelvin_filt"] = m_k_filt["amp_ratio"]
+                    m["rms_up_kelvin_filt"] = m_k_filt["rms_up"]
+                    m["rms_dn_kelvin_filt"] = m_k_filt["rms_dn"]
                 all_results[label].append(m)
 
 for label, results in all_results.items():
@@ -188,7 +192,7 @@ def block_bootstrap_diff(kelvin_data, control_data, events_list, metric, n_boot=
 
 
 print("\n=== Block Bootstrap Results (events as blocks) ===")
-for control_name in ["rossby", "stationary", "time_shifted"]:
+for control_name in ["rossby", "time_shifted"]:
     print(f"\nKelvin vs {control_name}:")
     for metric in ["amp_ratio", "coherence"]:
         diff, stats = block_bootstrap_diff(
@@ -208,11 +212,11 @@ with open(out_file, "w") as f:
     json.dump(all_results, f, indent=2, default=str)
 print(f"\nSaved: {out_file}")
 
-# Figure: 4-panel comparison
+# Figure: comparison (stationary control removed per EXT-R2)
 fig, axes = plt.subplots(1, 4, figsize=(18, 5))
 labels_map = {"kelvin": "Kelvin\n(east)", "rossby": "Rossby\n(west)",
-              "stationary": "Stationary\n(control)", "time_shifted": "Time-shifted\n(placebo)"}
-colors = {"kelvin": "#C0392B", "rossby": "#2980B9", "stationary": "#7F8C8D", "time_shifted": "#F39C12"}
+              "time_shifted": "Time-shifted\n(placebo)"}
+colors = {"kelvin": "#C0392B", "rossby": "#2980B9", "time_shifted": "#F39C12"}
 
 for ax, metric, ylabel, title in [
     (axes[0], "amp_ratio", "dn/up ratio", "(a) Amplitude Retention"),
@@ -221,7 +225,7 @@ for ax, metric, ylabel, title in [
     data_lists = []
     tick_labels = []
     box_colors = []
-    for label in ["kelvin", "rossby", "stationary", "time_shifted"]:
+    for label in ["kelvin", "rossby", "time_shifted"]:
         vals = [r[metric] for r in all_results[label]]
         if vals:
             data_lists.append(vals)
@@ -255,7 +259,7 @@ for ax_idx, metric in [(2, "amp_ratio"), (3, "coherence")]:
     ax.set_title(f"({'c' if ax_idx == 2 else 'd'}) {metric.replace('_', ' ').title()} by Zone")
     ax.legend(fontsize=8)
 
-fig.suptitle("P02 Robustness v2: Kelvin vs 3 Controls (7 deduped events)", fontsize=12)
+fig.suptitle("P02 Robustness v2: Kelvin vs 2 Controls (7 deduped events)", fontsize=12)
 plt.tight_layout()
 out_fig = FIG_DIR / "p3_robustness_v2.png"
 fig.savefig(out_fig, dpi=150, bbox_inches="tight")

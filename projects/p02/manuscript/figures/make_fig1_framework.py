@@ -165,11 +165,11 @@ for swot_lon in [160, 190, 220, 250]:
 ax_c.text(270, 8, "SWOT\nswaths", fontsize=5.5, color="#8E44AD",
          ha="center", style="italic")
 
-# Lambda annotation
-ax_c.text(175, -9.5, "$\\Lambda \\gg 1$", fontsize=7, ha="center",
-         color="#27AE60", fontweight="bold")
-ax_c.text(240, -9.5, "$\\Lambda \\sim 1$", fontsize=7, ha="center",
-         color="#E74C3C", fontweight="bold")
+# Mechanism annotation (V2: spectral matching, not amplitude)
+ax_c.text(175, -9.5, "spectrally\nmismatched", fontsize=6, ha="center",
+         color="#27AE60", fontweight="bold", linespacing=1.1)
+ax_c.text(240, -9.5, "resonant\n$(k,\\omega)$ channel", fontsize=6, ha="center",
+         color="#E74C3C", fontweight="bold", linespacing=1.1)
 
 ax_c.set_xlabel("Longitude (°E)", fontsize=7)
 ax_c.set_ylabel("Latitude (°N)", fontsize=7)
