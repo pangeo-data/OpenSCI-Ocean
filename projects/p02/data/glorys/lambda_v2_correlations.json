@@ -1,0 +1,23 @@
+{
+  "overall": {
+    "n": 14,
+    "spearman_rho": 0.42,
+    "spearman_p": 0.1351,
+    "pearson_r_loglog": 0.394,
+    "pearson_p": 0.1637
+  },
+  "Line Islands": {
+    "n": 6,
+    "spearman_rho": -0.543,
+    "spearman_p": 0.2657,
+    "pearson_r_loglog": -0.634,
+    "pearson_p": 0.1767
+  },
+  "TIW zone": {
+    "n": 7,
+    "spearman_rho": 0.643,
+    "spearman_p": 0.1194,
+    "pearson_r_loglog": 0.69,
+    "pearson_p": 0.0864
+  }
+}

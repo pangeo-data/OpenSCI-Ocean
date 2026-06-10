@@ -154,6 +154,9 @@ for event in events:
             "n_days": int(zeta.shape[0]),
             "lambda_v2": round(DELTA_OMEGA_EFF / (dw_res + 1e-20), 2),
             "delta_omega_res": round(dw_res, 10),
+            # R21 Concern 3: records shorter than 2x the longest resonant
+            # period resolve that period with <2 frequency bins
+            "window_caveat": bool(zeta.shape[0] < 2 * T_MAX_D),
             **{k: round(v, 10) for k, v in d.items()},
         }
         results.append(r)
@@ -191,6 +194,33 @@ r_p, p_p = stats.pearsonr(x, y)
 print(f"\nΛ₂ vs amp_ratio (n={len(pairs)}, rms_up>{RMS_UP_MIN}):")
 print(f"  Spearman ρ = {rho_s:.3f} (p = {p_s:.4f})")
 print(f"  Pearson r (log-log) = {r_p:.3f} (p = {p_p:.4f})")
+
+# R21 Concern 1 / Q19: zone-specific correlations, reproducible here.
+# Full-sample result above is reported first (Concern 2); zone subsets
+# follow with their physical motivation: the resonance channel is expected
+# to act in the TIW zone, not at the islands (focusing-dominated).
+corr_summary = {"overall": {"n": len(pairs), "spearman_rho": round(rho_s, 3),
+                            "spearman_p": round(p_s, 4),
+                            "pearson_r_loglog": round(r_p, 3),
+                            "pearson_p": round(p_p, 4)}}
+for zone in zones:
+    zp = [p for p in pairs if p[2] == zone["name"]]
+    if len(zp) < 4:
+        print(f"  {zone['name']}: n={len(zp)} too small, skipped")
+        continue
+    zx = np.log([p[0] for p in zp])
+    zy = np.log([p[1] for p in zp])
+    zr, zpp = stats.spearmanr(zx, zy)
+    zrp, zppp = stats.pearsonr(zx, zy)
+    corr_summary[zone["name"]] = {
+        "n": len(zp), "spearman_rho": round(zr, 3), "spearman_p": round(zpp, 4),
+        "pearson_r_loglog": round(zrp, 3), "pearson_p": round(zppp, 4)}
+    print(f"  {zone['name']:16s}: n={len(zp)} Spearman ρ={zr:+.3f} (p={zpp:.4f}) "
+          f"Pearson r={zrp:+.3f} (p={zppp:.4f})")
+
+with open(GLORYS_DIR / "lambda_v2_correlations.json", "w") as f:
+    json.dump(corr_summary, f, indent=2)
+print(f"Saved: {GLORYS_DIR / 'lambda_v2_correlations.json'}")
 
 # --- figure ---
 fig, axes = plt.subplots(1, 2, figsize=(12, 5))
