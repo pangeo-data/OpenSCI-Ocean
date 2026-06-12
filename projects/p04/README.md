@@ -1,49 +1,85 @@
-# P04: SWOT KaRIn 宽刈幅干涉测量揭示南极海冰骤降的临界点信号
+# P04: 南极海冰临界点与南大洋能量响应
 
-> 利用 SWOT 二维 SSH 观测捕捉 2016 年南极海冰历史性骤降后南大洋环流和能量场的系统性变化，检验"南极海冰临界点"假说。
+> 利用 CMEMS SSH、ERA5 风场和海冰数据，结合 CNES-CLS18 MDT，诊断 2016 年南极海冰骤降后的南大洋能量循环响应。
 
 ## Status / 状态
 
 | 项 | 内容 |
 |---|---|
-| 当前阶段 | 🔬 D0 Explore（选题调研完成，待启动 D1） |
-| 负责人 | 匿名 |
+| 当前阶段 | 🔬 D1 分析完成（待评估方向聚焦） |
+| 执行人 | **Tim** |
+| 合作人 | **张肚肚** |
 | 目标期刊 (T1) | Nature Climate Change |
 | 备选期刊 (T2) | Nature Communications |
 | 备选期刊 (T3) | JGR-Oceans |
 | 启动日期 | 2026-06-08 |
-| 预计投稿 | — |
+| 提交日期 | 2026-06-12 |
 
-## Scientific Question / 科学问题
+## 研究诚实评估
 
-南极海冰在 2016 年经历历史性骤降，此后持续低位运行，2022/2023 年连破最低记录。这一系列事件引发最紧迫的气候科学问题之一：南极海冰系统是否已跨越临界点（tipping point）？SWOT KaRIn 宽刈幅干涉测量首次提供南大洋高分辨率二维海面高度观测，可以捕捉到海冰减少后海洋环流和能量场的细微但系统性变化。
+本项目完成了 D1 阶段的主要分析工作，但存在以下问题：
 
-**核心问题：SWOT 观测到的南大洋 SSH 变异性和 EKE 增强信号，是否支持海冰系统已跨越临界点的假说？**
+### 已完成的分析链
 
-### 与现有研究的区别
+```
+海冰2016突变 (Pettitt CP=2016, p=0.004)
+  ↓ (tau不变, taueff增加源自海冰损失)
+τ_eff +16% (CP=2015, p=0.018)
+  ↓ (W→EKE Granger p=0.0004)
+W (风应力做功) 主导 EKE 增加
+  ↓
+EKE +10% (post-2016 vs pre-2016)
+```
 
-- 现有临界点讨论局限于海冰范围和面积数据，缺乏海洋动力独立的观测证据
-- 传统高度计南大洋沿轨间距 ~80 km，无法解析 ACC 锋面和亚极地环流的中尺度结构
-- **首次用 SWOT 二维 SSH 观测提供海冰临界点的海洋层独立证据链**
+### 存在的问题
 
-## Hypothesis / 假设
+1. **要素过多**：从临界点检测到 τ_eff 机制到 Lorenz 能量循环到 Granger 因果，研究链条过长
+2. **因果时序倒挂**：EKE 突变点（2013）早于海冰突变点（2016），"海冰→EKE"的因果方向存在疑问
+3. **不可逆性不可测**：后 2016 仅 8 年数据，无法区分"临界点"与"多年代际波动"
+4. **CK 链路易断裂**：正压转换→EKE 的 Granger 因果不成立（p=0.93）
+5. **假设需要重新聚焦**：原设想的 SWOT 观测因数据条件限制未能实施，实际路径为传统高度计+再分析资料
 
-1. 海冰骤降后开放水域面积增大 → 风能输入增强 → SSH 变异性和 EKE 系统性增加 20–50%
-2. 若已跨越临界点，增强信号将持续且不可逆；若仅为极端事件恢复，信号将衰减
-3. SSH/EKE 增强空间分布与海冰边缘退缩位置高度对应
+### 数据来源
 
-## Data / 数据
+- CMEMS DUACS L4 SLA（0.125°, 1993-2024）
+- ERA5 风场 + 海冰浓度（0.25°, 1940-2024）
+- CNES-CLS18 MDT（0.125° 气候态）
+- NSIDC 海冰指数（1979-2024）
+- CPC AAO / Niño3.4 指数
 
-- 公开数据：SWOT L3/L4 SSH、ESA CCI 海冰密集度、NSIDC 海冰指数、CMEMS 多源融合 SSH、ERA5、Argo、GEBCO
-- 私有数据：无（本项目可全用公开数据完成）
+## 文件结构
 
-## Method / 方法
-
-1. 海冰范围/面积时间序列分析 → 量化 2016 年前后 ΔA_open
-2. SWOT 期（2023–2025）vs 参考期（2010–2015）SSH 变异性 σ²_SSH 对比
-3. 地转 EKE = 1/2(u'² + v'²) 变化量诊断 → 识别增强热点
-4. 海冰边缘 SSH 梯度增强带分析 → 海冰-海洋耦合诊断
-5. 临界点信号评估：空间一致性 + 持久性 + 不可逆性
+```
+projects/p04/
+├── README.md                 # 本文件
+├── COLLABORATION.md          # 合作协议
+├── analysis/
+│   ├── p04_phase1_regression.py   # Phase 1: EKE 多元回归
+│   ├── p04_taueff_spatial.py      # τ_eff 空间分析
+│   ├── p04_phase2_mdt.py          # Phase 2: MDT 能量循环
+│   ├── p04_tipping_point.py       # 临界点检测
+│   ├── p04_final_chain.py         # 证据链闭合分析
+│   ├── p04_timeseries.pkl/.csv    # Phase 1 输出
+│   ├── p04_energy_cycle.pkl/.csv  # Phase 2 输出
+│   ├── p04_mdt_fields.npz         # MDT 梯度场
+│   ├── P04-Phase2-Summary-CN.md   # 能量循环总结
+│   ├── P04_TippingPoint_Chain_CN.md # 完整证据链报告
+│   └── p04_regression_results.txt # 回归结果
+├── figures/
+│   ├── p04_fig_timeseries.png        # EKE/W 时序
+│   ├── p04_fig_regression_coeffs.png # 回归系数
+│   ├── p04_fig_taueff_spatial.png    # τ_eff 空间图
+│   ├── p04_fig_taueff_timeseries.png # τ_eff 时序
+│   ├── p04_fig_energy_timeseries.png # 能量循环时序
+│   ├── p04_fig_energy_budget.png     # 能量预算对比
+│   ├── p04_fig_tipping_point.png     # 临界点证据
+│   ├── p04_fig_multivar_cp.png       # 多变量突变同步
+│   ├── p04_fig_phase_space.png       # 相空间轨迹
+│   ├── p04_fig_evidence_chain.png    # 证据链合成
+│   └── p04_fig_* (共16图)
+├── manuscript/                # 手稿（待完善）
+├── methodology/               # 方法学资料
+└── COLABORATION.md            # 合作说明
 
 ## Progress Log / 进度日志
 
