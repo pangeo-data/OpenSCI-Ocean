@@ -48,6 +48,12 @@ Ashleigh Womack, Marcello Vichi, Alberto Alberello, and Alessandro Toffoli.
   marginal ice zone using {ICESat}-2.
 \newblock {\em The Cryosphere}, 16:2325--2340, 2022.
 
+\bibitem{Marshall2003}
+Gareth~J. Marshall.
+\newblock Trends in the {S}outhern {A}nnular {M}ode from observations and
+  reanalyses.
+\newblock {\em Journal of Climate}, 16:4134--4143, 2003.
+
 \bibitem{Hersbach2020}
 Hans Hersbach, Bill Bell, Paul Berrisford, et~al.
 \newblock The {ERA5} global reanalysis.
@@ -69,11 +75,5 @@ C.~W.~J. Granger.
 \newblock Investigating causal relations by econometric models and
   cross-spectral methods.
 \newblock {\em Econometrica}, 37(3):424--438, 1969.
-
-\bibitem{Marshall2003}
-Gareth~J. Marshall.
-\newblock Trends in the {S}outhern {A}nnular {M}ode from observations and
-  reanalyses.
-\newblock {\em Journal of Climate}, 16:4134--4143, 2003.
 
 \end{thebibliography}

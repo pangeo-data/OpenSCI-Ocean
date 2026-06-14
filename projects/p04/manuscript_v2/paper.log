@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  14 JUN 2026 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  14 JUN 2026 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,62 +302,76 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3{
-/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<figures/fig1_baseline.png, id=27, 1002.144pt x 732.336pt>
+/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] 
+[4]
+<figures/fig1_concept.png, id=31, 1086.2181pt x 484.9317pt>
+File: figures/fig1_concept.png Graphic file (type png)
+<use figures/fig1_concept.png>
+Package pdftex.def Info: figures/fig1_concept.png  used on input line 123.
+(pdftex.def)             Requested size: 472.03123pt x 210.73639pt.
+<figures/fig2_spatial.png, id=33, 1280.8653pt x 377.7312pt>
+File: figures/fig2_spatial.png Graphic file (type png)
+<use figures/fig2_spatial.png>
+Package pdftex.def Info: figures/fig2_spatial.png  used on input line 132.
+(pdftex.def)             Requested size: 472.03123pt x 139.20503pt.
+<figures/fig1_baseline.png, id=34, 1002.144pt x 732.336pt>
 File: figures/fig1_baseline.png Graphic file (type png)
 <use figures/fig1_baseline.png>
-Package pdftex.def Info: figures/fig1_baseline.png  used on input line 113.
+Package pdftex.def Info: figures/fig1_baseline.png  used on input line 143.
 (pdftex.def)             Requested size: 472.03123pt x 344.94666pt.
-<figures/fig2_swh.png, id=29, 1071.5232pt x 957.8184pt>
+ [5 <./figures/fig1_concept.png>]
+<figures/fig2_swh.png, id=39, 1071.5232pt x 957.8184pt>
 File: figures/fig2_swh.png Graphic file (type png)
 <use figures/fig2_swh.png>
-Package pdftex.def Info: figures/fig2_swh.png  used on input line 130.
+Package pdftex.def Info: figures/fig2_swh.png  used on input line 160.
 (pdftex.def)             Requested size: 472.03123pt x 421.93831pt.
- [4] [5 <./figures/fig1_baseline.png>] [6 <./figures/fig2_swh.png>]
-Overfull \hbox (3.08997pt too wide) in paragraph at lines 162--163
+
+Overfull \hbox (3.08997pt too wide) in paragraph at lines 192--193
 []\OT1/cmr/m/n/10 After Bon-fer-roni cor-rec-tion for six si-mul-ta-ne-ous test
-s (Ta-ble 1[]; Fig-ure 3[]e), only the SIC$\OMS/cmsy/m/n/10 !$\OT1/cmr/m/n/10 F
+s (Ta-ble 1[]; Fig-ure 5[]e), only the SIC$\OMS/cmsy/m/n/10 !$\OT1/cmr/m/n/10 F
 etch
  []
 
-<figures/fig4_fetch.png, id=41, 1002.144pt x 878.3214pt>
+[6 <./figures/fig2_spatial.png>] [7 <./figures/fig1_baseline.png>] [8 <./figure
+s/fig2_swh.png>]
+<figures/fig4_fetch.png, id=53, 1002.144pt x 878.3214pt>
 File: figures/fig4_fetch.png Graphic file (type png)
 <use figures/fig4_fetch.png>
-Package pdftex.def Info: figures/fig4_fetch.png  used on input line 174.
+Package pdftex.def Info: figures/fig4_fetch.png  used on input line 204.
 (pdftex.def)             Requested size: 472.03123pt x 413.70906pt.
-<figures/fig5_seasonal_mwp.png, id=42, 857.604pt x 659.1024pt>
+<figures/fig5_seasonal_mwp.png, id=54, 857.604pt x 659.1024pt>
 File: figures/fig5_seasonal_mwp.png Graphic file (type png)
 <use figures/fig5_seasonal_mwp.png>
-Package pdftex.def Info: figures/fig5_seasonal_mwp.png  used on input line 187.
+Package pdftex.def Info: figures/fig5_seasonal_mwp.png  used on input line 217.
 
 (pdftex.def)             Requested size: 472.03123pt x 362.76892pt.
-[7] [8 <./figures/fig4_fetch.png>] [9 <./figures/fig5_seasonal_mwp.png>]
-[10]
-Overfull \hbox (64.46979pt too wide) in paragraph at lines 236--237
+ [9] [10 <./figures/fig4_fetch.png>] [11 <./figures/fig5_seasonal_mwp.png>] [12
+]
+Overfull \hbox (64.46979pt too wide) in paragraph at lines 274--275
 \OT1/cmr/m/n/10 ERA5 re-anal-y-sis data are avail-able from the Coper-ni-cus Cl
 i-mate Data Store (https://cds.climate.copernicus.eu).
  []
 
 
-Overfull \hbox (102.3577pt too wide) in paragraph at lines 236--237
+Overfull \hbox (102.3577pt too wide) in paragraph at lines 274--275
 \OT1/cmr/m/n/10 NSIDC Sea Ice In-dex v4.0 is avail-able from the Na-tional Snow
  and Ice Data Cen-ter (https://doi.org/10.7265/N5736NV7).
  []
 
-(./paper.bbl [11]) [12] (./paper.aux)
+(./paper.bbl [13]) [14] (./paper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5119 strings out of 467525
- 74963 string characters out of 5418982
- 509333 words of memory out of 5000000
- 33969 multiletter control sequences out of 15000+600000
+ 5143 strings out of 467525
+ 75645 string characters out of 5418982
+ 507378 words of memory out of 5000000
+ 33993 multiletter control sequences out of 15000+600000
  639661 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,1516b,279s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,1516b,280s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -374,10 +388,10 @@ e/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/202
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026
 /texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on paper.pdf (12 pages, 1593696 bytes).
+Output written on paper.pdf (14 pages, 3516809 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 144 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

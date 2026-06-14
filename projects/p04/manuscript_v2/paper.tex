@@ -38,9 +38,11 @@ A leading hypothesis invokes a wave-ice positive feedback. Sea ice acts as a buf
 
 The individual links of this chain have theoretical and observational support. Wave-ice interaction theory predicts that sea ice acts as a low-pass filter, preferentially attenuating short-period waves, with attenuation rates depending on ice concentration, thickness, and floe size\cite{Squire2020}. Wave-triggered breakup generates lognormal floe size distributions in the MIZ\cite{Mokus2022}, and fractured ice melts faster, creating a local feedback between fragmentation and concentration loss. Recent observations confirm that ocean waves drive Antarctic sea ice melting through flooding and mechanical pulverization\cite{Kohout2026}, and that waves can propagate over 1000~km into the winter ice pack\cite{Kohout2014}. ICESat-2 altimetry has enabled direct observation of wave attenuation through the Antarctic MIZ\cite{Womack2022}.
 
-What remains untested is whether these individual mechanisms close into a self-reinforcing loop at the basin scale, and specifically whether the 2016 regime shift activated or strengthened such a feedback. Addressing this requires simultaneous, long-term observations of sea ice concentration, wave height, wind forcing, and MIZ geometry across the full Southern Ocean, a combination that only reanalysis products can provide over multi-decadal timescales.
+Independently, Southern Ocean wave climate has been changing. Satellite altimetry and reanalysis products show significant increases in significant wave height (SWH) across the Southern Ocean over recent decades, driven primarily by the intensification of the circumpolar westerlies associated with the positive trend in the Southern Annular Mode (SAM)\cite{Marshall2003}. Young and Ribal (2019) reported global wave height trends from 33 years of satellite altimetry, finding the strongest increases at high southern latitudes. These wind-driven wave changes provide the background energy field against which any wave-ice feedback must operate.
 
-Here we use 46 years (1979--2024) of ERA5 monthly reanalysis to diagnose the complete wave-ice feedback chain in the Southern Ocean. We test four links: (1) whether sea ice loss increases open-water fraction (the fetch proxy), (2) whether increased open water amplifies significant wave height (SWH), (3) whether higher SWH erodes the MIZ, and (4) whether MIZ erosion feeds back to reduce total sea ice concentration. We also assess changes in ice shelf buffer conditions at five major Antarctic ice shelves.
+What remains untested is whether the individual wave-ice interaction mechanisms close into a self-reinforcing loop at the basin scale, and specifically whether the 2016 regime shift activated or strengthened such a feedback. Two competing hypotheses can be distinguished (Figure~\ref{fig:concept}a). The \textit{fetch hypothesis} posits that ice retreat exposes more open water, lengthening the distance over which winds can generate waves, thereby increasing SWH through local wave growth. The \textit{swell-attenuation hypothesis} posits that ice retreat reduces the path length over which remotely generated swell is attenuated before reaching the ice edge, thereby increasing SWH without additional local wave generation. These two mechanisms predict different wave spectral signatures: the fetch mechanism would increase short-period wind-sea, while the swell-attenuation mechanism would increase long-period swell.
+
+Addressing this question requires simultaneous, long-term observations of sea ice concentration, wave height, wind forcing, and MIZ geometry across the full Southern Ocean (Figure~\ref{fig:concept}b), a combination that only reanalysis products can provide over multi-decadal timescales. Here we use 46 years (1979--2024) of ERA5 monthly reanalysis to diagnose the complete wave-ice feedback chain. We test whether sea ice loss increases fetch at the ice edge, whether increased fetch or reduced sea ice amplifies SWH, whether higher SWH drives ice-edge retreat, and whether ice-edge retreat feeds back to reduce total sea ice concentration. We apply Granger causality with Bonferroni correction, partial Granger causality conditioning on wind speed to isolate the independent effect of sea ice, and seasonal decomposition to identify the seasons when wave-ice coupling is strongest. We also assess changes in ice shelf buffer conditions at five major Antarctic ice shelves.
 
 %% ============================================================
 \section{Data and Methods}
@@ -91,9 +93,17 @@ We test directional predictability between pairs of monthly anomaly time series 
 
 The feedback chain is tested as a sequence of Granger causality links:
 \[
-\text{SIC} \to \text{OW fraction} \to \text{SWH} \to \text{MIZ width} \to \text{SIC}
+\text{SIC} \to \text{Fetch} \to \text{SWH} \to \text{Ice edge} \to \text{SIC}
 \]
-with wind speed ($|\mathbf{u}_{10}|$) as an alternative driver of SWH.
+with wind speed ($|\mathbf{u}_{10}|$) as an alternative driver of SWH. To address the multiple comparisons problem, we report Bonferroni-corrected $p$-values alongside uncorrected values for all six tests conducted simultaneously.
+
+\subsection{Partial Granger causality}
+
+To distinguish the independent effects of sea ice and wind on SWH, we apply partial Granger causality. For the test ``does SIC Granger-cause SWH after controlling for wind?'', the full model includes lagged values of SWH, SIC, and wind speed, while the reduced model omits the lagged SIC terms. The $F$-test then assesses whether SIC adds predictive power beyond what SWH's own history and wind already provide. This controls for the possibility that both SIC and SWH are driven by a common atmospheric forcing (e.g., SAM) with different lag structures.
+
+\subsection{Seasonal decomposition}
+
+We test the seasonal dependence of the SIC$\to$SWH Granger link by restricting the analysis to months within each austral season: DJF (summer), MAM (autumn), JJA (winter), and SON (spring). This tests the physical prediction that the swell-attenuation mechanism should be strongest in winter, when sea ice coverage is maximum and the attenuation path is longest. For seasonal tests, the maximum lag is reduced to 3 months to preserve statistical power within each 138-month seasonal subsample.
 
 \subsection{Ice shelf buffer analysis}
 
@@ -110,8 +120,28 @@ The NSIDC Sea Ice Index confirms a significant regime shift in 2016 (Pettitt $p 
 
 \begin{figure}[htbp]
 \centering
+\includegraphics[width=\textwidth]{figures/fig1_concept}
+\caption{\textbf{Competing wave-ice feedback mechanisms and study domain.}
+\textbf{a}, Conceptual diagram of the two hypothesized pathways by which sea ice loss could amplify wave height at the ice edge. Hypothesis A (red, dashed) invokes fetch lengthening: less ice exposes more open water for local wave generation. Hypothesis B (blue, solid) invokes swell-attenuation reduction: less ice shortens the path over which remotely generated swell is attenuated. Green arrows indicate statistically supported Granger-causal links; red dashed arrow indicates the failing link. Granger $p$-values shown.
+\textbf{b}, Southern Ocean study domain in south-polar stereographic projection. Light blue band: marginal ice zone (55--65$^\circ$S). Blue dashed circle: mean ice edge ($\sim$65$^\circ$S). Red triangles: five major ice shelves examined for buffer loss. Red arrows: poleward swell propagation. Purple arrows: circumpolar westerlies.}
+\label{fig:concept}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig2_spatial}
+\caption{\textbf{Spatial patterns of sea ice and wave height change (post-2016 minus pre-2016).}
+\textbf{a}, Sea ice concentration change. Blue dashed contour: pre-2016 ice edge (SIC = 0.15); red solid contour: post-2016 ice edge. Sea ice loss is widespread, with the largest reductions in the Bellingshausen, Amundsen, and Weddell sectors.
+\textbf{b}, Significant wave height change. Increases are concentrated in the ACC belt and near the retreated ice edge. Gray dashed contour: pre-2016 ice edge for reference.
+\textbf{c}, Pre-2016 mean SIC (shading) with pre-2016 (blue dashed) and post-2016 (red solid) ice edge contours overlaid. Red triangles mark the five ice shelves. The poleward retreat of the ice edge is evident across most sectors.
+All panels use south-polar stereographic projection with Natural Earth coastlines.}
+\label{fig:spatial}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
 \includegraphics[width=\textwidth]{figures/fig1_baseline}
-\caption{\textbf{Antarctic sea ice extent baseline (NSIDC Sea Ice Index, 1979--2026).}
+\caption{\textbf{Antarctic sea ice extent time series (NSIDC Sea Ice Index, 1979--2026).}
 \textbf{a}, Annual mean extent with Pettitt change point at 2016 ($p = 0.004$). Blue/red shading indicates pre/post-shift mean levels.
 \textbf{b}, Seasonal mean extent (DJF, MAM, JJA, SON). Summer (DJF) shows the largest post-2016 decline ($-16.8$\%).
 \textbf{c}, Monthly extent with 12-month running mean.
@@ -214,9 +244,17 @@ The feedback chain SIC loss $\to$ reduced swell attenuation $\to$ higher SWH $\t
 
 The background energy source is wind intensification associated with the positive SAM trend\cite{Marshall2003}. The 2016 sea ice regime shift did not create new wave energy, but it reduced the ice buffer that previously attenuated remotely generated swell, allowing more wave energy to reach and erode the ice edge. This mechanism is seasonally asymmetric: strongest in winter when the ice edge is most expansive and the swell attenuation path is longest.
 
-\subsection{Implications for ice shelf stability}
+\subsection{Comparison with prior work}
 
-The limited response of ice shelf buffer conditions (significant only for Ross) suggests that the 2016 regime shift has not yet systematically compromised the sea ice protection of Antarctic ice shelves. However, the Ross Ice Shelf result, combined with the continued intensification of wind-driven wave energy, indicates that specific sectors may be approaching a threshold of buffer loss. If the SAM continues to trend positive and sea ice continues to decline, the coincidence of stronger waves and reduced buffering could trigger the wave-driven calving mechanism documented by Massom et al.\cite{Massom2018} at additional ice shelf margins.
+Our results are consistent with several recent findings while adding mechanistic specificity. Kohout et al.\cite{Kohout2026} demonstrated that ocean waves drive Antarctic sea ice melting through flooding and mechanical pulverization, but did not distinguish between fetch-driven and swell-driven wave energy as the source. Our Granger analysis suggests that swell, not locally generated wind-sea, is the dominant wave type at the ice edge, implying that the melting mechanisms documented by Kohout et al. are primarily swell-driven. Purich and England\cite{Purich2026} identified compound drivers of Antarctic sea ice loss involving CDW upwelling and wind forcing, and our results add a wave-mediated component to their dynamical framework: the wind intensification they describe not only drives upper-ocean mixing but also amplifies the swell field that erodes the MIZ.
+
+The positive correlation between MWP and SIC ($r = 0.24$) provides observational support for the theoretical prediction that sea ice acts as a low-pass filter for ocean waves\cite{Squire2020}. This frequency-dependent attenuation has been documented locally using ICESat-2\cite{Womack2022} and in wave buoy arrays, but our result extends it to the basin scale as a systematic relationship over 46 years.
+
+\subsection{Implications for ice shelf stability and climate projections}
+
+The limited response of ice shelf buffer conditions (significant only for Ross) suggests that the 2016 regime shift has not yet systematically compromised the sea ice protection of Antarctic ice shelves. However, several considerations point toward increasing risk. The Ross Ice Shelf result (change point at 2009, preceding the broader ice decline) may represent an early-warning signal for other sectors. The swell-attenuation mechanism identified here implies that ice shelf exposure to wave action depends not only on the local sea ice state but on the integrated ice coverage along the poleward swell propagation path. As sea ice continues to decline, the cumulative attenuation along these paths will decrease nonlinearly, potentially producing threshold-like increases in wave energy at ice shelf fronts.
+
+Climate models that project continued SAM intensification and Antarctic sea ice decline under greenhouse forcing scenarios should consider the swell-attenuation feedback as an additional mechanism that could accelerate ice-edge retreat beyond what atmospheric and oceanic thermal forcing alone would produce. Current coupled models typically do not include explicit wave-ice interaction\cite{Squire2020}, and our results suggest that parameterizing this interaction could improve projections of MIZ evolution and ice shelf stability.
 
 \subsection{Limitations}
 
