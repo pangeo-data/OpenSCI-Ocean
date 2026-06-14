@@ -1,0 +1,16 @@
+P04 v2 Phase 2c: Ice-Edge Fetch Summary (R03 fixes)
+
+Change Points:
+  IceEdge     : CP=2016, p=0.009091 **
+  Fetch       : CP=2016, p=0.009091 **
+  SWH_edge    : CP=2010, p=0.524006 ns
+  SIC         : CP=2016, p=0.020872 *
+  Wind        : CP=2010, p=0.056738 ns
+
+Granger Causality:
+  SIC → Fetch                   : F=16.613, p=0.000000 ***, lag=6
+  Fetch → SWH at edge           : F=0.297, p=0.743039 ns, lag=2
+  SWH → Ice edge                : F=2.432, p=0.033977 *, lag=5
+  Ice edge → SIC (feedback)     : F=2.638, p=0.048938 *, lag=3
+  Wind → SWH at edge            : F=4.035, p=0.018220 *, lag=2
+  SIC → SWH (direct)            : F=3.463, p=0.032016 *, lag=2
