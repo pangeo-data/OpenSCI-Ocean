@@ -1,0 +1,89 @@
+% !TEX program = pdflatex
+\documentclass[11pt]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[numbers]{natbib}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\begin{document}
+
+\title{Supplementary Information\\[6pt]
+\large Antarctic sea ice retreated into pre-existing waves: swell attenuation, not fetch, controls wave exposure at the ice edge}
+\author{}
+\date{}
+\maketitle
+
+\section*{S1. Sub-period Granger causality stability}
+
+To test whether the Granger causality results are robust to the 2016 regime shift (which violates the stationarity assumption), we repeated all six tests separately for the pre-2016 (1979--2015, $n = 444$ months) and post-2016 (2016--2024, $n = 108$ months) periods. Results are shown in Table~\ref{tab:subperiod}.
+
+\begin{table}[htbp]
+\centering
+\caption{Sub-period Granger causality tests. $p_{\mathrm{Bonf}}$ corrected for 6 tests within each period.}
+\label{tab:subperiod}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{Pre-2016 ($n = 444$)} & \multicolumn{3}{c}{Post-2016 ($n = 108$)} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Link & $F$ & $p$ & $p_{\mathrm{Bonf}}$ & $F$ & $p$ & $p_{\mathrm{Bonf}}$ \\
+\midrule
+SIC $\to$ Fetch & 15.98 & $<$0.001 & $<$0.001 & 21.08 & $<$0.001 & $<$0.001 \\
+Fetch $\to$ SWH & 0.28 & 0.756 & 1.000 & 3.60 & 0.061 & 0.364 \\
+SWH $\to$ Ice edge & 2.57 & 0.038 & 0.226 & 1.18 & 0.280 & 1.000 \\
+Ice edge $\to$ SIC & 2.03 & 0.109 & 0.652 & 1.37 & 0.258 & 1.000 \\
+Wind $\to$ SWH & 2.88 & 0.057 & 0.342 & 3.73 & 0.056 & 0.337 \\
+SIC $\to$ SWH & 2.71 & 0.068 & 0.406 & 5.80 & 0.018 & 0.107 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The SIC$\to$Fetch link is the only relationship that survives Bonferroni correction in both sub-periods. The post-2016 SIC$\to$SWH link ($p = 0.018$) is stronger than the pre-2016 counterpart ($p = 0.068$) but remains marginal after Bonferroni correction ($p_{\mathrm{Bonf}} = 0.107$) due to the small post-2016 sample size ($n = 108$).
+
+\section*{S2. ERA5 wave model masking sensitivity}
+
+The ERA5 WAM does not compute wave fields in grid cells where SIC exceeds 30\%. To test whether the SIC$\to$SWH statistical link is an artifact of this masking, we classified Southern Ocean grid points (50--70$^\circ$S) into two categories:
+
+\begin{itemize}
+\item \textbf{Always ice-free}: SIC $< 15$\% in $> 95$\% of all months ($n = 16{,}508$ grid points)
+\item \textbf{Transitional}: SIC crosses the 30\% threshold in 10--90\% of months ($n = 10{,}886$ grid points)
+\end{itemize}
+
+If the SIC$\to$SWH link were a masking artifact, transitional grid points should show stronger SWH trends (as they gain wave data when SIC drops below 30\%). Instead, always-ice-free grid points show a \textit{stronger} SWH trend ($+0.046$~m~decade$^{-1}$, $p = 0.0002$) than transitional points ($+0.019$~m~decade$^{-1}$, $p = 0.056$). The SIC$\to$SWH Granger link is not significant at either type of fixed grid point (always-ice-free: $p = 0.40$; transitional: $p = 0.97$), confirming that the signal arises from ice-edge-relative sampling rather than grid-level masking.
+
+\section*{S3. Wave energy flux calculation}
+
+Wave energy flux per unit crest length is estimated as:
+\[
+P = \frac{\rho g^2}{64\pi} H_s^2 T_p
+\]
+where $\rho = 1025$~kg~m$^{-3}$ is seawater density, $g = 9.81$~m~s$^{-2}$, $H_s$ is significant wave height, and $T_p$ is peak wave period (approximated by MWP). At the ice edge, pre-2016 values ($H_s = 3.24$~m, $T_p = 8.97$~s) yield $P = 46.1$~kW~m$^{-1}$; post-2016 values ($H_s = 3.27$~m, $T_p = 8.97$~s) yield $P = 47.2$~kW~m$^{-1}$. The $+2.4$\% increase is driven entirely by the small SWH increase; MWP is unchanged. In winter (JJA), the energy flux change is $+0.1$\% (66.6 to 66.7~kW~m$^{-1}$), confirming that the wave energy field at the ice edge is effectively stationary.
+
+\section*{S4. Partial Granger causality formulation}
+
+The partial Granger test for ``SIC $\to$ SWH $|$ Wind'' compares two nested models:
+
+\noindent\textbf{Reduced model} (no SIC lags):
+\[
+\text{SWH}_t = \alpha_0 + \sum_{l=1}^{L} \beta_l \, \text{SWH}_{t-l} + \sum_{l=1}^{L} \gamma_l \, \text{Wind}_{t-l} + \epsilon_t
+\]
+
+\noindent\textbf{Full model} (includes SIC lags):
+\[
+\text{SWH}_t = \alpha_0 + \sum_{l=1}^{L} \beta_l \, \text{SWH}_{t-l} + \sum_{l=1}^{L} \gamma_l \, \text{Wind}_{t-l} + \sum_{l=1}^{L} \delta_l \, \text{SIC}_{t-l} + \epsilon_t
+\]
+
+The $F$-test compares the residual sum of squares:
+\[
+F = \frac{(\text{RSS}_{\text{red}} - \text{RSS}_{\text{full}}) / L}{\text{RSS}_{\text{full}} / (T - 2L - L - 1)}
+\]
+
+On annual data, $F = 1.97$, $p = 0.14$ (SIC effect absorbed by wind collinearity). In JJA only, $F = 2.84$, $p = 0.040$ (SIC retains independent predictive power).
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
