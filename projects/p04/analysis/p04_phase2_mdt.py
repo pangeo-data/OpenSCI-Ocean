@@ -16,12 +16,13 @@ Author: anonymous  Date: 2026-06-12
 """
 
 import numpy as np, xarray as xr, pandas as pd, os, warnings
+from pathlib import Path
 warnings.filterwarnings('ignore')
 import matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 # -- Paths --------------------------------------------------------------
-REPO = 'E:/OpenSCI-Ocean'
+REPO = str(Path(__file__).resolve().parents[2])
 DATA = f'{REPO}/data'
 OUT  = f'{REPO}/projects/p04/analysis'
 FIG  = f'{REPO}/projects/p04/figures'

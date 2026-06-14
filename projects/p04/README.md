@@ -82,7 +82,7 @@ projects/p04/
 │   ├── p04_final_chain.py                # 证据链闭合（最终检验）
 │   ├── p04_timeseries.pkl/.csv           # Phase 1输出
 │   ├── p04_energy_cycle.pkl/.csv         # Phase 2输出
-│   ├── p04_mdt_fields.npz                # MDT梯度场
+│   ├── p04_mdt_fields.npz                # MDT梯度场（未提交，由 p04_phase2_mdt.py 生成）
 │   ├── p04_regression_results.txt        # 回归结果
 │   ├── P04-Phase2-Summary-CN.md          # 能量循环总结
 │   └── P04_TippingPoint_Chain_CN.md      # 证据链报告

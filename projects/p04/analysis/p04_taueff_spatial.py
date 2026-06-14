@@ -12,6 +12,7 @@ Author: anonymous  Date: 2026-06-12
 import numpy as np
 import xarray as xr
 import pandas as pd
+from pathlib import Path
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -19,7 +20,7 @@ from matplotlib import gridspec
 import os, warnings
 warnings.filterwarnings('ignore')
 
-REPO = 'E:/OpenSCI-Ocean'
+REPO = str(Path(__file__).resolve().parents[2])
 DATA = f'{REPO}/data'
 OUT  = f'{REPO}/projects/p04/analysis'
 FIG  = f'{REPO}/projects/p04/figures'

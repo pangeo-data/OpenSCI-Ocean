@@ -8,12 +8,13 @@ Author: anonymous  Date: 2026-06-12
 """
 
 import numpy as np, xarray as xr, pandas as pd, os, warnings
+from pathlib import Path
 warnings.filterwarnings('ignore')
 import matplotlib; matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from scipy import stats
 
-REPO = 'E:/OpenSCI-Ocean'
+REPO = str(Path(__file__).resolve().parents[2])
 DATA = f'{REPO}/data'
 OUT  = f'{REPO}/projects/p04/analysis'
 FIG  = f'{REPO}/projects/p04/figures'
@@ -215,23 +216,18 @@ gs = fig.add_gridspec(4, 4, hspace=0.4, wspace=0.35)
 ax = fig.add_subplot(gs[0, :])
 ax.axis('off')
 chain_text = (
-    'THE COMPLETE ENERGY CHAIN (1993-2024, Ice Zone)\n\n'
-    f'SIC Loss (CP=2016, p=0.004**)\n'
-    f'  |\n'
-    f'  v\n'
-    f'tau_eff +14%  (CP=2015, p=0.018*)   [tau unchanged: p=0.065 ns]\n'
-    f'  |\n'
-    f'  +------> W_mean +14% (p=0.079)\n'
-    f'  |           |\n'
-    f'  |           v\n'
-    f'  |         MKE --> CK +9%  (mean -> eddy)\n'
-    f'  |                    |\n'
-    f'  +------> W_eddy (small abs) --> EKE +10%\n'
+    'NEGATIVE RESULT: CAUSAL CHAIN NOT SUPPORTED (1993-2024, Ice Zone)\n\n'
+    f'FATAL: EKE CP=2013 precedes SIC CP=2016 by 3 years\n'
+    f'       -> "sea ice loss drives EKE increase" causality reversed\n\n'
+    f'What still holds:                     What fails:\n'
+    f'  SIC Loss (CP=2016, p=0.004**)        taueff beta<0 in regression\n'
+    f'  tau_eff +16% (ice-driven)            CK->EKE Granger p=0.93 (ns)\n'
+    f'  W -> EKE (Granger p=0.0004***)       taueff->EKE Granger p=0.064 (ns)\n'
+    f'  EKE +10% post-2016                   R^2=0.13 (87% unexplained)\n'
     f'\n'
-    f'Granger causality: taueff -> EKE (F=5.01, p=0.003**)\n'
-    f'                  W -> EKE (F=4.82, p=0.003**)\n'
-    f'                  SIC -> EKE (F=4.27, p=0.006**)\n'
-    f'                  CK -> EKE (F=2.98, p=0.040*)\n'
+    f'Conclusion: W is the strongest EKE predictor, but W change is NOT\n'
+    f'driven by SIC loss. Sea ice loss and EKE increase are co-occurring\n'
+    f'independent phenomena, not causally linked.\n'
     f'\n'
     f'EKE piecewise trend: pre-2016 {b_pre:.1e}, post-2016 {b_post:.1e}'
     + (f' (acceleration p={p_val[2]:.4f})' if p_val[2] < 0.1 else ' (no significant acceleration)')
@@ -296,18 +292,22 @@ summary_data = [
     ['Link', 'Evidence', 'Strength', 'Status'],
     ['SIC loss', f'Pettitt CP=2016, p=0.004; CSD: AC1 0.46->0.66, Var +73%', 'STRONG', 'CONFIRMED'],
     ['tau unchanged', f'Pettitt CP=2015, p=0.065 (ns)', 'MODERATE', 'CONFIRMED'],
-    ['taueff increase', f'Pettitt CP=2015, p=0.018; Granger ->EKE p=0.003', 'STRONG', 'CONFIRMED'],
-    ['Wind work (W)', f'Granger ->EKE p=0.003; Regression beta=0.40**', 'STRONG', 'CONFIRMED'],
-    ['Barotropic conv.', f'CK +9% post-2016; Granger ->EKE p=0.040', 'WEAK', 'SUGGESTIVE'],
-    ['EKE increase', f'+10% post-2016; piecewise trend pre={b_pre:.1e} post={b_post:.1e}/yr', 'STRONG', 'CONFIRMED'],
-    ['Mechanism chain', 'SIC -> taueff -> W_mean/CK -> EKE (physical + statistical)', 'MODERATE', 'COHERENT'],
+    ['taueff increase', f'Pettitt CP=2015, p=0.018; but beta<0 in regression', 'MODERATE', 'CONTRADICTED'],
+    ['Wind work (W)', f'Granger ->EKE p=0.0004; but W not driven by SIC', 'MODERATE', 'PARTIAL'],
+    ['Barotropic conv.', f'CK->EKE Granger p=0.93 (ns)', 'WEAK', 'NOT SUPPORTED'],
+    ['EKE increase', f'+10% post-2016; but CP=2013, before SIC CP=2016', 'MODERATE', 'TIMING REVERSED'],
+    ['Causal chain', 'SIC->taueff->EKE: causal order not supported', 'WEAK', 'TERMINATED'],
 ]
 table = ax.table(cellText=summary_data[1:], colLabels=summary_data[0],
                  cellLoc='center', loc='center', colWidths=[0.15, 0.50, 0.15, 0.20])
 table.auto_set_font_size(False); table.set_fontsize(9)
 for (row, col), cell in table.get_celld().items():
     if row == 0: cell.set_facecolor('#40466e'); cell.set_text_props(color='white', weight='bold')
-    elif col == 3: cell.set_facecolor('#d4edda' if 'CONFIRMED' in cell.get_text().get_text() else '#fff3cd')
+    elif col == 3:
+            txt = cell.get_text().get_text()
+            if 'CONFIRMED' in txt: cell.set_facecolor('#d4edda')
+            elif txt in ('CONTRADICTED', 'NOT SUPPORTED', 'TIMING REVERSED', 'TERMINATED'): cell.set_facecolor('#f8d7da')
+            else: cell.set_facecolor('#fff3cd')
 table.scale(1, 1.4)
 ax.set_title('(f) Evidence Chain Summary Table', fontsize=13, pad=10)
 
@@ -361,10 +361,10 @@ chg = (np.nanmean(da['eke'][da.index >= '2016-01-01']) - np.nanmean(da['eke'][da
 print(f'  Total change: {chg:+.1f}%')
 
 print('\n=== OVERALL ASSESSMENT ===')
-print(f'  Physical chain: COMPLETE (SIC-CP, tau_eff-CP, W_mean, CK, EKE)')
-print(f'  Statistical chain: PARTIAL (Granger for taueff, W, CK -> EKE)')
-print(f'  Tipping point evidence: STRONG (multivar CP + CSD)')
-print(f'  Paper narrative: READY for drafting')
+print(f'  Physical chain: INCOMPLETE — EKE CP (2013) precedes SIC CP (2016)')
+print(f'  Statistical chain: PARTIAL — tau_eff->EKE Granger marginal (p=0.064)')
+print(f'  Tipping point evidence: MIXED — CSD signals present but causal order reversed')
+print(f'  Project status: TERMINATED — causal hypothesis not supported by data')
 
 print(f'\n  Generated: {FIG}/p04_fig_evidence_chain.png')
 print('\nDone.')
