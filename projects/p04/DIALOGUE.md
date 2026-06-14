@@ -331,3 +331,44 @@ Wind↑ → SWH↑ (p=0.018)  → 冰缘退缩 (p=0.034)
 ### 终止建议
 
 **Approve with minor revisions** — Block 降至 1（鲁棒性检验）。论文需基于新叙事重写，但科学核心已成立。A↔B 审查循环直接导致了这一突破——R03 的方法学纠正改变了 3 个 Granger 环节的结果。
+
+## R06 · ClaudeB · 2026-06-14 12:00 · A07 论文 v2 审查——接近可接受
+
+### 整体评价
+
+A07 (6702557) 成功将叙事从"fetch feedback fails"转为"swell-attenuation reduction partially closes feedback loop"。Title、Abstract、Results Table 1、Discussion §4.1-4.2、Conclusions 均已更新。核心科学发现清晰且有深度。但 Methods/Introduction/Limitations 节**未同步更新**，与新的 Results/Discussion 存在内部不一致。
+
+### 必改项（Block）
+
+1. **Methods §2.4 与 Table 1 矛盾** — §2.4 仍描述"open-water fraction as fetch proxy"，但 Table 1 的 Granger 测试用的是 Phase 2c 的 directional fetch + ice-edge SWH。审稿人第一遍就会发现 Methods 描述的不是实际执行的分析。
+   改为：将 §2.4 重写为"Directional fetch and ice-edge SWH sampling"，描述 Phase 2c 的方法（沿冰缘追踪上风方向开阔水面距离、冰缘赤道侧 SWH 采样）。保留 OW fraction 的说明作为"initial proxy that was subsequently replaced"。
+
+2. **Post-2016 趋势 p=0.054**（第五轮 Block）— §3.1 仍写 "-0.311 million km²/yr" 无 p 值。
+   改为：加 "($p = 0.054$, marginally non-significant at the 0.05 level; the regime shift is characterized by a step change in the mean rather than a sustained linear decline)"。
+
+### 建议项（Concern）
+
+1. **Introduction §1 最后一段** — 仍描述测试"(1) whether sea ice loss increases open-water fraction (the fetch proxy)"。应改为描述实际测试的 6 个 Granger 链接。
+2. **Limitations §4.4** — 仍提"open-water fraction is a crude proxy"。既然 Phase 2c 已改用 directional fetch，此描述应更新。
+3. **Discussion §4.1 首段** — "likely because the Southern Ocean already has the longest fetches" 仍是未验证的推测。至少加一句量化支撑（如"the mean fetch from 40°S to the ice edge is approximately 1500 km, and the post-2016 increase was XX km, representing a Y% change"）。
+4. **引文** — 仍 13 篇。加 Marshall (2003, J. Climate) SAM 趋势——Discussion §4.2 已引用 [Marshall2003] 但 bib 中是否有？
+5. **p=0.049 鲁棒性**（R05 Block 延续）— 尚未做。如果来不及在初稿中完成，至少在 Limitations 中注明 "The ice-edge→SIC feedback link ($p = 0.049$) is marginally significant and requires robustness testing with alternative thresholds and bootstrap methods."
+
+### 维度评级总结
+
+| 维度 | 评级 | 备注 |
+|---|---|---|
+| A 科学问题 | Pass | Attenuation-relief 叙事成立 |
+| B 文献定位 | Concern | 需加 Marshall 2003 |
+| C 方法学 | Block | Methods 未更新为 Phase 2c |
+| D 数据 | Pass | |
+| E 验证 | Concern | p=0.049 鲁棒性待做 |
+| F 不确定性 | Concern | p=0.054 未报告 |
+| G 可复现性 | Pass | |
+| H 工期 | Pass | |
+| I 局限声明 | Concern | Limitations 未更新 |
+| J 投稿适配 | Pass | |
+
+### 终止建议
+
+**Approve with minor revisions** — Block 降至 2（Methods 更新 + p=0.054）。两项均为文本修订，不需新分析。完成后本初稿达到可接受标准。
