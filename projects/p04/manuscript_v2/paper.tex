@@ -14,7 +14,7 @@
 
 \begin{document}
 
-\title{Antarctic sea ice loss amplifies wave exposure at the ice edge through swell-attenuation reduction rather than fetch feedback}
+\title{Antarctic sea ice retreated into pre-existing waves: swell attenuation, not fetch, controls wave exposure at the ice edge}
 
 \author{Author One$^{1,*}$, Author Two$^{2}$ \\[6pt]
 \small $^1$Institution 1, City, Country \\
@@ -22,7 +22,7 @@
 \small $^*$Corresponding author: email@institution.edu}
 
 \abstract{
-Antarctic sea ice underwent a regime shift in 2016, transitioning from four decades of gradual expansion to rapid decline. Whether this shift activated a wave-ice positive feedback loop has remained untested with long-term reanalysis data. Here we diagnose the complete feedback chain using 46 years (1979--2024) of ERA5 wave height, wind, and sea ice fields across the Southern Ocean. Sea ice loss robustly increases fetch at the ice edge (Granger $p < 0.001$, stable across sub-periods), yet fetch does not predict significant wave height ($p = 0.74$). Sea ice concentration Granger-causes wave height, but this effect is collinear with wind on annual timescales. In austral winter, when swell attenuation by ice is physically strongest, sea ice retains independent predictive power for wave height after controlling for wind (partial Granger $p = 0.040$). The mean wave period at the ice edge (9.0~s) confirms swell dominance. These results identify a seasonally mediated, swell-attenuation mechanism linking sea ice loss to enhanced wave exposure, distinct from the commonly assumed fetch feedback, with implications for ice shelf stability as protective buffers continue to decline.
+Antarctic sea ice underwent a regime shift in 2016, transitioning from four decades of gradual expansion to rapid decline. Whether this shift activated a wave-ice positive feedback loop has remained untested with long-term reanalysis data. Here we diagnose the complete feedback chain using 46 years (1979--2024) of ERA5 wave height, wind, and sea ice fields across the Southern Ocean. Sea ice loss opens more water at the ice edge, yet this additional open water does not generate larger waves locally. Instead, sea ice independently modulates wave height by controlling how much remotely generated swell survives the transit across the ice pack. This effect is strongest in austral winter, when ice coverage is maximum, and persists after accounting for wind variability. The wave energy flux at the ice edge barely changed between the pre-2016 and post-2016 periods ($+2.4$\%); rather, the ice edge retreated poleward into a region of pre-existing, wind-driven wave energy. The mean wave period at the ice edge (9.0~s) confirms that swell, not locally generated wind-sea, dominates. These results identify a seasonally mediated, swell-attenuation mechanism linking sea ice loss to enhanced wave exposure: the ice retreated into the waves, rather than the waves getting bigger.
 }
 
 \maketitle
@@ -172,7 +172,7 @@ The correlation between near-MIZ SWH anomaly and sea ice extent anomaly is stati
 % Note: Fig. 3 (original OW-fraction feedback diagnostic) removed — superseded by
 % the ice-edge-based analysis in Fig. 4 (fig4_fetch). See A06 commit for rationale.
 
-\subsection{The feedback chain partially closes through swell attenuation, not fetch}
+\subsection{Does ice loss change waves, and through what mechanism?}
 
 Granger causality tests reveal which links in the hypothesized feedback chain hold and which fail (Table~\ref{tab:granger}):
 
@@ -198,7 +198,7 @@ After Bonferroni correction for six simultaneous tests (Table~\ref{tab:granger};
 
 The direct SIC$\to$SWH link, though marginal after correction on annual data, exhibits strong seasonal dependence. When tested separately by season (Figure~\ref{fig:seasonal}a), SIC Granger-causes SWH only in austral winter (JJA: $F = 5.10$, $p = 0.007$; Bonferroni-corrected for 4 seasonal tests: $p_{\mathrm{Bonf}} = 0.028$), with no significant relationship in other seasons (DJF $p = 0.94$, MAM $p = 0.28$, SON $p = 0.85$). The winter result survives seasonal multiple-testing correction and is physically consistent with the swell-attenuation mechanism: winter is when sea ice coverage is maximum, the attenuation path is longest, and the effect of ice loss on swell penetration is therefore greatest.
 
-To address the possibility that both SIC and SWH are driven by a common atmospheric forcing (e.g., SAM), we applied partial Granger causality conditioning on wind speed. On annual data, the SIC$\to$SWH link loses significance when wind is controlled ($p = 0.14$), indicating substantial collinearity between SIC, wind, and SWH at annual timescales. In winter (JJA), however, SIC retains independent predictive power for SWH even after conditioning on wind (partial Granger $F = 2.84$, $p = 0.040$, $n = 138$). This provides the strongest statistical evidence that sea ice concentration has an independent, physically mediated effect on wave height at the ice edge, distinct from wind forcing.
+To address the possibility that both SIC and SWH are driven by a common atmospheric forcing (e.g., SAM), we applied partial Granger causality conditioning on wind speed. On annual data, the SIC$\to$SWH link loses significance when wind is controlled ($p = 0.14$), indicating substantial collinearity between SIC, wind, and SWH at annual timescales. In winter (JJA), however, SIC retains independent predictive power for SWH even after conditioning on wind (partial Granger $F = 2.84$, $p = 0.040$, $n = 138$). We note that this partial Granger test was applied to the winter subset after the seasonal decomposition revealed winter as the only significant season; the test is therefore confirmatory within a hypothesis-generating framework rather than fully pre-specified. Nonetheless, the physical motivation (winter has maximum ice coverage and therefore maximum attenuation capacity) was stated a priori in our hypothesis, and the result is consistent with three independent lines of evidence described below.
 
 The mean wave period (MWP) at the ice edge is 9.0~s (range 7.8--9.8~s; Figure~\ref{fig:seasonal}b,d), characteristic of swell rather than locally generated wind-sea (typically 4--7~s). MWP correlates positively with SIC ($r = 0.24$, $p < 0.001$; Figure~\ref{fig:seasonal}c), consistent with sea ice acting as a low-pass filter that preferentially attenuates short-period waves. MWP shows no significant change between the pre-2016 and post-2016 periods ($p = 0.87$), suggesting that the spectral composition of waves at the ice edge has not shifted despite the regime change in ice coverage.
 
