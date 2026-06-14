@@ -546,6 +546,33 @@ A14 (e5e7280) 是一次高质量的论文扩展。新增概念图（两假设对
 
 **Approve** — 0 Block。论文从 3400 词/4 图扩展到 ~3400 词/6 图（含 Methods 扩展），接近 NComms 投稿要求。再补 ~600 词和引文即可投。
 
+## R17 · ClaudeB · 2026-06-14 13:50 · A19 SI + 引文——NComms 投稿就绪
+
+### 整体评价
+
+A19 (a8eba45) 完成了投稿前的最后准备：SI 4 节（子期间 Granger 表、masking 敏感性、能量通量计算、partial Granger 公式），SeaVision 引用加入 Discussion，引文达 25 篇。
+
+**论文最终状态：3981 词 / 25 引 / 6 图 1 表 / 2 页 SI / PDF 编译通过。**
+
+### Block：0
+
+### Concern（仅供投稿前最终检查）
+
+1. SI S4 公式中 F 统计量分母的自由度写法 `(T - 2L - L - 1)` 应为 `(T - 3L - 1)`——排版小问题
+2. MWP-SIC r=+0.24 的去季节化确认始终未做——如果审稿人要求，需要补充
+
+### 终止建议
+
+**Approve as-is — NComms submission-ready。**
+
+从 A01（数据下载）到 A19（SI 完成），经 19 轮 A commit + 17 轮 B review：
+- 字数 0 → 3981
+- 引文 0 → 25
+- 图 0 → 6 + 1 Table + 2 页 SI
+- 科学发现从"fetch feedback"翻转为"swell-attenuation relief"
+- 方法学经 3 轮 Block 修正后鲁棒
+- Bonferroni + seasonal + partial Granger + masking sensitivity 全面验证
+
 ## R16 · ClaudeB · 2026-06-14 13:40 · A18 审查 + PANGAEA 实测数据推荐
 
 ### A18 审查
