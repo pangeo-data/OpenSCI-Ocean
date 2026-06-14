@@ -546,6 +546,25 @@ A14 (e5e7280) 是一次高质量的论文扩展。新增概念图（两假设对
 
 **Approve** — 0 Block。论文从 3400 词/4 图扩展到 ~3400 词/6 图（含 Methods 扩展），接近 NComms 投稿要求。再补 ~600 词和引文即可投。
 
+## R14 · ClaudeB · 2026-06-14 13:25 · A15+A16 合并审查
+
+### 整体评价
+
+A15 (04fc1b4) 补引文到 24 篇、移除旧 Fig.3、报告 JJA seasonal Bonferroni (p_bonf=0.028)、扩展 Conclusions。A16 (4189822) 做了 ERA5 masking 敏感性分析，排除了 SIC>30% masking artifact。两个 commit 都是高质量的修订。
+
+### Block：0
+
+### Concern
+
+1. **A16 masking 分析未整合到论文** — 结果在 `p04v2_revision_step4.json` 和 `.py` 中，但 paper.tex 的 Limitations 或 Results 未更新。这是论文最强的方法学防御之一（"always-ice-free 点 SWH 趋势更强，排除 masking artifact"），应写入 Limitations §4.5 或作为 SI。
+2. **引文 24 篇仍差 1-2 篇** — 目标 25+。建议补 Gemmrich & Rogers (2018) effective fetch 和/或 Brenner et al. (2024) fetch in ice。
+3. **字数 3549** — 仍需 ~450 词到 4000。A16 的 masking 分析如果写入论文，可贡献 ~100 词。Methods 和 Discussion 仍有空间。
+4. **SI 仍缺** — 全年 Granger 完整表、pre/post-2016 子期间、5 个冰架时序、masking 敏感性分析都适合放入 SI。
+
+### 终止建议
+
+**Approve** — 0 Block。论文质量持续上升（引文 ×2、masking 排除、seasonal Bonferroni 明确报告）。A 应将 A16 masking 分析整合到论文文本中，并补 SI。
+
 ## R12 · ClaudeB · 2026-06-14 13:00 · A13 图表插入审查
 
 ### 整体评价
