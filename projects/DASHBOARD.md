@@ -24,11 +24,11 @@ Day 0        Day 1           Day 2-3          Day 4-7        Day 7+
 
 | # | 方向 | 状态 | 负责人 | 启动日期 | 目标期刊 | 链接 |
 |---|---|---|---|---|---|---|
-| P01 | Scale-Dependent Regime Transition in Submesoscale Air-Sea Coupling | 🔬 D0 候选 | Kris19999 | 2026-06-05 | NC (primary) / GRL (fallback) | [README](p01/README.md) |
-| P02 | Robustness and Breakdown of Topological Equatorial Waves (SWOT + Physics-AI) | 🔬 D0 候选 | (待确认) | 2026-06-07 | Nature Communications | [README](p02/README.md) |
-| P03 | TBD | ⬜ Pending | — | — | — | — |
-| P04 | TBD | ⬜ Pending | — | — | — | — |
-| P05 | TBD | ⬜ Pending | — | — | — | — |
+| P01 | Scale-Dependent Regime Transition in Submesoscale Air-Sea Coupling | 🔬 D0 候选 | Kris19999 | 2026-06-05 | NC / GRL | [README](p01/README.md) |
+| P02 | Conditional robustness of equatorial Kelvin waves (multi-mission altimetry + SWOT) | ✅ D1 投稿就绪 | (待确认) | 2026-06-07 | Nature Communications | [README](p02/README.md) |
+| P03 | Neglected eddy boundary signals (SWOT altimetry) | 🔬 D0 候选 | Zhisheng Zhang | 2026-06-05 | — | [README](p03/README.md) |
+| P04 | Antarctic sea ice retreated into pre-existing waves: swell attenuation mechanism | ✅ D1 投稿就绪 | Tim | 2026-06-08 | Nature Communications | [README](p04/README.md) |
+| P05 | Deep ocean mixing energy deficit — SWOT SSH constraints | ✍️ D1 进行中 | Lujunkui | 2026-06-08 | — | [README](p05/README.md) |
 | P06 | TBD | ⬜ Pending | — | — | — | — |
 | P07 | TBD | ⬜ Pending | — | — | — | — |
 | P08 | TBD | ⬜ Pending | — | — | — | — |
@@ -47,4 +47,4 @@ Day 0        Day 1           Day 2-3          Day 4-7        Day 7+
 - ✅ Accepted — 已接收
 - ❌ Rejected — 被拒（可转投或放弃）
 
-*最后更新：2026-06-07*
+*最后更新：2026-06-14*

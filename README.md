@@ -23,18 +23,18 @@ Failures, dead ends, and rejections are part of the experiment and will be visib
 
 See [projects/DASHBOARD.md](projects/DASHBOARD.md) for live status of all 10 projects.
 
-| # | Direction | Status |
-|---|---|---|
-| [P01](projects/p01/) | Submesoscale air-sea coupling regime transition (SWOT) | 🔬 D0 |
-| [P02](projects/p02/) | Topological equatorial wave robustness & breakdown (SWOT) | ✍️ D1 |
-| [P03](projects/p03/) | Neglected eddy boundary signals (SWOT altimetry) | 🔬 D0 |
-| [P04](projects/p04/) | Antarctic sea ice tipping point — SWOT SSH/EKE evidence | ✍️ D1 |
-| [P05](projects/p05/) | Deep ocean mixing energy deficit — SWOT SSH constraints | ✍️ D1 |
-| [P06](projects/p06/) | TBD | ⬜ |
-| [P07](projects/p07/) | TBD | ⬜ |
-| [P08](projects/p08/) | TBD | ⬜ |
-| [P09](projects/p09/) | TBD | ⬜ |
-| [P10](projects/p10/) | TBD | ⬜ |
+| # | Direction | Status | Journal |
+|---|---|---|---|
+| [P01](projects/p01/) | Submesoscale air-sea coupling regime transition (SWOT) | 🔬 D0 Explore | — |
+| [P02](projects/p02/) | Equatorial Kelvin wave topological robustness (SWOT + altimetry) | ✅ D1 Complete — 投稿就绪 | Nature Comm. |
+| [P03](projects/p03/) | Neglected eddy boundary signals (SWOT altimetry) | 🔬 D0 Explore | — |
+| [P04](projects/p04/) | Wave-ice feedback: swell attenuation at Antarctic ice edge | ✅ D1 Complete — 投稿就绪 | Nature Comm. |
+| [P05](projects/p05/) | Deep ocean mixing energy deficit — SWOT SSH constraints | ✍️ D1 | — |
+| [P06](projects/p06/) | TBD | ⬜ | — |
+| [P07](projects/p07/) | TBD | ⬜ | — |
+| [P08](projects/p08/) | TBD | ⬜ | — |
+| [P09](projects/p09/) | TBD | ⬜ | — |
+| [P10](projects/p10/) | TBD | ⬜ | — |
 
 Each project is self-contained in its own directory with literature, analysis scripts, figures, manuscript, and AI interaction logs.
 
