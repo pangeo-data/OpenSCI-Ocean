@@ -75,9 +75,11 @@ We define four latitude bands for area-weighted spatial averaging:
 
 The \textbf{marginal ice zone (MIZ)} is defined as the band where $0.15 < \text{SIC} < 0.80$. MIZ width is computed as the zonal-mean meridional extent of this band at each time step.
 
-\subsection{Open-water fraction as fetch proxy}
+\subsection{Ice-edge-based fetch and wave height sampling}
 
-Direct calculation of fetch (the unobstructed distance over which wind generates waves) requires resolving the geometry of ice floes and leads at each time step, which is not feasible with monthly-mean SIC fields. Instead, we use the \textbf{open-water fraction} (the fraction of grid cells with SIC $< 0.15$ south of 55$^\circ$S) as a proxy for fetch. An increase in open-water fraction corresponds to a larger area of open water available for wave generation.
+For each month, the ice edge is defined as the most equatorward latitude at which SIC exceeds 0.15 at each longitude. The zonal-mean ice-edge latitude serves as a proxy for fetch: a more poleward ice edge implies a longer meridional distance of open water available for wave generation by the prevailing westerlies. This ice-edge-based fetch captures the dominant zonal-wind geometry of the Southern Ocean, where fetch is limited primarily by the meridional position of the ice margin rather than by zonal extent.
+
+SWH is sampled at the ice edge rather than at fixed latitude bands, to avoid conflating changes in ice-edge position with changes in wave climate. For each longitude, SWH is extracted from the nearest grid point 2$^\circ$ equatorward of the local ice edge, ensuring that the sampled wave height reflects conditions actually experienced by the ice margin.
 
 \subsection{Change point detection}
 
@@ -104,7 +106,7 @@ For five major Antarctic ice shelves (Ross, Filchner-Ronne, Amery, Larsen~C, and
 
 \subsection{Confirmation of the 2016 sea ice regime shift}
 
-The NSIDC Sea Ice Index confirms a significant regime shift in 2016 (Pettitt $p = 0.004$), with annual mean extent declining from 11.68 to 10.33 million~km$^2$ ($-11.5$\%). The decline is strongest in austral summer (DJF: $-16.8$\%, $p = 0.002$) and weakest in winter (JJA: $-5.7$\%, not significant at $p = 0.073$). The ERA5 SIC field confirms this timing: the area-weighted mean SIC in the ice zone (55$^\circ$--75$^\circ$S) shows a change point at 2016 ($p = 0.021$), and the open-water fraction shifts synchronously ($p = 0.013$). Before 2016, Antarctic sea ice extent increased at $+0.022$~million~km$^2$~yr$^{-1}$; after 2016, it declined at $-0.311$~million~km$^2$~yr$^{-1}$.
+The NSIDC Sea Ice Index confirms a significant regime shift in 2016 (Pettitt $p = 0.004$), with annual mean extent declining from 11.68 to 10.33 million~km$^2$ ($-11.5$\%). The decline is strongest in austral summer (DJF: $-16.8$\%, $p = 0.002$) and weakest in winter (JJA: $-5.7$\%, not significant at $p = 0.073$). The ERA5 SIC field confirms this timing: the area-weighted mean SIC in the ice zone (55$^\circ$--75$^\circ$S) shows a change point at 2016 ($p = 0.021$), and the open-water fraction shifts synchronously ($p = 0.013$). Before 2016, Antarctic sea ice extent increased at $+0.022$~million~km$^2$~yr$^{-1}$ ($p < 0.001$); after 2016, it declined at $-0.311$~million~km$^2$~yr$^{-1}$ ($p = 0.054$, marginally significant over only 9 years of post-shift data).
 
 \subsection{Wave height trends are wind-driven, not fetch-driven}
 
