@@ -1,78 +1,122 @@
-# P04: SWOT KaRIn 宽刈幅干涉测量揭示南极海冰骤降的临界点信号
+# P04: 南极海冰骤降对南大洋涡动能的调制作用 —— 负结果存档
 
-> 利用 SWOT 二维 SSH 观测捕捉 2016 年南极海冰历史性骤降后南大洋环流和能量场的系统性变化，检验"南极海冰临界点"假说。
+> **项目状态：已终止。** 数据时间跨度的根本性限制导致核心假设无法被现有观测验证。
+> 本文档作为负结果存档，记录方法、发现和终止原因。
+
+---
 
 ## Status / 状态
 
 | 项 | 内容 |
 |---|---|
-| 当前阶段 | 🔬 D0 Explore（选题调研完成，待启动 D1） |
-| 负责人 | 匿名 |
-| 目标期刊 (T1) | Nature Climate Change |
-| 备选期刊 (T2) | Nature Communications |
-| 备选期刊 (T3) | JGR-Oceans |
+| 当前阶段 | ❌ D1 终止（因数据限制终止） |
+| 执行人 | **Tim** |
+| 合作人 | **张肚肚** |
+| 目标期刊 | —（不投稿） |
 | 启动日期 | 2026-06-08 |
-| 预计投稿 | — |
+| 终止日期 | 2026-06-12 |
+| 存档于 | `p04-d1` 分支，OpenSCI-Ocean |
 
-## Scientific Question / 科学问题
+---
 
-南极海冰在 2016 年经历历史性骤降，此后持续低位运行，2022/2023 年连破最低记录。这一系列事件引发最紧迫的气候科学问题之一：南极海冰系统是否已跨越临界点（tipping point）？SWOT KaRIn 宽刈幅干涉测量首次提供南大洋高分辨率二维海面高度观测，可以捕捉到海冰减少后海洋环流和能量场的细微但系统性变化。
+## 原始假设
 
-**核心问题：SWOT 观测到的南大洋 SSH 变异性和 EKE 增强信号，是否支持海冰系统已跨越临界点的假说？**
+**H0（未验证）**：2016年南极海冰骤降后，海冰屏蔽效应减弱（τ_eff上升）→ 风能输入增加（W↑）→ 涡动能增加（EKE↑）。
 
-### 与现有研究的区别
+## 验证结果
 
-- 现有临界点讨论局限于海冰范围和面积数据，缺乏海洋动力独立的观测证据
-- 传统高度计南大洋沿轨间距 ~80 km，无法解析 ACC 锋面和亚极地环流的中尺度结构
-- **首次用 SWOT 二维 SSH 观测提供海冰临界点的海洋层独立证据链**
+| 检验 | 结果 | 支持假设？ |
+|------|------|-----------|
+| τ_eff 是否增加 | ✅ 冰区τ_eff +16%（放大因子2.3×） | 是 |
+| τ（风应力）是否不变 | ✅ τ CP不显著（p=0.065） | 是——τ_eff增加由海冰驱动 |
+| W 是否预测 EKE | ✅ Granger p=0.0004*** | 是——风能做功传递到EKE |
+| τ_eff 是否预测 EKE | ❌ Granger p=0.064（不显著） | **否** |
+| SIC 突变在 EKE 突变之前 | ❌ **EKE的CP在2013，SIC的CP在2016** | **否——因果倒挂** |
+| 回归中τ_eff系数为正 | ❌ **τ_eff系数为负（β=-0.18, p=0.002）** | **否——与假设相反** |
+| 能量循环（CK→EKE） | ❌ Granger p=0.93 | **否** |
+| 不可逆性可验证 | ❌ 仅8年后数据 | 不可能 |
 
-## Hypothesis / 假设
+### 核心矛盾
 
-1. 海冰骤降后开放水域面积增大 → 风能输入增强 → SSH 变异性和 EKE 系统性增加 20–50%
-2. 若已跨越临界点，增强信号将持续且不可逆；若仅为极端事件恢复，信号将衰减
-3. SSH/EKE 增强空间分布与海冰边缘退缩位置高度对应
+> **EKE的突变发生在2013年，比SIC的突变（2016年）早3年。** 因果方向不成立。
 
-## Data / 数据
+这排除了"海冰损失→EKE增加"的因果链。W（风应力做功）确实是EKE的最强预测因子，但W的变化并非由海冰损失驱动，而是大尺度大气环流变化的结果。
 
-- 公开数据：SWOT L3/L4 SSH、ESA CCI 海冰密集度、NSIDC 海冰指数、CMEMS 多源融合 SSH、ERA5、Argo、GEBCO
-- 私有数据：无（本项目可全用公开数据完成）
+---
 
-## Method / 方法
+## 终止原因总结
 
-1. 海冰范围/面积时间序列分析 → 量化 2016 年前后 ΔA_open
-2. SWOT 期（2023–2025）vs 参考期（2010–2015）SSH 变异性 σ²_SSH 对比
-3. 地转 EKE = 1/2(u'² + v'²) 变化量诊断 → 识别增强热点
-4. 海冰边缘 SSH 梯度增强带分析 → 海冰-海洋耦合诊断
-5. 临界点信号评估：空间一致性 + 持久性 + 不可逆性
+| 原因 | 说明 |
+|------|------|
+| **数据时间不够** | 后2016仅8年，无法验证"临界点"或"不可逆转换" |
+| **因果时序倒挂** | EKE的突变（2013）早于SIC的突变（2016） |
+| **τ_eff系数为负** | 回归中τ_eff对EKE的独立贡献为负，与假设相反 |
+| **能量路径断裂** | CK→EKE的Granger因果不成立（p=0.93） |
+| **解释度低** | 回归R²=0.13，87%的EKE方差无法解释 |
 
-## Progress Log / 进度日志
+---
 
-| 日期 | 阶段 | 内容 | 产出 |
-|---|---|---|---|
-| 2026-06-08 | D0 | AI 辅助选题调研 | 文献调研（15篇）、数据可行性评估、方法框架、D0 调研文档 |
+## 仍然成立的事实（负结果的组成部分）
 
-## Key Findings
+1. **τ_eff 机制具有物理合理性**：海冰区τ_eff +16%，τ仅+7%，放大因子2.3×——海冰确实修饰了风应力输入
+2. **W（风应力做功）是EKE的最强预测因子**（Granger p=0.0004, 回归β=0.40）——能量确实进入了海洋
+3. **SIC在2016年发生显著状态转变**——这是观测事实，但后续影响尚不明确
+4. **AAO/Niño3.4不相关**——排除大气环流模态混淆的替代解释
 
-- Knowledge gap 极强且话题紧迫：海冰临界点的海洋观测证据完全空白
-- SWOT 南大洋数据窗口刚开（2023.07），几乎无人发表
-- 数据全公开，发表潜力 Nature Climate Change 级
-- 核心挑战：SWOT ~2 年记录 vs 气候尺度 → 需巧妙的设计（骤降后状态对比，非追踪骤降过程）
+这些事实本身有价值，但不足以支持"海冰损失驱动EKE增加"的因果叙事。
 
-## AI Interaction Log / AI 交互日志
+---
 
-- 2026-06-08: D0 调研 (见 `E:\4.23\obsidian\Spiral upward\RAW\P04-南极海冰临界点-D0调研.md`)
+## 文件清单
 
-## References / 参考文献
+```
+projects/p04/
+├── DIRECTION.md                          # 研究方向和终止说明
+├── README.md                             # 本文件
+├── COLLABORATION.md                      # 合作协议
+├── analysis/
+│   ├── p04_phase1_regression.py          # Phase 1: EKE多元回归
+│   ├── p04_taueff_spatial.py             # τ_eff空间分析
+│   ├── p04_phase2_mdt.py                 # Phase 2: MDT能量循环（不成功）
+│   ├── p04_tipping_point.py              # 临界点检测（发现CP倒挂）
+│   ├── p04_final_chain.py                # 证据链闭合（最终检验）
+│   ├── p04_timeseries.pkl/.csv           # Phase 1输出
+│   ├── p04_energy_cycle.pkl/.csv         # Phase 2输出
+│   ├── p04_mdt_fields.npz                # MDT梯度场
+│   ├── p04_regression_results.txt        # 回归结果
+│   ├── P04-Phase2-Summary-CN.md          # 能量循环总结
+│   └── P04_TippingPoint_Chain_CN.md      # 证据链报告
+├── figures/                              # 16张分析图
+│   ├── p04_fig_timeseries.png            # EKE/W时序
+│   ├── p04_fig_regression_coeffs.png     # 回归系数
+│   ├── p04_fig_taueff_spatial.png        # τ_eff空间
+│   ├── p04_fig_taueff_timeseries.png     # τ_eff时序
+│   ├── p04_fig_energy_timeseries.png     # 能量循环
+│   ├── p04_fig_energy_budget.png         # 能量预算
+│   ├── p04_fig_tipping_point.png         # 临界点证据
+│   ├── p04_fig_multivar_cp.png           # 多变量突变同步
+│   ├── p04_fig_phase_space.png           # 相空间轨迹
+│   ├── p04_fig_evidence_chain.png        # 证据链合成
+│   └── ...（共16图）
+├── manuscript/                           # 手稿（未完成，存档）
+└── methodology/                          # 方法学资料
+```
 
-| # | 文献 | DOI | 核验状态 |
-|---|---|---|---|
-| 1 | Turner et al. (2017) Unprecedented Antarctic sea ice retreat 2016 | 10.1002/2017GL073656 | ⚠️ |
-| 2 | Parkinson (2019) 40-y Antarctic sea ice record | 10.1073/pnas.1906556116 | ⚠️ |
-| 3 | Meehl et al. (2019) Ocean changes and Antarctic sea ice retreat | 10.1038/s41467-018-07865-9 | ⚠️ |
-| 4 | Lenton et al. (2008) Tipping elements in Earth's climate system | 10.1073/pnas.0705414105 | ⚠️ |
-| 5 | Purich et al. (2022) Record low Antarctic sea ice 2022 | 10.1029/2022GL100904 | ⚠️ |
-| 6 | Fu et al. (2024) SWOT Mission Performance | — | ⚠️ 需核验 |
-| 7 | Gille et al. (2025) SWOT Southern Ocean mesoscale | — | ⚠️ 需核验 |
-| 8 | Holland et al. (2019) Antarctic sea ice in changing climate | 10.1038/s41558-019-0483-z | ⚠️ |
-| 9 | Thompson et al. (2018) Southern Ocean eddy dynamics review | 10.1175/JPO-D-18-0082.1 | ⚠️ |
-| 10 | Rintoul et al. (2018) Southern Ocean in coupled climate system | 10.1038/s41561-018-0185-6 | ⚠️ |
+---
+
+## 对后续研究的建议
+
+1. **至少15-20年后数据**才能验证SIC的2016年下降是否为不可逆临界点
+2. **先验方向假设**：τ_eff和EKE的因果关系需要动力学机制（如涡分辨率模型）的独立验证，仅靠统计归因不够
+3. **更高时间分辨率数据**（日或周尺度）才能解析能量从风到涡流的传递过程，月分辨率太粗
+4. **负结果也值得发表**——"海冰损失和EKE增加同时发生但无因果关系"是有价值的科学发现
+
+---
+
+## 免责声明
+
+本研究结论仅基于 CMEMS SSH、ERA5、NSIDC 和 CPC 公开数据（1993-2024年）。分析方法和代码均公开。研究终止是因为数据时间跨度的根本性限制，**不构成对"南极海冰是否越过临界点"这一科学问题的最终判定**。
+
+---
+
+*存档于 2026-06-12。项目已终止，代码和图表保留作为负结果参考。*

@@ -1,5 +1,6 @@
 # Raw data files — GitHub only stores links, not data
 *.nc
+*.zip
 *.nc4
 *.hdf5
 *.h5
