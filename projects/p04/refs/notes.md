@@ -1,86 +1,78 @@
-# P04 核心参考文献（L1 摘要级）
+# P04 核心参考文献（v2 新方向）
 
 ---
 
-## Ref01: 南极海冰骤降与临界点
+## Ref01: 波浪→冰架崩解机制（核心标杆）
 
-**Role**: 研究的出发点——2016年海冰骤降是 P04 整个问题的起因。
+**Massom, R. A. et al. (2018). Antarctic ice shelf disintegration triggered by sea ice loss and ocean swell. *Nature*, 558, 383–389.**
+DOI: 10.1038/s41586-018-0212-1
 
-**Key references**:
+**Role**: 核心标杆——证明了海冰缓冲带消失后，远场涌浪触发冰架崩解的机制。
 
-1. Parkinson, C. L. (2019). A 40-y record reveals gradual Antarctic sea ice increases followed by decreases at rates far exceeding the rates seen in the Arctic. *PNAS*, 116(29), 14414–14423. DOI: 10.1073/pnas.1906556116
-   - 40年南极海冰记录：1979-2014增加，2014年后急剧下降
-   - 下降速率远超北极
+**Key takeaways**:
+- 海冰作为冰架的保护缓冲带，衰减破坏性涌浪
+- Larsen A/B、Wilkins 冰架崩解前，海冰季节性缺失增加
+- 涌浪引起冰架前缘弯曲应力，扩展预存裂缝直至崩解
+- 机制链：sea ice loss → swell exposure → flexure → calving
 
-2. Parkinson, C. L. & Cavalieri, D. J. (2012). Antarctic sea ice variability and trends, 1979–2010. *The Cryosphere*, 6, 871–880.
-   - 南极海冰长期变化基准文献
-
-3. Stuecker, M. F. et al. (2017). A mechanism for the 2016 Antarctic sea ice and surface temperature anomalies. *Geophysical Research Letters*, 44, 5094–5103.
-   - 讨论2016年南极海冰异常的大气驱动因子
-
-## Ref02: 南大洋涡动能（EKE）与风应力
-
-**Role**: EKE变化的事实基础和方法学参考。
-
-**Key references**:
-
-1. Meredith, M. P. & Hogg, A. M. (2006). Circumpolar response of Southern Ocean eddy activity to a change in the Southern Annular Mode. *Geophysical Research Letters*, 33, L16608.
-   - SAM变化驱动南大洋EKE响应的经典研究
-
-2. Hogg, A. M. et al. (2015). Recent trends in the Southern Ocean eddy field. *Journal of Geophysical Research: Oceans*, 120, 257–267.
-   - 南大洋EKE上升趋势的观测证据
-
-3. Ferreira, D. et al. (2015). Antarctic ocean and sea ice response to the breakup of the Larsen Ice Shelf. *Geophysical Research Letters*, 42, 3521–3528.
-   - 冰架崩解后的海洋响应，与海冰退缩类似
-
-## Ref03: 海冰-风应力耦合（τ_eff 机制）
-
-**Role**: τ_eff = τ × (1 − α × SIC) 的物理基础。
-
-**Key references**:
-
-1. Martin, T. et al. (2014). The impact of sea ice on the surface wind stress field in the Southern Ocean. *Journal of Climate*, 27, 7006–7026.
-   - 南大洋海冰对风应力的调制作用——τ_eff 机制的直接文献支持
-
-2. Tsamados, M. et al. (2014). Impact of variable sea ice roughness on the Southern Ocean. *Journal of Geophysical Research: Oceans*, 119, 6376–6390.
-   - 海冰粗糙度对风应力传导的影响，α=0.8的经验依据
-
-## Ref04: Lorenz 能量循环
-
-**Role**: 能量诊断的理论框架。
-
-**Key references**:
-
-1. Von Storch, J.-S. et al. (2012). A description of the wind power input to the ocean. *Journal of Geophysical Research*, 117, C09020.
-   - 风能向海洋输入的完整诊断框架，W_mean 和 W_eddy 的定义
-
-2. Chen, R. et al. (2014). The wind work input into the ocean: The role of eddy/wind interaction. *Journal of Physical Oceanography*, 44, 2157–2175.
-   - 涡旋-风相互作用对风能输入的贡献
-
-3. Lorenz, E. N. (1955). Available potential energy and the maintenance of the general circulation. *Tellus*, 7, 157–167.
-   - Lorenz 能量循环的原始文献
-
-## Ref05: 临界点检测方法学
-
-**Role**: 方法学基础——Pettitt 检验、CSD 等。
-
-**Key references**:
-
-1. Lenton, T. M. et al. (2008). Tipping elements in the Earth's climate system. *PNAS*, 105(6), 1786–1793.
-   - 气候临界点概念的奠基文献
-
-2. Dakos, V. et al. (2008). Slowing down as an early warning signal for abrupt climate change. *PNAS*, 105(38), 14308–14312.
-   - 临界减速（CSD）作为临界点预警信号的经典方法
-
-3. Pettitt, A. N. (1979). A non-parametric approach to the change-point problem. *Applied Statistics*, 28(2), 126–135.
-   - Pettitt 检验原始文献
+**对本文的模仿/超越**:
+- 模仿：机制链的叙事结构（缓冲带→暴露→响应）
+- 超越：从 3 个历史事件的定性分析 → 全南极 45 年定量时序诊断
 
 ---
 
-## 补充文献（未在分析中直接使用，但相关）
+## Ref02: 波浪-海冰-大气反馈综述
 
-1. Sallée, J.-B. (2018). Southern Ocean warming and its climatic impacts. *Nature Climate Change*, 8, 992–1001.
-   - 南大洋增温综述
+**Squire, V. A. (2020). Ocean wave interactions with sea ice: a reappraisal. *Annual Review of Fluid Mechanics*, 52, 37–60.**
+或同一主题：
+**Squire, V. A. et al. (2022). Wave propagation in the marginal ice zone: connections and feedback mechanisms within the air–ice–ocean system. *Phil. Trans. R. Soc. A*, 380, 20210251.**
 
-2. Swart, N. C. & Fyfe, J. C. (2013). The Southern Annular Mode: variability and trends. *Climate Dynamics*, 40, 1073–1088.
-   - SAM 变率与趋势基准文献
+**Role**: 方法学/理论基座——波浪-冰相互作用的完整物理框架。
+
+**Key takeaways**:
+- MIZ 是海洋-冰-大气强烈耦合的过渡区
+- 正反馈环：波浪打碎冰→floe 变小→融化加速→冰浓度下降→波浪传播更远→更多冰破碎
+- 海冰是低通滤波器，优先衰减高频波
+- 南大洋 fetch 一直很大，但海冰退缩后 MIZ 内波浪活动增强
+
+---
+
+## Ref03: 波浪融化南极海冰的最新观测证据
+
+**Kohout, A. L., Vichi, M.,"; Alberello, A. et al. (2026). The influence of ocean waves on Antarctic sea-ice albedo and seasonal melting, and potential coupled physical and biological feedbacks. *The Cryosphere*, 20, 3271–....**
+
+**Role**: 当前前沿——2025/2026 年发表的波浪对南极海冰的最新研究。
+
+**Key takeaways**:
+- 波浪通过"wave flooding"（淹没冰面）和"wave pulverisation"（机械研磨）驱动融化
+- 这两个过程降低反照率，引发额外的热力-动力反馈
+- 预测南大洋风暴性和波浪性增强将强化这些反馈
+- 可能扰乱年度海冰循环
+
+---
+
+## Ref04: 南极海冰损失的复合驱动因子
+
+**Purich, A. & England, M. H. (2025/2026). Compound drivers of Antarctic sea ice loss and Southern Ocean destratification. *Science Advances*.**
+
+**Role**: 背景支撑——解释 2016 年海冰骤降的物理驱动机制。
+
+**Key takeaways**:
+- 西风加强 → CDW 上涌 → 上层海洋增暖增盐 → 海冰减少
+- 2015-2016 年强风增强了 CDW 混合
+- 持续的 CDW 混合 + 减少的融水输出维持了低海冰状态
+- 可能已越过临界点，进入持续衰退的新状态
+
+---
+
+## Ref05: ICESat-2 观测 MIZ 波浪衰减
+
+**Womack, A. et al. (2022). Altimetric observation of wave attenuation through the Antarctic marginal ice zone using ICESat-2. *The Cryosphere*, 16, 2325–2340.**
+
+**Role**: 方法参考——卫星高度计观测 MIZ 波浪衰减的方法学范例。
+
+**Key takeaways**:
+- ICESat-2 可测量 MIZ 内波浪衰减率
+- 衰减率依赖海冰浓度、厚度和 floe 尺寸
+- 波浪可传播超过 1000 km 进入冬季冰盖
+- 为卫星波浪-冰观测提供了方法学基础
