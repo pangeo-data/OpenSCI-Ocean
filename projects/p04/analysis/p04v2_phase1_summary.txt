@@ -1,0 +1,9 @@
+P04 v2 Phase 1: ERA5 SWH Analysis Summary
+
+Full SO (40-75S): CP=1993, p=0.000053, pre=-0.0929 → post=0.0406 m
+Near-MIZ (55-65S): CP=1993, p=0.055095, pre=-0.0782 → post=0.0342 m
+ACC belt (45-55S): CP=1993, p=0.000058, pre=-0.1076 → post=0.0471 m
+Deep ice edge (65-75S): CP=2020, p=0.666058, pre=-0.0122 → post=0.0997 m
+
+Near-MIZ SWH vs extent: r=0.136, p=0.0014
+Significant grid points (p<0.05): 7234/42634
