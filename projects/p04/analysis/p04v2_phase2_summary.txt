@@ -1,0 +1,6 @@
+P04 v2 Phase 2+3 Summary
+
+MIZ boundary: CP=1979, p=2.000000, trend=0.0000°/yr
+MIZ boundary vs SWH at MIZ: r=nan, p=nan
+Buffer months: CP=2023, p=1.253509
+  Pre: 6.0 mo/yr, Post: 5.0 mo/yr

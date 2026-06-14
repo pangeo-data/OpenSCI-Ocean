@@ -1,0 +1,23 @@
+P04 v2 Feedback Diagnostic Summary
+
+Change Points:
+  SIC         : CP=2016, p=0.020872 *
+  OW_frac     : CP=2016, p=0.012962 *
+  MIZ_width   : CP=2007, p=0.000014 ***
+  Wind        : CP=2010, p=0.056738 ns
+  SWH         : CP=1993, p=0.001234 **
+
+Granger Causality:
+  SIC → OW fraction             : F=29.800, p=0.000000 ***, lag=3
+  OW fraction → SWH             : F=0.321, p=0.863756 ns, lag=4
+  SWH → MIZ width               : F=8.353, p=0.000019 ***, lag=3
+  MIZ width → SIC (feedback)    : F=1.295, p=0.275215 ns, lag=3
+  Wind → SWH                    : F=3.592, p=0.006668 **, lag=4
+  SIC → SWH (direct)            : F=1.088, p=0.353839 ns, lag=3
+
+Ice Shelf Buffer:
+  Ross           : 11.7 → 10.8 mo/yr, CP=2009, p=0.040797
+  Filchner-Ronne : 11.9 → 12.0 mo/yr, CP=1999, p=1.920074
+  Amery          : 10.2 → 10.7 mo/yr, CP=1995, p=0.418666
+  Larsen C       : nan → 12.0 mo/yr, CP=1979, p=2.000000
+  Totten         : 11.5 → 11.9 mo/yr, CP=1985, p=1.513127
