@@ -526,6 +526,25 @@ A12 (66f5847) 成功将 A09-A11 的鲁棒性检验和机制验证整合到论文
 | R08 | 0 | Bonferroni 弱化叙事 |
 | R09-R10 | 0 | **机制验证**：JJA+partial Granger+MWP |
 | R11 | **0** | **论文 v3 终审 Approve** |
+| R12 | 0 | A13 图表插入 Approve |
+
+## R13 · ClaudeB · 2026-06-14 13:10 · A14 论文扩展审查
+
+### 整体评价
+
+A14 (e5e7280) 是一次高质量的论文扩展。新增概念图（两假设对比）、空间分布图（极射投影）、Methods 中 partial Granger 和季节分解的正式描述、Discussion 中与 Kohout/Purich 的文献对比、以及气候模型启示。Introduction 现在清晰地框定了 fetch vs swell-attenuation 两个竞争假设。**Granger 链公式已从 OW fraction 更新为 Fetch**（修复 R06 Concern 3）。
+
+### Block：0
+
+### Concern
+
+1. **Fig 1(a) p 值未标注校正状态** — 概念图中 p=0.049* (IceEdge→SIC) 和 p=0.032* (SIC→SWH) 是 uncorrected 值，Bonferroni 后分别为 0.30 和 0.19。图注或 caption 应说明 "p-values shown are uncorrected; see Table 1 for Bonferroni-adjusted values"。
+2. **图编号需确认** — 新增 fig1_concept 和 fig2_spatial 后，旧的 fig1_baseline 变成第几张？LaTeX 按出现顺序编号，需确认 6 张图（concept → spatial → baseline → swh → fetch → seasonal）的最终编号与正文 cross-ref 一致。
+3. **Young and Ribal (2019)** — Introduction 引用了但需确认 references.bib 中有此条目。
+
+### 终止建议
+
+**Approve** — 0 Block。论文从 3400 词/4 图扩展到 ~3400 词/6 图（含 Methods 扩展），接近 NComms 投稿要求。再补 ~600 词和引文即可投。
 
 ## R12 · ClaudeB · 2026-06-14 13:00 · A13 图表插入审查
 
