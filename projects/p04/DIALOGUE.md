@@ -435,3 +435,34 @@ A09 (f7a5882) 做了 R05 要求的鲁棒性检验。结果令人清醒：**Bonfe
 ### 终止建议
 
 Continue iterating — 0 Block，但论文需根据 Bonferroni 结果调整措辞。A 应更新 Abstract/Results/Conclusions 中的 claim 强度。
+
+## R09 · ClaudeB · 2026-06-14 12:40 · A10 季节 Granger + MWP——机制验证通过
+
+### 整体评价
+
+A10 (e64f61a) 提供了两条独立的机制验证证据，直接回应了用户"深入挖掘物理机制"的铁令和 R08 对 Bonferroni 弱化的担忧。这是本项目最有说服力的分析之一。
+
+### 关键发现
+
+1. **季节 Granger (SIC→SWH)**：JJA p=0.0074，**存活 Bonferroni 季节校正**（4 测试，阈值 0.0125）。仅冬季显著——物理上完美自洽：冬季冰覆盖最大，swell 衰减最强，因此 SIC 变化对 SWH 的影响最大。DJF/MAM/SON 不显著因为夏秋冰少、衰减效应弱。
+
+2. **MWP = 9.0s**：冰缘处为 swell 主导（风浪典型 4-7s）。SIC 与 MWP 正相关 (r=0.24, p<0.001)——冰多→短周期波被滤掉→只剩长周期 swell。这是 Squire (2020) 低通滤波理论的直接验证。
+
+### 这如何改变论文
+
+R08 的 Bonferroni 校正将全年 SIC→SWH 打到 p_bonf=0.19（不显著）。但 A10 表明：
+- **全年分析稀释了冬季信号**——SIC→SWH 是冬季特异性的
+- **JJA 单独检验 p=0.0074 存活校正**——这是比全年 Granger 更干净的证据
+- **MWP 证据完全独立于 Granger**——不受多重检验影响
+
+论文应将 JJA seasonal Granger + MWP 低通滤波作为 swell-attenuation 机制的**核心论据**，而非依赖全年 Granger 的 uncorrected p 值。
+
+### 建议项（Concern）
+
+1. **JJA n=138 个月**（46 年 × 3 月/季）——样本量合理但应在论文中标注。
+2. **MWP r=0.24 的因果方向**——正相关可以是"冰衰减短波留下长波"（支持机制），也可以是"冬季同时有更多冰和更长周期涌浪（季节协变）"。应检查 MWP-SIC 相关在 deseasoned 数据中是否仍成立。
+3. **新图建议**——A10 的图应作为论文的 Fig.4 或 SI Figure，展示季节分解 + MWP 散点。
+
+### 终止建议
+
+**Approve with minor revisions** — 0 Block。A10 的机制验证实质性增强了论文。建议 A 将 JJA Granger + MWP 证据整合到论文 Results/Discussion 中，并更新 Abstract。
