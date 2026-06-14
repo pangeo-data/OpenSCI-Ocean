@@ -106,13 +106,36 @@ For five major Antarctic ice shelves (Ross, Filchner-Ronne, Amery, Larsen~C, and
 
 \subsection{Confirmation of the 2016 sea ice regime shift}
 
-The NSIDC Sea Ice Index confirms a significant regime shift in 2016 (Pettitt $p = 0.004$), with annual mean extent declining from 11.68 to 10.33 million~km$^2$ ($-11.5$\%). The decline is strongest in austral summer (DJF: $-16.8$\%, $p = 0.002$) and weakest in winter (JJA: $-5.7$\%, not significant at $p = 0.073$). The ERA5 SIC field confirms this timing: the area-weighted mean SIC in the ice zone (55$^\circ$--75$^\circ$S) shows a change point at 2016 ($p = 0.021$), and the open-water fraction shifts synchronously ($p = 0.013$). Before 2016, Antarctic sea ice extent increased at $+0.022$~million~km$^2$~yr$^{-1}$ ($p < 0.001$); after 2016, it declined at $-0.311$~million~km$^2$~yr$^{-1}$ ($p = 0.054$, marginally significant over only 9 years of post-shift data).
+The NSIDC Sea Ice Index confirms a significant regime shift in 2016 (Pettitt $p = 0.004$; Figure~\ref{fig:baseline}a), with annual mean extent declining from 11.68 to 10.33 million~km$^2$ ($-11.5$\%). The decline is strongest in austral summer (DJF: $-16.8$\%, $p = 0.002$) and weakest in winter (JJA: $-5.7$\%, not significant at $p = 0.073$). The ERA5 SIC field confirms this timing: the area-weighted mean SIC in the ice zone (55$^\circ$--75$^\circ$S) shows a change point at 2016 ($p = 0.021$), and the open-water fraction shifts synchronously ($p = 0.013$). Before 2016, Antarctic sea ice extent increased at $+0.022$~million~km$^2$~yr$^{-1}$ ($p < 0.001$); after 2016, it declined at $-0.311$~million~km$^2$~yr$^{-1}$ ($p = 0.054$, marginally significant over only 9 years of post-shift data).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig1_baseline}
+\caption{\textbf{Antarctic sea ice extent baseline (NSIDC Sea Ice Index, 1979--2026).}
+\textbf{a}, Annual mean extent with Pettitt change point at 2016 ($p = 0.004$). Blue/red shading indicates pre/post-shift mean levels.
+\textbf{b}, Seasonal mean extent (DJF, MAM, JJA, SON). Summer (DJF) shows the largest post-2016 decline ($-16.8$\%).
+\textbf{c}, Monthly extent with 12-month running mean.
+\textbf{d}, Year-to-year change, showing the abrupt shift to persistent negative anomalies after 2016.}
+\label{fig:baseline}
+\end{figure}
 
 \subsection{Wave height trends are wind-driven, not fetch-driven}
 
-Significant wave height in the Southern Ocean has increased over the satellite era, but the change point occurs in 1993 ($p = 0.001$), more than two decades before the sea ice regime shift. In the near-MIZ zone (55$^\circ$--65$^\circ$S), the SWH anomaly shows a marginal change point at 1993 ($p = 0.055$), with mean anomaly shifting from $-0.078$~m to $+0.034$~m. The ACC belt (45$^\circ$--55$^\circ$S) shows the strongest SWH increase ($p = 0.0001$), consistent with intensification of the westerly wind belt. Spatially, 17\% of Southern Ocean grid points show a significant SWH increase between the pre-2016 and post-2016 periods ($p < 0.05$, two-sample $t$-test).
+Significant wave height in the Southern Ocean has increased over the satellite era (Figure~\ref{fig:swh}a), but the change point occurs in 1993 ($p = 0.001$), more than two decades before the sea ice regime shift. In the near-MIZ zone (55$^\circ$--65$^\circ$S), the SWH anomaly shows a marginal change point at 1993 ($p = 0.055$), with mean anomaly shifting from $-0.078$~m to $+0.034$~m. The ACC belt (45$^\circ$--55$^\circ$S) shows the strongest SWH increase ($p = 0.0001$), consistent with intensification of the westerly wind belt. Spatially, 17\% of Southern Ocean grid points show a significant SWH increase between the pre-2016 and post-2016 periods ($p < 0.05$, two-sample $t$-test).
 
 The correlation between near-MIZ SWH anomaly and sea ice extent anomaly is statistically significant but weak ($r = 0.136$, $p = 0.001$, $n = 550$ months), indicating that sea ice conditions explain less than 2\% of SWH variance.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig2_swh}
+\caption{\textbf{ERA5 significant wave height trends in the Southern Ocean (1979--2024).}
+\textbf{a}, Spatial map of SWH percentage change (post-2016 minus pre-2016). Black contours enclose regions where the change is significant ($p < 0.05$, two-sample $t$-test). Widespread increases are concentrated in the ACC belt.
+\textbf{b}, Regional annual SWH anomaly time series for four latitude bands.
+\textbf{c}, Near-MIZ zone (55--65$^\circ$S) Pettitt change point at 1993 ($p = 0.055$).
+\textbf{d}, SWH anomaly versus sea ice extent anomaly ($r = 0.136$).
+\textbf{e}, Mean wave period change (post-2016 minus pre-2016).}
+\label{fig:swh}
+\end{figure}
 
 \subsection{The feedback chain partially closes through swell attenuation, not fetch}
 
@@ -136,15 +159,39 @@ SIC $\to$ SWH (direct) & 3.46 & 0.032 & 0.192 & 2 mo & Marginal \\
 \end{tabular}
 \end{table}
 
-After Bonferroni correction for six simultaneous tests, only the SIC$\to$Fetch link remains significant at the 5\% level. The remaining links are individually significant ($p < 0.05$) but marginal after correction ($p_{\mathrm{Bonf}} = 0.11$--$0.30$). The SIC$\to$Fetch relationship is robust across sub-periods: it holds in both the pre-2016 ($F = 16.0$, $p < 0.001$, $n = 444$ months) and post-2016 ($F = 21.1$, $p < 0.001$, $n = 108$ months) periods, with the post-2016 effect being stronger.
+After Bonferroni correction for six simultaneous tests (Table~\ref{tab:granger}; Figure~\ref{fig:fetch}e), only the SIC$\to$Fetch link remains significant at the 5\% level. The remaining links are individually significant ($p < 0.05$) but marginal after correction ($p_{\mathrm{Bonf}} = 0.11$--$0.30$). The SIC$\to$Fetch relationship is robust across sub-periods: it holds in both the pre-2016 ($F = 16.0$, $p < 0.001$, $n = 444$ months) and post-2016 ($F = 21.1$, $p < 0.001$, $n = 108$ months) periods, with the post-2016 effect being stronger.
 
-The direct SIC$\to$SWH link, though marginal after correction on annual data, exhibits strong seasonal dependence. When tested separately by season, SIC Granger-causes SWH only in austral winter (JJA: $F = 5.10$, $p = 0.007$), with no significant relationship in other seasons (DJF $p = 0.94$, MAM $p = 0.28$, SON $p = 0.85$). This winter specificity is physically consistent with the swell-attenuation mechanism: winter is when sea ice coverage is maximum and swell attenuation by ice is strongest.
+The direct SIC$\to$SWH link, though marginal after correction on annual data, exhibits strong seasonal dependence. When tested separately by season (Figure~\ref{fig:seasonal}a), SIC Granger-causes SWH only in austral winter (JJA: $F = 5.10$, $p = 0.007$), with no significant relationship in other seasons (DJF $p = 0.94$, MAM $p = 0.28$, SON $p = 0.85$). This winter specificity is physically consistent with the swell-attenuation mechanism: winter is when sea ice coverage is maximum and swell attenuation by ice is strongest.
 
 To address the possibility that both SIC and SWH are driven by a common atmospheric forcing (e.g., SAM), we applied partial Granger causality conditioning on wind speed. On annual data, the SIC$\to$SWH link loses significance when wind is controlled ($p = 0.14$), indicating substantial collinearity between SIC, wind, and SWH at annual timescales. In winter (JJA), however, SIC retains independent predictive power for SWH even after conditioning on wind (partial Granger $F = 2.84$, $p = 0.040$, $n = 138$). This provides the strongest statistical evidence that sea ice concentration has an independent, physically mediated effect on wave height at the ice edge, distinct from wind forcing.
 
-The mean wave period (MWP) at the ice edge is 9.0~s (range 7.8--9.8~s), characteristic of swell rather than locally generated wind-sea (typically 4--7~s). MWP correlates positively with SIC ($r = 0.24$, $p < 0.001$), consistent with sea ice acting as a low-pass filter that preferentially attenuates short-period waves. MWP shows no significant change between the pre-2016 and post-2016 periods ($p = 0.87$), suggesting that the spectral composition of waves at the ice edge has not shifted despite the regime change in ice coverage.
+The mean wave period (MWP) at the ice edge is 9.0~s (range 7.8--9.8~s; Figure~\ref{fig:seasonal}b,d), characteristic of swell rather than locally generated wind-sea (typically 4--7~s). MWP correlates positively with SIC ($r = 0.24$, $p < 0.001$; Figure~\ref{fig:seasonal}c), consistent with sea ice acting as a low-pass filter that preferentially attenuates short-period waves. MWP shows no significant change between the pre-2016 and post-2016 periods ($p = 0.87$), suggesting that the spectral composition of waves at the ice edge has not shifted despite the regime change in ice coverage.
 
 Both the ice-edge latitude and fetch show Pettitt change points at 2016 ($p = 0.009$), synchronous with the SIC regime shift. SWH at the ice edge shows no significant change point ($p = 0.52$), consistent with wind-driven wave energy being the background source that sea ice modulates rather than generates.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig4_fetch}
+\caption{\textbf{Ice-edge-based fetch proxy and SWH at the ice edge (1979--2024).}
+\textbf{a}, Zonal-mean fetch proxy (distance from 40$^\circ$S to ice edge) annual anomaly. Change point at 2016 ($p = 0.009$).
+\textbf{b}, SWH sampled at the ice edge. No significant change point ($p = 0.52$).
+\textbf{c}, Scatter plot of fetch anomaly versus SWH at the ice edge ($r = -0.19$, $p = 0.20$): fetch does not predict SWH.
+\textbf{d}, Ice-edge latitude anomaly with change point at 2016.
+\textbf{e}, Granger causality $F$-statistics. Green = significant ($p < 0.05$); orange = marginal; red = not significant.
+\textbf{f}, Seasonal cycle of fetch and SWH at the ice edge.}
+\label{fig:fetch}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig5_seasonal_mwp}
+\caption{\textbf{Seasonal dependence and mean wave period evidence for swell attenuation.}
+\textbf{a}, SIC$\to$SWH Granger $F$-statistic by season. Only JJA (winter) is significant ($F = 5.10$, $p = 0.007$).
+\textbf{b}, Mean wave period (MWP) anomaly at the ice edge. No significant change at 2016.
+\textbf{c}, SIC anomaly versus MWP anomaly ($r = +0.24$, $p < 0.001$): positive correlation consistent with sea ice acting as a low-pass filter.
+\textbf{d}, MWP seasonal cycle at the ice edge, pre-2016 versus post-2016.}
+\label{fig:seasonal}
+\end{figure}
 
 \subsection{Ice shelf buffer changes}
 
