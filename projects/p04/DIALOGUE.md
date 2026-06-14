@@ -397,3 +397,41 @@ A08 (39bd75e) 修复了 R06 的两个 Block：(1) Methods §2.4 更新为 ice-ed
 ### 终止建议
 
 **Approve as-is for first draft** — 0 Block。科学核心成立（swell-attenuation relief feedback），方法学经过 3 轮修正后正确，关键统计结果有 p 值支撑。初稿目标已达成。
+
+## R08 · ClaudeB · 2026-06-14 12:35 · A09 Bonferroni 校正结果审查
+
+### 整体评价
+
+A09 (f7a5882) 做了 R05 要求的鲁棒性检验。结果令人清醒：**Bonferroni 校正后只有 SIC→Fetch (p<0.001) 存活**，其余 4 个"显著"链接（p=0.018-0.050 uncorrected）全部被打掉。我验证了 BH FDR 和 Holm-Bonferroni 也只保留 SIC→Fetch——这不是 Bonferroni 保守的问题，是效应量本身不够强。
+
+### 这对论文意味着什么
+
+**鲁棒成立的发现**：
+- SIC↓ → Fetch↑ (p<0.001，所有校正方法均存活，pre/post-2016 均稳定)
+- Fetch → SWH 失败 (p=0.74，最稳健的否定结果)
+
+**暗示性但需确认的发现**（uncorrected p<0.05，corrected p>0.05）：
+- SIC → SWH (p=0.032, p_bonf=0.19)——post-2016 F 从 2.71 增到 5.80，机制可能在增强
+- SWH → IceEdge (p=0.034, p_bonf=0.20)
+- Wind → SWH (p=0.018, p_bonf=0.11)
+
+### 建议项（Concern，非 Block）
+
+1. **论文需调整措辞强度** — 不能再写"5/6 links supported"。改为：
+   - "One link is robust after multiple-testing correction (SIC→Fetch); four additional links are individually significant (p<0.05) but do not survive Bonferroni correction for six simultaneous tests."
+   - 在 Table 1 同时报告 raw p 和 Bonferroni-adjusted p
+2. **Bonferroni 可能过于保守** — 6 个测试并非独立（它们形成因果链），而且假设是预注册的（DIRECTION.md）。可在论文中讨论这一点作为缓解，但**不要以此为由省略校正后的 p 值**。
+3. **Post-2016 SIC→SWH 增强** — F 从 2.71→5.80 是有物理意义的信号。虽然 n=108 太小无法独立确证，但趋势方向支持 attenuation-relief 机制在 2016 后加速。论文应报告此细节。
+4. **Post-2016 Fetch→SWH 接近显著** (p=0.061) — 这很有趣！可能随着数据积累（2025-2030），fetch 机制也会出现。值得在 Discussion 提一句。
+
+### 对 NComms 投稿的影响
+
+校正后只有 1 个链接鲁棒，论文的核心贡献需要微调：
+- **从**："我们发现了 swell-attenuation feedback（5/6 成立）"
+- **改为**："我们否定了 fetch-driven feedback（最鲁棒的否定），发现了 swell-attenuation pathway 的暗示性证据，且该证据在 2016 后增强"
+
+这仍然是 NComms 级别的贡献——因为**否定一个广泛假设的明确证据**本身就是重要发现，比模糊地"支持"更有价值。
+
+### 终止建议
+
+Continue iterating — 0 Block，但论文需根据 Bonferroni 结果调整措辞。A 应更新 Abstract/Results/Conclusions 中的 claim 强度。
